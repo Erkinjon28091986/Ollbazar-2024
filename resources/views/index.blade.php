@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document56646456456</title>
+    <title>Ollbazar - bepul e'lonlar taxtasi</title>
+    <!-- CSS -->
+    <link href="css/bootstrap-5.0.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel voluptatum veniam exercitationem officia tempore, natus praesentium a nostrum et hic alias in sequi incidunt deleniti reprehenderit accusantium? Nulla fuga debitis, molestiae officiis consequuntur est quia voluptate velit eos incidunt quis rerum quo assumenda veniam ut sequi iure soluta ex amet quidem animi impedit. Atque dicta optio sequi fugit magnam repudiandae at, quisquam odit architecto. Perspiciatis aperiam, ab iusto ullam porro adipisci sit quos soluta excepturi numquam, quas quis, architecto maiores provident. Quisquam facere sunt neque fugit earum, quibusdam quo in accusantium et repudiandae! Ullam consequatur perferendis officia vero nulla atque sint reiciendis, sit sunt modi dolores expedita animi incidunt dolor a aliquam consectetur officiis vel. Inventore odio natus perferendis neque, necessitatibus nostrum maxime culpa repellat, voluptates laborum aliquid provident explicabo nobis rem, cupiditate saepe id. Reprehenderit qui, necessitatibus sit distinctio ab eius autem, exercitationem cumque ad corporis hic ipsum? Sequi nulla aliquam ipsam debitis fugit velit, odit repudiandae qui labore atque perspiciatis facere ipsa voluptatibus illo et numquam consequuntur distinctio voluptates porro alias facilis? Laborum dignissimos reiciendis voluptatum quo modi, perspiciatis doloribus fuga eaque inventore nulla repudiandae qui voluptatibus hic asperiores, pariatur exercitationem deserunt fugit repellendus aspernatur odit, officiis odio! Dolore perferendis dolores non officiis eos aperiam illum eligendi eum ea animi excepturi magni iure veritatis, aliquid mollitia blanditiis voluptates ducimus, aliquam esse, accusamus nulla asperiores vel? Expedita magni dignissimos nesciunt perspiciatis aliquid. Nam voluptatibus, id ex ipsum vel iure et repudiandae alias nisi dolorem eligendi natus corrupti veritatis earum sint illum quo unde, cupiditate incidunt itaque suscipit? Aut laborum ab beatae, nihil quia nemo magni architecto? Nobis dolor consectetur, officiis aspernatur vero pariatur mollitia eos error deserunt molestias debitis cupiditate recusandae aut repellendus 
-        amet, voluptatibus ipsum assumenda, veniam laboriosam eaque et esse. Quis fugit odit quia hic cumque culpa?</div>
+    <div class="autolocationuser df">
+        <p>Bu sizning hududmi?</p>
+        <div class="jcaic">
+            <a href="#" class="hashuhudud">Ha</a>
+            <a href="#" class="boshqatanlash">O'zgartirish</a>
+        </div>    
+    </div>
+    <header>
+        <nav class="w70w">
+            <div class="navbox df">
+                <img src="https://i.postimg.cc/ZKDH4Xty/jb.jpg" alt="Ollbazar" class="mainlogo">
+                <div class="menubox df">
+                    <ul class="df">
+                        <li><a href="#" class="navitems">Avtomobil</a></li>
+                        <li><a href="#" class="navitems">Uy-joy</a></li>
+                        <li><a href="#" class="navitems">Ish bor</a></li>
+                        <li><a href="#" class="navitems">Telefon</a></li>
+                    </ul>
+                    <a href="#" class="elonberish">E'lon berish</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w70w">
+
+    </main>
+
+
+    <!-- jQuery и JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
