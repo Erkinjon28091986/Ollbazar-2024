@@ -58,6 +58,25 @@
                     </div>
                 </div>
             </div>
+            <div class="cats__box">
+                <div class="swiper-container swiperbox__categories">
+                    <ul class="swiper-wrapper categories">
+                        <li class="swiper-slide">
+                            <a href="#" class="c-link c-link-2" tabindex="0"><i class="fas fa-volleyball-ball"
+                                    aria-hidden="true"></i>Avtomobil</a>
+                        </li>
+                        <li class="swiper-slide df">
+                            <a href="">Item 7ghfddhgdhdfh</a>
+                        </li>
+                        <li class="swiper-slide df">
+                            <a href="" style="width:110px">Item 7ghfddhgdhdfh</a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">Item 21</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main class="w70w">
 
@@ -70,6 +89,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
         </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
     <script src="js/main.js"></script>
 </body>
 

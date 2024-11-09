@@ -2,7 +2,7 @@ $btnPadding: 5px 10px;
 $btnRadius: 5px;
 
 :root {
-  --base-color: white;
+  --base-color: #ffffff;
   --base-variant: #ffffff;
   --text-color: #111528;
   --secondary-text: #232738;
@@ -10,6 +10,7 @@ $btnRadius: 5px;
   --accent-color: #0071ff;
   --elonjoylash-btn-bg: #ffffff;
   --elonjoylash-btn-text: #7684c6;
+  --text-colorikki: #ffffff;
 }
 .darkmode {
   --base-color: #2f3657;
@@ -20,6 +21,7 @@ $btnRadius: 5px;
   --accent-color: #0071ff;
   --elonjoylash-btn-bg: #323654;
   --elonjoylash-btn-text: #7684c6;
+  --text-colorikki: #a52626;
 }
 
 body {
@@ -311,13 +313,13 @@ header {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: var(--text-color1);
     text-shadow: 0px 1px 10px rgb(0 0 0 / 26%);
     .prosubtitle {
       width: 70%;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 19px;
+      margin: 0 auto;
+      color: var(--text-color1);
+      font-size: 19px;
     }
   }
   .searchbox {
@@ -326,30 +328,45 @@ header {
         align-items: center;
         width: 70%;
         background: rgb(113 143 208 / 40%);
-        height:50px;
+        height: 50px;
         border-radius: 5px;
         margin: 0 auto;
         margin-top: 20px;
         padding-left: 14px;
         position: relative;
         border: 1px solid rgb(255 255 255 / 6%);
-    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 28%);
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 28%);
-    transition: all ease .3s;
-    cursor: text;
-        .search__icon{
+        -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 28%);
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 28%);
+        transition: all ease 0.3s;
+        cursor: text;
+        .search__icon {
           position: absolute;
           right: 14px;
-          i{
+          i {
             color: #d2d2d2;
-    font-size: 18px;
+            font-size: 18px;
           }
         }
-        .animation__word{
+        .animation__word {
           color: #fff;
-    font-size: 18px;
+          font-size: 18px;
         }
       }
     }
   }
+}
+.swiper-slide {
+  width: auto;
+}
+.categories li a {
+  display: block;
+  height: 35px;
+  background-color: #009ec3;
+  color: white;
+  margin: 0 2px 2px 0;
+  padding: 0 10px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
 }

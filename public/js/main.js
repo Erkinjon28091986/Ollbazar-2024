@@ -7,7 +7,7 @@ $(".closelocation").on("click", function (event) {
     event.preventDefault();
 });
 
-
+//skeleton effect
 const skeletons = document.querySelectorAll('.skeleton') 
 skeletons.forEach((skeleton) => { 
 setTimeout(() => { 
@@ -15,6 +15,7 @@ $(skeletons).removeClass('skeleton')
  }, 2000) 
 })
 
+//dark/laght mode
 let darkmode = localStorage.getItem('darkmode')
 const themeSwitch = document.getElementById('theme-switch')
 
@@ -34,3 +35,11 @@ themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem('darkmode')
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
+
+//swiper category freemode
+var swiper2 = new Swiper('.swiperbox__categories', {
+  slidesPerView: 'auto',
+  freeMode: true,
+  rewind: false,
+  spaceBetween: 2
+}); 
