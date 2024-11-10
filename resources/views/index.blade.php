@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ollbazar - bepul e'lonlar taxtasi</title>
+    <title>Hanbazar - bepul e'lonlar taxtasi</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="css/bootstrap-5.0.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.11.1/css/flag-icons.min.css">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="mainpage">
     <x-AutoLocationUser></x-AutoLocationUser>
     <div class="fixappbox df">
         <div class="saopy df">
@@ -28,9 +31,69 @@
             <i class="fa-solid fa-caret-right"></i>
         </div>
     </div>
+    <div class="head__submenu df">
+        <div class="lorewq df">
+            <div id="theme-switch" class="hovereffect">
+                <div class="switchsvg"><i class="fa-solid fa-moon"></i> Tun</div>
+                <div class="switchsvg"><i class="fa-solid fa-sun"></i> Kun</div>
+            </div>
+            <div class="select2box__outer">
+                <div class="select2box hovereffect">
+                    <div class="current__language df"><img src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png"
+                            alt="uz">UZ</div>
+                </div>
+                <div class="til__dropdown">
+                    <div class="tillar">Tillar</div>
+                    <div class="tilich tilikop">
+                        <div class="control-group">
+                            <label class="control control--radio">O'zbekcha
+                                <input type="radio" name="radio2" checked="checked" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Қазақша
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Кыргызча
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Русский
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Tоҷикӣ
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">English
+                                <input type="radio" name="radio2" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tillar">Pul birligi</div>
+                    <div class="tilich vtrew">
+                        <div class="control-group">
+                            <div class="pulbir df"><i class="fa-solid fa-caret-right"></i> Oz'bek so'mi - Uzs</div>
+                        </div>
+                    </div>
+                    <div class="tillar">Hudud</div>
+                    <div class="tilich vtrew">
+                        <div class="control-group">
+                            <div class="selected__region">
+                                <div class="sel__reg__country"> <i class="fa-solid fa-caret-right"></i>O'zbekiston</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="foottil">O'zgartirish</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="nav__wrap">
-            <nav class="w70w">
+            <nav class="w70w fdc">
                 <div class="navbox df">
                     <div class="skeleton mlogobox">
                         <img src="https://i.postimg.cc/DZZhpjFD/jahonbozor-oq.png" alt="Ollbazar" class="mainlogo">
@@ -42,60 +105,9 @@
                             <li><a href="#" class="navitems skeleton">Ish bor</a></li>
                             <li><a href="#" class="navitems skeleton">Telefon</a></li>
                         </ul>
-                        <button id="theme-switch" class="skeleton">
-                            <svg class="switchsvg" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                viewBox="0 -960 960 960" width="24px">
-                                <path
-                                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
-                            </svg>
-                            <svg class="switchsvg" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                viewBox="0 -960 960 960" width="24px">
-                                <path
-                                    d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
-                            </svg>
-                        </button>
+                        <a href="" class="menu__user hovereffect__light skeleton"><i class="fa-solid fa-user-large"></i></a>
                         <a href="#" class="elonberish skeleton">
-                            <svg version="1.1" id="fi_32563" class="eljoysvg" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="349.03px"
-                                height="349.031px" viewBox="0 0 349.03 349.031"
-                                style="enable-background:new 0 0 349.03 349.031;" xml:space="preserve">
-                                <g>
-                                    <path d="M349.03,141.226v66.579c0,5.012-4.061,9.079-9.079,9.079H216.884v123.067c0,5.019-4.067,9.079-9.079,9.079h-66.579
-		c-5.009,0-9.079-4.061-9.079-9.079V216.884H9.079c-5.016,0-9.079-4.067-9.079-9.079v-66.579c0-5.013,4.063-9.079,9.079-9.079
-		h123.068V9.079c0-5.018,4.069-9.079,9.079-9.079h66.579c5.012,0,9.079,4.061,9.079,9.079v123.068h123.067
-		C344.97,132.147,349.03,136.213,349.03,141.226z"></path>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                            </svg> E'LON JOYLASH</a>
+                            <span>+</span> E'LON JOYLASH</a>
                     </div>
                 </div>
             </nav>
@@ -108,9 +120,9 @@
                         <div class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                     </div>
                     <a href="#" class="searchbymap">
-                        <img src="https://i.postimg.cc/L67fQggc/maps-and-location.png" alt="Search on map"
-                            class="searchbymapicon">
-                        <!-- <i class="fa-solid fa-map-location-dot"></i> -->
+                        <!-- <img src="https://i.postimg.cc/L67fQggc/maps-and-location.png" alt="Search on map"
+                            class="searchbymapicon"> -->
+                        <i class="fa-solid fa-map-location-dot"></i>
                     </a>
                 </div>
             </div>
@@ -127,7 +139,7 @@
                     <div class="swiper-container swiperbox__categories">
                         <ul class="swiper-wrapper categories">
                             <li class="swiper-slide">
-                                <a href="#" class="cat__item btn-ripple" tabindex="0">
+                                <a href="javascript:void(0)" class="cat__item btn-ripple" tabindex="0">
                                     <img src="https://i.postimg.cc/tC85Wvd6/spark.png" alt="avtomobil">
                                     <span>Avtomobil</span>
                                 </a>
@@ -204,9 +216,10 @@
                 </div>
             </div>
     </header>
-    <main class="w70w">
+    <main class="w70w" style="height:1500px">
 
     </main>
+    <div class="main__overlay"></div>
 
 
     <!-- jQuery и JavaScript -->
@@ -216,7 +229,14 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        //haeder scroll effect
+
+ 
+
+    </script>
 </body>
 
 </html>
