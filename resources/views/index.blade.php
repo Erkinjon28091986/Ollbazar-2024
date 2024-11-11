@@ -11,6 +11,7 @@
     <link href="css/bootstrap-5.0.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.11.1/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -33,14 +34,14 @@
     </div>
     <div class="head__submenu df">
         <div class="lorewq df">
-            <div id="theme-switch" class="hovereffect">
+            <div id="theme-switch" class="">
                 <div class="switchsvg"><i class="fa-solid fa-moon"></i> Tun</div>
                 <div class="switchsvg"><i class="fa-solid fa-sun"></i> Kun</div>
             </div>
             <div class="select2box__outer">
-                <div class="select2box hovereffect">
+                <div class="select2box ">
                     <div class="current__language df"><img src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png"
-                            alt="uz">UZ</div>
+                            alt="uz">Uz</div>
                 </div>
                 <div class="til__dropdown">
                     <div class="tillar">Tillar</div>
@@ -105,7 +106,8 @@
                             <li><a href="#" class="navitems skeleton">Ish bor</a></li>
                             <li><a href="#" class="navitems skeleton">Telefon</a></li>
                         </ul>
-                        <a href="" class="menu__user hovereffect__light skeleton"><i class="fa-solid fa-user-large"></i></a>
+                        <a href="" class="menu__user hovereffect__light skeleton"><i
+                                class="fa-solid fa-user-large"></i></a>
                         <a href="#" class="elonberish skeleton">
                             <span>+</span> E'LON JOYLASH</a>
                     </div>
@@ -216,8 +218,53 @@
                 </div>
             </div>
     </header>
-    <main class="w70w" style="height:1500px">
+    <main class="w70w asosiycontent" style="height: 590px">
+        <div class="u-wrapper vip__ads">
+            <div class="swipercontrolbox df">
+                <p class="htitle">Shox e'lonlar</p>
+                <div class="c-carousel__controls" style="--swiper-navigation-color: pink;">
+                    <div class="c-carousel__button--prev">
+                        <i class="fa-solid fa-square-caret-left"></i>
+                    </div>
+                    <div class="c-carousel__button--next">
+                        <i class="fa-solid fa-square-caret-right"></i>
+                    </div>
+                </div>
+            </div>
 
+            <div class="c-carousel">
+                <div class="c-carousel__wrapper swiper">
+                    <div class="c-carousel__inner-wrapper swiper-wrapper">
+                        <div class="c-carousel__item swiper-slide">
+                            <div class="vipaditem df">
+                                <div class="infobagde df">
+                                    <div class="vipbadge">Shox</div>
+                                    <div class="korildibadge">Ko'rildi</div>
+                                </div>
+                                <img src="https://i.postimg.cc/Ghshrk98/Land-Rover.jpg" alt="ad">
+                                <div class="vipadfoot">
+                                    <p class="vipadtitle">Range Rover</p>
+                                    <p class="vipadprice">23 000 000 <span class="currents">Uzs</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/257.svg" alt="">
+                        </div>
+                        <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/289.svg" alt="">
+                        </div>
+                        <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/242.svg" alt="">
+                        </div>
+                        <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/330.svg" alt="">
+                        </div>
+                        <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/321.svg" alt="">
+                        </div>
+                        <div class="c-carousel__item swiper-slide"><img src="https://img.logoipsum.com/216.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
     <div class="main__overlay"></div>
 
@@ -230,11 +277,12 @@
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         //haeder scroll effect
 
- 
+
 
     </script>
 </body>

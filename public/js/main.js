@@ -105,10 +105,12 @@ $(document).ready(function () {
     $(".select2box").click(function () {
         $(".til__dropdown").addClass("til__dropdown2");
         $(".main__overlay").addClass("main__overlay__show");
+        $(".current__language").addClass("current__language__bg__show");
     });
     $(".main__overlay").click(function () {
       $(".til__dropdown").removeClass("til__dropdown2");
       $(".main__overlay").removeClass("main__overlay__show");
+      $(".current__language").removeClass("current__language__bg__show");
   });
 });
 
@@ -190,6 +192,27 @@ $(document).ready(function () {
 })(jQuery);
 */
 
-
+const swiper = new Swiper('.swiper', {
+  // modules: [Navigation, A11y],
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.c-carousel__button--next',
+    prevEl: '.c-carousel__button--prev',
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 48,
+  a11y: {
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+  },
+  // autoplay: {
+  //   delay: 48000,
+  // },
+//   autoplay: {
+//     disableOnInteraction: false,
+//     pauseOnMouseEnter: true,
+// },
+});
 
 
