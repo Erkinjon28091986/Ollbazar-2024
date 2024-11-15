@@ -1431,7 +1431,7 @@ header {
 .masonry .item-elon {
   position: relative;
   display: inline-block;
-  margin: 12px 0 0 0;
+  margin: 20px 0 0 0;
   width: 100%;
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -1927,6 +1927,7 @@ header {
   justify-content: center;
   border-bottom: #dedede 1px solid;
   padding-bottom: 8px;
+  margin-bottom: 10px;
 }
 .drobwrap .til__dropdown-m .dropbox .useravatar {
   display: block;
@@ -1946,28 +1947,41 @@ header {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  color: #999999;
+  font-size: 14px;
 }
-.drobwrap .til__dropdown-m .dropmenular {
+.drobwrap .til__dropdown-m .dropbox .dropinner .dropname {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.drobwrap .til__dropdown2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0) scaleY(1) translateY(0);
+  transition: all ease 0.4s;
+}
+
+.dropmenular {
   flex-direction: column;
   color: #444;
 }
-.drobwrap .til__dropdown-m .dropmenular ul li .mnavitems {
+.dropmenular li .mnavitems {
   position: relative;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  color: #fff;
+  color: #726f6f;
   text-decoration: none;
   border-radius: 25px;
   transition: all ease 0.3s;
 }
-.drobwrap .til__dropdown-m .dropmenular ul li .mnavitems:after {
+.dropmenular li .mnavitems:after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  background: hsla(0, 0%, 90%, 0.165);
+  background: hsla(0, 0%, 90%, 0.35);
   transform: scaleX(0.7) scaleY(0.7);
   transition: all ease 0.3s;
   width: 100%;
@@ -1976,20 +1990,15 @@ header {
   border-radius: 25px;
   opacity: 0;
 }
-.drobwrap .til__dropdown-m .dropmenular ul li .mnavitems:hover:after {
-  background: hsla(0, 0%, 90%, 0.165);
+.dropmenular li .mnavitems:hover:after {
+  background: hsla(0, 0%, 90%, 0.65);
   position: absolute;
   transform: scaleX(1) scaleY(1);
   opacity: 1;
+  z-index: -1;
   transition: all ease 0.3s;
 }
-.drobwrap .til__dropdown-m .dropmenular ul li .navitems2 {
+.dropmenular li .navitems2 {
   color: #7d7d7d;
   fill: #7d7d7d;
-}
-.drobwrap .til__dropdown2 {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0) scaleY(1) translateY(0);
-  transition: all ease 0.4s;
 }

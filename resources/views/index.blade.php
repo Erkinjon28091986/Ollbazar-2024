@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.11.1/css/flag-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="css/hanbazar-icons.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -102,232 +103,62 @@
                     <div class="menubox df">
                         <ul class="df lilar">
                             <li><a href="#" class="navitems skeleton elyt eluyenv">
-                                    <svg class="" clip-rule="evenodd" style="height: 20px;" fill-rule="evenodd"
-                                        stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg" id="fi_10426418">
-                                        <g id="Icon">
-                                            <path
-                                                d="m6.577 17.965-1.133.529c-.875.408-1.917.029-2.325-.847l-1.691-3.625c-.408-.876-.029-1.917.847-2.326l1.133-.528zm-1.921-7.669 7.187-6.454c.412-.37.976-.523 1.519-.412s1.002.472 1.236.975l4.353 9.335c.234.503.217 1.087-.047 1.574-.265.488-.744.821-1.293.899l-9.563 1.356z">
-                                            </path>
-                                            <path
-                                                d="m21.669 5.963c.375-.175.822-.012.997.363.174.375.012.821-.363.996l-1.813.846c-.375.175-.822.012-.997-.363-.174-.375-.012-.822.363-.997z">
-                                            </path>
-                                            <path
-                                                d="m22.223 12.015c.389.142.59.573.448.962-.141.389-.572.589-.961.448l-1.879-.684c-.389-.142-.59-.572-.448-.961.141-.389.572-.59.961-.449z">
-                                            </path>
-                                            <path
-                                                d="m16.649 2.572c.142-.389.573-.59.962-.448.389.141.589.572.448.961l-.684 1.879c-.142.389-.572.59-.961.449-.389-.142-.59-.573-.449-.962z">
-                                            </path>
-                                            <path
-                                                d="m11.594 18.076.435.933c.409.876.03 1.917-.846 2.326l-.907.422c-.875.409-1.917.03-2.325-.846l-.951-2.039.444-.207z">
-                                            </path>
-                                        </g>
-                                    </svg> E'lonlarim</a></li>
+                                <i class="icon-megaphone"></i>
+                                     E'lonlarim</a></li>
                             <li><a href="#" class="navitems skeleton elyt">
-                                    <svg id="fi_2099199" style="height: 16px;" enable-background="new 0 0 512 512"
-                                        height="512" viewBox="0 0 512 512" width="512"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z">
-                                        </path>
-                                        <path
-                                            d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z">
-                                        </path>
-                                    </svg>Hatdon</a>
+                                <i class="icon-email"></i>
+                                    Hatdon</a>
                             </li>
                             <li><a href="#" class="navitems skeleton elyt">
-                                    <svg version="1.1" id="fi_833386" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 412.735 412.735" style="enable-background:new 0 0 412.735 412.735;"
-                                        xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path
-                                                    d="M295.706,35.522C295.706,35.522,295.706,35.522,295.706,35.522c-34.43-0.184-67.161,14.937-89.339,41.273
-			c-22.039-26.516-54.861-41.68-89.339-41.273C52.395,35.522,0,87.917,0,152.55C0,263.31,193.306,371.456,201.143,375.636
-			c3.162,2.113,7.286,2.113,10.449,0c7.837-4.18,201.143-110.759,201.143-223.086C412.735,87.917,360.339,35.522,295.706,35.522z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg> Sevimli</a>
+                                    <i class="icon-heart-filled"></i> Sevimli</a>
                             </li>
                             <li><a href="#" class="navitems skeleton elyt">
-                                    <svg fill="none" height="512" style="height: 20px; margin-right: 0"
-                                        viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"
-                                        id="fi_10419420">
-                                        <g fill="rgb(0,0,0)">
-                                            <path
-                                                d="m8.35179 20.2418c.84109 1.0692 2.16241 1.7582 3.64821 1.7582s2.8071-.689 3.6482-1.7582c-2.4218.3282-4.8746.3282-7.29641 0z">
-                                            </path>
-                                            <path
-                                                d="m18.7491 9v.7041c0 .845.2412 1.6711.6931 2.3741l1.1074 1.723c1.0116 1.5737.2394 3.7127-1.52 4.2104-4.6023 1.3018-9.45686 1.3018-14.05924 0-1.75931-.4977-2.53154-2.6367-1.52-4.2104l1.10744-1.723c.45192-.703.69307-1.5291.69307-2.3741v-.7041c0-3.86599 3.02169-7 6.74913-7 3.7274 0 6.7491 3.13401 6.7491 7z">
-                                            </path>
-                                        </g>
-                                    </svg>Habarnoma</a>
+                                <i class="icon-bell"></i>
+                                    Habarnoma</a>
                             </li>
                         </ul>
                         <div class="drobwrap">
-                        <a href="javascript:void(0)" class="menu__user skeleton">
-                            <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24"
-                                xmlns="http://www.w3.org/2000/svg" id="fi_16797245">
-                                <g clip-rule="evenodd" fill="#fff" fill-rule="evenodd">
-                                    <path
-                                        d="m12 2c-2.76142 0-4.99999 2.23858-4.99999 5s2.23857 5 4.99999 5c2.7614 0 5-2.23858 5-5s-2.2386-5-5-5z">
-                                    </path>
-                                    <path
-                                        d="m9.00001 13c-1.66275 0-3.26177.7585-4.19885 1.9004-.4756.5796-.80994 1.2967-.83905 2.0915-.02973.8117.26326 1.6039.86748 2.2952 1.47256 1.6845 3.82369 2.7129 7.17041 2.7129 3.3467 0 5.6979-1.0284 7.1704-2.7129.6043-.6913.8972-1.4835.8675-2.2952-.0291-.7948-.3634-1.5119-.839-2.0915-.9371-1.1419-2.5361-1.9004-4.1989-1.9004z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </a>
+                            <a href="javascript:void(0)" class="menu__user skeleton">
+                                <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24"
+                                    xmlns="http://www.w3.org/2000/svg" id="fi_16797245">
+                                    <g clip-rule="evenodd" fill="#fff" fill-rule="evenodd">
+                                        <path
+                                            d="m12 2c-2.76142 0-4.99999 2.23858-4.99999 5s2.23857 5 4.99999 5c2.7614 0 5-2.23858 5-5s-2.2386-5-5-5z">
+                                        </path>
+                                        <path
+                                            d="m9.00001 13c-1.66275 0-3.26177.7585-4.19885 1.9004-.4756.5796-.80994 1.2967-.83905 2.0915-.02973.8117.26326 1.6039.86748 2.2952 1.47256 1.6845 3.82369 2.7129 7.17041 2.7129 3.3467 0 5.6979-1.0284 7.1704-2.7129.6043-.6913.8972-1.4835.8675-2.2952-.0291-.7948-.3634-1.5119-.839-2.0915-.9371-1.1419-2.5361-1.9004-4.1989-1.9004z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
                             <div class="til__dropdown-m til__dropdown2">
                                 <div class="dropbox df">
                                     <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="user" class="useravatar">
                                     <div class="dropinner df">
                                         <div class="dropname">Karimov Mamurjon</div>
-                                        <p class="dropadress">Mamurjonkarimov@gmail.com</p>
+                                        <p class="dropadress">Mamurarimov@gmail.com</p>
                                     </div>
                                 </div>
-                                
                                 <ul class="df lilar dropmenular">
-                            <li><a href="#" class="mnavitems skeleton elyt eluyenv">
-                                    <svg class="" clip-rule="evenodd" style="height: 20px;" fill-rule="evenodd"
-                                        stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg" id="fi_10426418">
-                                        <g id="Icon">
-                                            <path
-                                                d="m6.577 17.965-1.133.529c-.875.408-1.917.029-2.325-.847l-1.691-3.625c-.408-.876-.029-1.917.847-2.326l1.133-.528zm-1.921-7.669 7.187-6.454c.412-.37.976-.523 1.519-.412s1.002.472 1.236.975l4.353 9.335c.234.503.217 1.087-.047 1.574-.265.488-.744.821-1.293.899l-9.563 1.356z">
-                                            </path>
-                                            <path
-                                                d="m21.669 5.963c.375-.175.822-.012.997.363.174.375.012.821-.363.996l-1.813.846c-.375.175-.822.012-.997-.363-.174-.375-.012-.822.363-.997z">
-                                            </path>
-                                            <path
-                                                d="m22.223 12.015c.389.142.59.573.448.962-.141.389-.572.589-.961.448l-1.879-.684c-.389-.142-.59-.572-.448-.961.141-.389.572-.59.961-.449z">
-                                            </path>
-                                            <path
-                                                d="m16.649 2.572c.142-.389.573-.59.962-.448.389.141.589.572.448.961l-.684 1.879c-.142.389-.572.59-.961.449-.389-.142-.59-.573-.449-.962z">
-                                            </path>
-                                            <path
-                                                d="m11.594 18.076.435.933c.409.876.03 1.917-.846 2.326l-.907.422c-.875.409-1.917.03-2.325-.846l-.951-2.039.444-.207z">
-                                            </path>
-                                        </g>
-                                    </svg> Mening honam</a></li>
-                            <li><a href="#" class="mnavitems skeleton elyt">
-                                    <svg id="fi_2099199" style="height: 16px;" enable-background="new 0 0 512 512"
-                                        height="512" viewBox="0 0 512 512" width="512"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z">
-                                        </path>
-                                        <path
-                                            d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z">
-                                        </path>
-                                    </svg>Hisobim</a>
-                            </li>
-                            <li><a href="#" class="mnavitems skeleton elyt">
-                                    <svg version="1.1" id="fi_833386" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 412.735 412.735" style="enable-background:new 0 0 412.735 412.735;"
-                                        xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path
-                                                    d="M295.706,35.522C295.706,35.522,295.706,35.522,295.706,35.522c-34.43-0.184-67.161,14.937-89.339,41.273
-			c-22.039-26.516-54.861-41.68-89.339-41.273C52.395,35.522,0,87.917,0,152.55C0,263.31,193.306,371.456,201.143,375.636
-			c3.162,2.113,7.286,2.113,10.449,0c7.837-4.18,201.143-110.759,201.143-223.086C412.735,87.917,360.339,35.522,295.706,35.522z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                    </svg> Sozlama</a>
-                            </li>
-                            <li><a href="#" class="mnavitems skeleton elyt">
-                                    <svg fill="none" height="512" style="height: 20px; margin-right: 0"
-                                        viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"
-                                        id="fi_10419420">
-                                        <g fill="rgb(0,0,0)">
-                                            <path
-                                                d="m8.35179 20.2418c.84109 1.0692 2.16241 1.7582 3.64821 1.7582s2.8071-.689 3.6482-1.7582c-2.4218.3282-4.8746.3282-7.29641 0z">
-                                            </path>
-                                            <path
-                                                d="m18.7491 9v.7041c0 .845.2412 1.6711.6931 2.3741l1.1074 1.723c1.0116 1.5737.2394 3.7127-1.52 4.2104-4.6023 1.3018-9.45686 1.3018-14.05924 0-1.75931-.4977-2.53154-2.6367-1.52-4.2104l1.10744-1.723c.45192-.703.69307-1.5291.69307-2.3741v-.7041c0-3.86599 3.02169-7 6.74913-7 3.7274 0 6.7491 3.13401 6.7491 7z">
-                                            </path>
-                                        </g>
-                                    </svg>Yordam</a>
-                            </li>
-                        </ul>
+                                    <li><a href="#" class="mnavitems skeleton elyt eluyenv">
+                                        <i class="icon-user"></i>
+                                        Mening honam</a></li>
+                                    <li><a href="#" class="mnavitems skeleton elyt">
+                                        <i class="icon-wallet6"></i>
+                                        Hisobim</a></li>
+                                </ul>
                                 <div class="tillar">Hudud</div>
                                 <div class="tilich vtrew">
                                     <div class="control-group">
                                         <div class="selected__region">
-                                            <div class="sel__reg__country"> <i
-                                                    class="fa-solid fa-caret-right"></i>O'zbekiston</div>
+                                            <div class="sel__reg__country"> <i class="fa-solid fa-caret-right"></i>O'zbekiston</div>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="#" class="foottil">O'zgartirish</a>
                             </div>
                         </div>
-                        
+
                         <a href="#" class="elonberish skeleton" data-bs-toggle="modal"
                             data-bs-target="#ElonBerishBolimlariModal">
                             <span>+</span> E'LON JOYLASH</a>
