@@ -33,66 +33,7 @@
             <i class="fa-solid fa-caret-right"></i>
         </div>
     </div>
-    <div class="head__submenu df">
-        <div class="lorewq df">
-            <div id="theme-switch" class="">
-                <div class="switchsvg"><i class="fa-solid fa-moon"></i> Tun</div>
-                <div class="switchsvg"><i class="fa-solid fa-sun"></i> Kun</div>
-            </div>
-            <div class="select2box__outer">
-                <div class="select2box ">
-                    <div class="current__language df"><img src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png"
-                            alt="uz">Uz</div>
-                </div>
-                <div class="til__dropdown">
-                    <div class="tillar">Tillar</div>
-                    <div class="tilich tilikop">
-                        <div class="control-group">
-                            <label class="control control--radio">O'zbekcha
-                                <input type="radio" name="radio2" checked="checked" />
-                                <div class="control__indicator"></div>
-                            </label>
-                            <label class="control control--radio">Қазақша
-                                <input type="radio" name="radio2" />
-                                <div class="control__indicator"></div>
-                            </label>
-                            <label class="control control--radio">Кыргызча
-                                <input type="radio" name="radio2" />
-                                <div class="control__indicator"></div>
-                            </label>
-                            <label class="control control--radio">Русский
-                                <input type="radio" name="radio2" />
-                                <div class="control__indicator"></div>
-                            </label>
-                            <label class="control control--radio">Tоҷикӣ
-                                <input type="radio" name="radio2" />
-                                <div class="control__indicator"></div>
-                            </label>
-                            <label class="control control--radio">English
-                                <input type="radio" name="radio2" />
-                                <div class="control__indicator"></div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="tillar">Pul birligi</div>
-                    <div class="tilich vtrew">
-                        <div class="control-group">
-                            <div class="pulbir df"><i class="fa-solid fa-caret-right"></i> Oz'bek so'mi - Uzs</div>
-                        </div>
-                    </div>
-                    <div class="tillar">Hudud</div>
-                    <div class="tilich vtrew">
-                        <div class="control-group">
-                            <div class="selected__region">
-                                <div class="sel__reg__country"> <i class="fa-solid fa-caret-right"></i>O'zbekiston</div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="foottil">O'zgartirish</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <header>
         <div class="nav__wrap">
             <nav class="w70w fdc">
@@ -102,63 +43,68 @@
                     </div>
                     <div class="menubox df">
                         <ul class="df lilar">
-                            <li><a href="#" class="navitems skeleton elyt eluyenv">
-                                <i class="icon-megaphone"></i>
-                                     E'lonlarim</a></li>
                             <li><a href="#" class="navitems skeleton elyt">
-                                <i class="icon-email"></i>
-                                    Hatdon</a>
+                                    <i class="icon-information"></i>
+                                    Yordam</a>
                             </li>
-                            <li><a href="#" class="navitems skeleton elyt">
-                                    <i class="icon-heart-filled"></i> Sevimli</a>
-                            </li>
-                            <li><a href="#" class="navitems skeleton elyt">
-                                <i class="icon-bell"></i>
-                                    Habarnoma</a>
+                            <li>
+                                <div class="select2box__outer navitems skeleton elyt bayrte">
+                                    <div class="select2box ">
+                                        <div class="current__language df"><img
+                                                src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"></div>
+                                    </div>
+                                    <div class="til__dropdown">
+                                        <div class="tillar">Tillar</div>
+                                        <div class="tilich tilikop">
+                                            <div class="control-group">
+                                                <label class="control control--radio">O'zbekcha
+                                                    <input type="radio" name="radio2" checked="checked">
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                                <label class="control control--radio">Қазақша
+                                                    <input type="radio" name="radio2">
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                                <label class="control control--radio">Кыргызча
+                                                    <input type="radio" name="radio2">
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                                <label class="control control--radio">Русский
+                                                    <input type="radio" name="radio2">
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                                <label class="control control--radio">Tоҷикӣ
+                                                    <input type="radio" name="radio2">
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                                <label class="control control--radio">English
+                                                    <input type="radio" name="radio2">
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tillar">Pul birligi</div>
+                                        <div class="tilich vtrew">
+                                            <div class="control-group">
+                                                <div class="pulbir df"><i class="fa-solid fa-caret-right"></i>
+                                                    Oz'bek so'mi - Uzs</div>
+                                            </div>
+                                        </div>
+                                        <div class="tillar">Hudud</div>
+                                        <div class="tilich vtrew">
+                                            <div class="control-group">
+                                                <div class="selected__region">
+                                                    <div class="sel__reg__country"> <i
+                                                            class="fa-solid fa-caret-right"></i>O'zbekiston</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="foottil">O'zgartirish</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                        <div class="drobwrap">
-                            <a href="javascript:void(0)" class="menu__user skeleton">
-                                <svg fill="#fff" height="24" viewBox="0 0 24 24" width="24"
-                                    xmlns="http://www.w3.org/2000/svg" id="fi_16797245">
-                                    <g clip-rule="evenodd" fill="#fff" fill-rule="evenodd">
-                                        <path
-                                            d="m12 2c-2.76142 0-4.99999 2.23858-4.99999 5s2.23857 5 4.99999 5c2.7614 0 5-2.23858 5-5s-2.2386-5-5-5z">
-                                        </path>
-                                        <path
-                                            d="m9.00001 13c-1.66275 0-3.26177.7585-4.19885 1.9004-.4756.5796-.80994 1.2967-.83905 2.0915-.02973.8117.26326 1.6039.86748 2.2952 1.47256 1.6845 3.82369 2.7129 7.17041 2.7129 3.3467 0 5.6979-1.0284 7.1704-2.7129.6043-.6913.8972-1.4835.8675-2.2952-.0291-.7948-.3634-1.5119-.839-2.0915-.9371-1.1419-2.5361-1.9004-4.1989-1.9004z">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </a>
-                            <div class="til__dropdown-m til__dropdown2">
-                                <div class="dropbox df">
-                                    <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="user" class="useravatar">
-                                    <div class="dropinner df">
-                                        <div class="dropname">Karimov Mamurjon</div>
-                                        <p class="dropadress">Mamurarimov@gmail.com</p>
-                                    </div>
-                                </div>
-                                <ul class="df lilar dropmenular">
-                                    <li><a href="#" class="mnavitems skeleton elyt eluyenv">
-                                        <i class="icon-user"></i>
-                                        Mening honam</a></li>
-                                    <li><a href="#" class="mnavitems skeleton elyt">
-                                        <i class="icon-wallet6"></i>
-                                        Hisobim</a></li>
-                                </ul>
-                                <div class="tillar">Hudud</div>
-                                <div class="tilich vtrew">
-                                    <div class="control-group">
-                                        <div class="selected__region">
-                                            <div class="sel__reg__country"> <i class="fa-solid fa-caret-right"></i>O'zbekiston</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="foottil">O'zgartirish</a>
-                            </div>
-                        </div>
-
+                        <a href="javascript:void(0)" class="menu__user skeleton"><i class="icon-user"></i></a>
                         <a href="#" class="elonberish skeleton" data-bs-toggle="modal"
                             data-bs-target="#ElonBerishBolimlariModal">
                             <span>+</span> E'LON JOYLASH</a>
@@ -747,7 +693,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
@@ -774,12 +720,11 @@
                     </div>
                     <a href="" class="elonimglink">
                         <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
-                            class="lot-image lazy">
+                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
@@ -813,7 +758,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
@@ -870,7 +815,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
@@ -896,13 +841,12 @@
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
                             class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
@@ -959,7 +903,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
@@ -983,12 +927,11 @@
                 <div class="item-elon">
                     <a href="" class="elonimglink">
                         <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
-                            class="lot-image lazy">
+                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
@@ -1021,7 +964,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
@@ -1055,7 +998,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
@@ -1110,7 +1053,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
@@ -1137,12 +1080,11 @@
                     </div>
                     <a href="" class="elonimglink">
                         <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
-                            class="lot-image lazy">
+                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
@@ -1176,7 +1118,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
@@ -1233,7 +1175,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
@@ -1259,13 +1201,12 @@
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
                             class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
@@ -1322,7 +1263,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
@@ -1355,7 +1296,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
@@ -1389,7 +1330,8 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
@@ -1423,372 +1365,8 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 9</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy" alt="Damas">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
-                            <div>
-                                <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
-                            <div>
-                                <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 3</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
-                            <div>
-                                <div class="lot-title">Qazon 4</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
-                            <div>
-                                <div class="lot-title">Damas 5</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
-                            <div>
-                                <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam aperiam enim tempore.</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
-                            <div>
-                                <div class="lot-title">Damas 7</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 8</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
@@ -1845,7 +1423,8 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
@@ -1877,7 +1456,8 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
@@ -1903,7 +1483,6 @@
                 <div class="item-elon">
                     <div class="infobagde df">
                         <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="" class="elonimglink lot-image-flashelon">
                         <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
@@ -1911,7 +1490,8 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
@@ -1968,12 +1548,103 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
                             <div>
                                 <div class="lot-title">Qazon 4</div>
+                                <div class="elonNarh">2 000 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <div class="infobagde df">
+
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                            class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
+                            <div>
+                                <div class="lot-title">Damas 5</div>
+                                <div class="elonNarh">100 700 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                    </div>
+                </div>
+                <div class="item-elon ">
+                    <div class="infobagde df">
+                        <div class="vipbadge">
+                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                        fill="#ed7756"></path>
+                                    <path
+                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                        fill="#ffad49"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                            class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
+                            <div>
+                                <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam aperiam enim tempore.</div>
                                 <div class="elonNarh">2 000 000 Uzs</div>
                             </div>
                             <a href="javascript:void(0)" class="addtolovelist">
@@ -2000,7 +1671,285 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
+                            <div>
+                                <div class="lot-title">Damas 7</div>
+                                <div class="elonNarh">100 700 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <div class="infobagde df">
+                        <div class="flashbadge">Tezkor</div>
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink lot-image-flashelon">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                            class="lot-image  lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
+                            <span class="status-user user-offline"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
+                            <div>
+                                <div class="lot-title">Oshxona mebeli 8</div>
+                                <div class="elonNarh">56 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <a href="" class="elonimglink">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                            class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
+                            <span class="status-user user-offline"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
+                            <div>
+                                <div class="lot-title">Oshxona mebeli 9</div>
+                                <div class="elonNarh">56 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <div class="infobagde df">
+                        <div class="vipbadge">
+                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                        fill="#ed7756"></path>
+                                    <path
+                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                        fill="#ffad49"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
+                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                            class="lot-image lazy" alt="Damas">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
+                            <div>
+                                <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
+                                <div class="elonNarh">2 000 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <div class="infobagde df">
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink">
+                        <img alt="Damas" src="placeholder.jpg"
+                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/wjVyHdwd/ohpo.jpg" alt="Admin 2" class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
+                            <div>
+                                <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
+                                <div class="elonNarh">100 700 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <div class="infobagde df">
+                        <div class="flashbadge">Tezkor</div>
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink lot-image-flashelon">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                            class="lot-image  lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/wjVyHdwd/ohpo.jpg" alt="Admin 2" class="seller-avatar">
+                            <span class="status-user user-offline"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
+                            <div>
+                                <div class="lot-title">Oshxona mebeli 3</div>
+                                <div class="elonNarh">56 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                    </div>
+                </div>
+                <div class="item-elon ">
+                    <div class="infobagde df">
+                        <div class="vipbadge">
+                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                        fill="#ed7756"></path>
+                                    <path
+                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                        fill="#ffad49"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink lot-image-vipelon">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                            class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                            <div>
+                                <div class="lot-title">Qazon 4</div>
+                                <div class="elonNarh">2 000 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-elon">
+                    <div class="infobagde df">
+
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                            class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
@@ -2057,7 +2006,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
@@ -2084,13 +2033,12 @@
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
                             class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-online"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
@@ -2124,7 +2072,7 @@
                     </a>
                     <div class="lot-nav df">
                         <div class="user-img-box">
-                            <img src="https://jahonbozor.uz/avatar-women2.png" alt="Admin 2" class="seller-avatar">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
                             <span class="status-user user-offline"></span>
                         </div>
                         <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
@@ -2234,6 +2182,66 @@
                     <button type="button" class="btn btn-primary">Save changes</button>
                 </div> -->
             </div>
+        </div>
+    </div>
+
+    <!-- aside menu -->
+    <div class="drobwrap rightmenu">
+        <a href="javascript:void(0)" class="closerightmenu"><i class="icon-close"></i></a>
+        <div class="rmenuinner">
+            <div class="dropboxer df">
+                <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="user" class="useravatar">
+                <div class="dropinner df">
+                    <div class="dropname">Karimov Mamurjon</div>
+                    <p class="dropadress">Mamurarikjhfgkjhglkhfgjmov@gmail.com</p>
+                </div>
+            </div>
+            <ul class="df lilar dropmenular">
+                <li><a href="#" class="mnavitems skeleton elyt eluyenv">
+                        <i class="icon-user"></i>
+                        Mening honam</a></li>
+                <li><a href="#" class="mnavitems skeleton elyt">
+                        <i class="icon-wallet6"></i>
+                        Hisobim</a></li>
+                <li><a href="#" class="mnavitems skeleton elyt">
+                        <i class="icon-email"></i>
+                        Hatdon</a></li>
+                <li><a href="#" class="mnavitems skeleton elyt">
+                        <i class="icon-heart-filled"></i>
+                        Sevimli</a></li>
+                <li><a href="#" class="mnavitems skeleton elyt">
+                        <i class="icon-bell"></i>
+                        Habarnoma</a></li>
+                <li><a href="#" class="mnavitems skeleton elyt">
+                        <i class="icon-settings"></i>
+                        Sozlama</a></li>
+                <li><a href="#" class="mnavitems skeleton elyt">
+                        <i class="icon-logout"></i>
+                        Chiqish</a></li>
+
+            </ul>
+            <div class="wallet-wdj df">
+                <div class="hshapka df">
+                    <span><i class="icon-wallet6"></i>Hisobingiz</span>
+                    <span class="valyutas">uzs</span>
+                </div>
+                <div class="walloy df">
+                    <div class="myhisob df">
+                        <div class="hcount">1 400 566</div>
+                    </div>
+                    <a href=""><i class="icon-right-open"></i></a>
+
+                </div>
+            </div>
+            <!-- <div class="tillar">Hudud</div>
+            <div class="tilich vtrew">
+                <div class="control-group">
+                    <div class="selected__region">
+                        <div class="sel__reg__country"> <i class="fa-solid fa-caret-right"></i>O'zbekiston</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="foottil">O'zgartirish</a> -->
         </div>
     </div>
 

@@ -7,19 +7,25 @@
     const onScroll = () => {
         if (window.pageYOffset >= stickyPoint) {
             stickyDiv.classList.add('stickyde');
-            $('.navitems, .navitems svg, .nav__wrap > svg').addClass('navitems2');
-            $('.mnavitems, .navitems svg, .nav__wrap > svg').addClass('navitems2');
+            $('.navitems').addClass('navitems2');
             $('.elonberish').addClass('elonberishbg');
-            $('.menu__user').addClass('menu__user2');
+            $('.menu__user').addClass('navitems2');
+            $('.menu__user').css({
+                'background-color': 'hsl(0deg 0% 90% / 80%)'    
+            });
         } else {
             stickyDiv.classList.remove('stickyde');
-            $('.navitems, .navitems svg').removeClass('navitems2');
-            $('.mnavitems, .navitems svg').removeClass('navitems2');
+            $('.navitems').removeClass('navitems2');
             $('.elonberish').removeClass('elonberishbg');
-            $('.menu__user').removeClass('menu__user2');
+            $('.menu__user').removeClass('navitems2');
+            $('.menu__user').css({
+                'background-color': 'hsla(0, 0%, 90%, 0.165)'    
+            });
         }
     };
     window.addEventListener('scroll', onScroll); 
+
+    
 });
 
 
@@ -45,25 +51,25 @@ skeletons.forEach((skeleton) => {
 });
 
 //dark/laght mode
-let darkmode = localStorage.getItem("darkmode");
-const themeSwitch = document.getElementById("theme-switch");
+// let darkmode = localStorage.getItem("darkmode");
+// const themeSwitch = document.getElementById("theme-switch");
 
-const enableDarkmode = () => {
-    document.body.classList.add("darkmode");
-    localStorage.setItem("darkmode", "active");
-};
+// const enableDarkmode = () => {
+//     document.body.classList.add("darkmode");
+//     localStorage.setItem("darkmode", "active");
+// };
 
-const disableDarkmode = () => {
-    document.body.classList.remove("darkmode");
-    localStorage.setItem("darkmode", null);
-};
+// const disableDarkmode = () => {
+//     document.body.classList.remove("darkmode");
+//     localStorage.setItem("darkmode", null);
+// };
 
-if (darkmode === "active") enableDarkmode();
+// if (darkmode === "active") enableDarkmode();
 
-themeSwitch.addEventListener("click", () => {
-    darkmode = localStorage.getItem("darkmode");
-    darkmode !== "active" ? enableDarkmode() : disableDarkmode();
-});
+// themeSwitch.addEventListener("click", () => {
+//     darkmode = localStorage.getItem("darkmode");
+//     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
+// });
 
 
 const swiper22 = new Swiper('.swiper22', {
@@ -90,13 +96,13 @@ const swiper22 = new Swiper('.swiper22', {
         prevSlideMessage: 'Previous slide',
         nextSlideMessage: 'Next slide',
     },
-    // autoplay: {
-    //     delay: 13000,
-    // },
-    // autoplay: {
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: true,
-    // },
+    autoplay: {
+        delay: 13000,
+    },
+    autoplay: {
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
 });
 
 
@@ -143,33 +149,37 @@ $(document).ready(function () {
   //       $(".hidefoot").toggleClass("hidefoot__show");
   //   }, 300);
   // });
-    $(".select2box").click(function () {
+    $(".select2box__outer").click(function () {
         var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-        $('body').css('padding-right', scrollWidth + 'px');
-        $('body').addClass('modal-open');
-        $(".til__dropdown").addClass("til__dropdown2");
-        $(".main__overlay").addClass("main__overlay__show");
-        $(".current__language").addClass("current__language__bg__show");
+       
+        $(".til__dropdown").toggleClass("til__dropdown2");
+        
+        //$(".current__language").toggleClass("current__language__bg__show");
        
     });
     $(".main__overlay").click(function () {
         $(".til__dropdown").removeClass("til__dropdown2");
+        
+        //$(".current__language").removeClass("current__language__bg__show");
+        
+    });
+
+    $(".menu__user").click(function () {
+        var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+        $('body').css('padding-right', scrollWidth + 'px');
+        $('body').addClass('modal-open');
+        $(".rightmenu").addClass("rightmenu__show");
+        $(".main__overlay").addClass("main__overlay__show");
+    });
+    $(".main__overlay, .closerightmenu").click(function () {
         $(".main__overlay").removeClass("main__overlay__show");
-        $(".current__language").removeClass("current__language__bg__show");
+        $(".rightmenu").removeClass("rightmenu__show");
         $('body').removeClass('modal-open');
         $('body').css('padding-right', '');
     });
 });
 
-$(".menu__user").click(function () {
-    //var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-    //$('body').css('padding-right', scrollWidth + 'px');
-    //$('body').addClass('modal-open');
-    $(".til__dropdown-m").toggleClass("til__dropdown2");
-    //$(".main__overlay").addClass("main__overlay__show");
-    $(".current__language").toggleClass("current__language__bg__show");
-   
-});
+
 
 
 
