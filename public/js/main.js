@@ -1,38 +1,3 @@
- $(document).ready(function () {
- 
-
-    const stickyDiv = document.querySelector('.nav__wrap');
-    const stickyPoint = stickyDiv.offsetTop;
-
-    const onScroll = () => {
-        if (window.pageYOffset >= stickyPoint) {
-            stickyDiv.classList.add('stickyde');
-            $('.navitems').addClass('navitems2');
-            $('.elonberish').addClass('elonberishbg');
-            $('.menu__user').addClass('navitems2');
-            $('.menu__user').css({
-                'background-color': 'hsl(0deg 0% 90% / 80%)'    
-            });
-        } else {
-            stickyDiv.classList.remove('stickyde');
-            $('.navitems').removeClass('navitems2');
-            $('.elonberish').removeClass('elonberishbg');
-            $('.menu__user').removeClass('navitems2');
-            $('.menu__user').css({
-                'background-color': 'hsla(0, 0%, 90%, 0.165)'    
-            });
-        }
-    };
-    window.addEventListener('scroll', onScroll); 
-
-    
-});
-
-
-
-
-
-
 $(".closelocation").on("click", function (event) {
     $(".jcaic, .locadress").fadeOut();
     setTimeout(function () {
@@ -71,19 +36,19 @@ skeletons.forEach((skeleton) => {
 //     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 // });
 
+// categories carousel
 
 const swiper22 = new Swiper('.swiper22', {
-  //loop: true,
-  freeMode: true,
-  slidesPerView: 'auto',
-  spaceBetween: 12,
+    //loop: true,
+    freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 12,
 });
 
 
 
-
- const swiper33 = new Swiper('.swiper33', {
-    // modules: [Navigation, A11y],
+// vip ads carousel
+const swiper33 = new Swiper('.swiper33', {
     direction: 'horizontal',
     loop: true,
     navigation: {
@@ -132,8 +97,33 @@ jQuery(document).ready(function ($) {
     });
 });
 
-//fix window for load apps
+
 $(document).ready(function () {
+
+    //fix head effect
+
+    const stickyDiv = document.querySelector('.nav__wrap');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            stickyDiv.classList.add('stickyde');
+            $('.navitems').addClass('navitems2');
+            $('.elonberish').addClass('elonberishbg');
+            $('.menu__user').addClass('navitems2');
+            $('.menu__user').css({
+                'background-color': 'hsl(0deg 0% 90% / 80%)'
+            });
+        } else {
+            stickyDiv.classList.remove('stickyde');
+            $('.navitems').removeClass('navitems2');
+            $('.elonberish').removeClass('elonberishbg');
+            $('.menu__user').removeClass('navitems2');
+            $('.menu__user').css({
+                'background-color': 'hsla(0, 0%, 90%, 0.165)'
+            });
+        }
+    });
+
+    //fix window for load apps
     $(".apparrow").on("click", function () {
         $(".fixappbox").toggleClass("fixappbox2");
         $(".apparrow i").toggleClass("apparrow2");
@@ -142,28 +132,15 @@ $(document).ready(function () {
         }, 300);
     });
 
-   
-  //   $(".vipaditem").hover(function () {
-      
-  //     setTimeout(function () {
-  //       $(".hidefoot").toggleClass("hidefoot__show");
-  //   }, 300);
-  // });
     $(".select2box__outer").click(function () {
         var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-       
         $(".til__dropdown").toggleClass("til__dropdown2");
-        
-        //$(".current__language").toggleClass("current__language__bg__show");
-       
+
     });
     $(".main__overlay").click(function () {
         $(".til__dropdown").removeClass("til__dropdown2");
-        
-        //$(".current__language").removeClass("current__language__bg__show");
-        
     });
-
+    //right sidebar menu
     $(".menu__user").click(function () {
         var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
         $('body').css('padding-right', scrollWidth + 'px');
@@ -178,12 +155,6 @@ $(document).ready(function () {
         $('body').css('padding-right', '');
     });
 });
-
-
-
-
-
-
 
 /*
 (function ($) {
@@ -285,49 +256,15 @@ $(document).ready(function () {
 //     },
 // });
 
-
-//like ads effect
-
-$(function() {
-//   $(".addtolovelist").click(function() {
-
-//     const parent = $(this).closest('.faveffect__parent');
-
-//     parent.find(".favoicon").toggleClass('favorite__added ');
-//     parent.find(".favoicon__show").toggleClass("press", 1000);
-//     parent.find(".favoicon__show2").toggleClass("press", 1300);
-//   });
-// });
-
-// var x = document.getElementsByClassName("shape")[0];
-  //     var y = document.getElementsByClassName("img")[0];
-  //     function addtofav() {
-  //       x.className = x.className + " add";
-  //       y.className = y.className + " blur";
-  //       setTimeout(() => {
-  //         x.className = "shape";
-  //         y.className = "img";
-  //       }, 1000);
-  //     }
-
-
-
-});
-
-
-
-
-
-
-$(function() {
-    $(".addtolovelist").click(function() {
+$(function () {
+    $(".addtolovelist").click(function () {
         const parent = $(this).closest('.faveffect__parent');
         const icon = parent.find(".favoicon");
         const itemId = parent.data('item-id');
         const isFavorite = icon.hasClass('favorite__added');
-        
+
         icon.toggleClass('favorite__added');
-        
+
         if (!isFavorite) {
             parent.find(".favoicon__show").addClass("press", 1000);
             parent.find(".favoicon__show2").addClass("press", 1300);
@@ -335,7 +272,7 @@ $(function() {
             parent.find(".favoicon__show").removeClass("press");
             parent.find(".favoicon__show2").removeClass("press");
         }
-     
+
         if (isFavorite) {
             localStorage.removeItem(itemId);
         } else {
@@ -343,7 +280,7 @@ $(function() {
         }
     });
 
-    $(".faveffect__parent").each(function() {
+    $(".faveffect__parent").each(function () {
         const parent = $(this);
         const itemId = parent.data('item-id');
         const isFavorite = localStorage.getItem(itemId) === 'true';
@@ -356,12 +293,12 @@ $(function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const lazyImages = document.querySelectorAll('img.lazy');
 
     if ('IntersectionObserver' in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
+        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     let lazyImage = entry.target;
                     lazyImage.src = lazyImage.dataset.src;
@@ -372,13 +309,13 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        lazyImages.forEach(function(lazyImage) {
+        lazyImages.forEach(function (lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
     } else {
         // Fallback для браузеров, не поддерживающих Intersection Observer
-        let lazyLoad = function() {
-            lazyImages.forEach(function(lazyImage) {
+        let lazyLoad = function () {
+            lazyImages.forEach(function (lazyImage) {
                 if (lazyImage.getBoundingClientRect().top < window.innerHeight && lazyImage.getBoundingClientRect().bottom > 0 && getComputedStyle(lazyImage).display !== 'none') {
                     lazyImage.src = lazyImage.dataset.src;
                     lazyImage.classList.remove('lazy');

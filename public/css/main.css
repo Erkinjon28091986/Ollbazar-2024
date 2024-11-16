@@ -191,7 +191,7 @@ ul {
 
 header {
   background: linear-gradient(-45deg, rgba(28, 63, 185, 0.76) 0%, rgba(28, 206, 234, 0.82) 100%);
-  height: 506px;
+  height: 546px;
   width: 100%;
 }
 
@@ -306,7 +306,8 @@ header {
 }
 
 .nav__wrap {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   height: 70px;
   display: flex;
@@ -408,7 +409,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 5px;
+  margin-left: 7px;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -438,7 +439,7 @@ header {
   justify-content: center;
   padding: 5px 10px;
   font-weight: bold;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .nav__wrap nav .elonberish i {
   margin-right: 5px;
@@ -634,7 +635,7 @@ header {
 }
 .markazbox {
   flex-direction: column;
-  margin-top: 120px;
+  padding-top: 240px;
 }
 .markazbox .protitle {
   text-align: center;
@@ -1064,9 +1065,11 @@ header {
 }
 
 .stickyde {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
   transition: all ease 0.3s;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .asosiycontent {
@@ -1893,7 +1896,7 @@ header {
   top: 0;
   bottom: 0;
   height: 100vh;
-  background: linear-gradient(-45deg, rgba(28, 63, 185, 0.98) 0%, rgba(28, 206, 234, 0.98) 100%);
+  background: linear-gradient(-45deg, rgba(28, 63, 185, 0.98) 0%, rgba(23, 185, 210, 0.98) 100%);
   width: 340px;
   z-index: 99;
   padding: 35px 20px;
@@ -1956,36 +1959,28 @@ header {
   margin-left: 8px;
 }
 .rightmenu .rmenuinner .dropboxer .dropinner .dropadress {
+  color: #e4e4e4;
+  font-size: 14px;
+  padding: 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.rightmenu .rmenuinner .dropboxer .dropinner .dropname {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
   -webkit-line-clamp: 1;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  color: #e4e4e4;
-  font-size: 14px;
-  padding: 3px 0;
-}
-.rightmenu .rmenuinner .dropboxer .dropinner .dropname {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 5px;
 }
 
 .rightmenu__show {
   transform: translateX(0);
   transition: all ease 0.3s;
-}
-
-.dropadress {
-  -webkit-line-clamp: 1;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  color: #999999;
-  font-size: 14px;
-  padding: 3px 0;
 }
 
 .masonty__box {
@@ -2017,14 +2012,15 @@ header {
   color: #9b9b9b;
 }
 .wallet-wdj .hshapka .valyutas {
-  color: #cccaca;
-  font-size: 13px;
+  color: #898a8f;
+  font-size: 14px;
   margin-right: 3px;
 }
 .wallet-wdj .walloy {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  margin-top: 5px;
 }
 .wallet-wdj p {
   color: #9b9b9b;

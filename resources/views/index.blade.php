@@ -17,7 +17,7 @@
 </head>
 
 <body class="mainpage">
-    <x-AutoLocationUser></x-AutoLocationUser>
+    <!-- <x-AutoLocationUser></x-AutoLocationUser> -->
     <div class="fixappbox df">
         <div class="saopy df">
             <img class="loadapp" src="https://i.postimg.cc/rmTBLp3j/scroll.png" alt="Loading app">
@@ -33,9 +33,7 @@
             <i class="fa-solid fa-caret-right"></i>
         </div>
     </div>
-
-    <header>
-        <div class="nav__wrap">
+    <div class="nav__wrap">
             <nav class="w70w fdc">
                 <div class="navbox df">
                     <div class="skeleton mlogobox">
@@ -112,6 +110,8 @@
                 </div>
             </nav>
         </div>
+    <header>
+        
         <div class="markazbox w70w df">
             <div class="searchbox">
                 <div class="search__panel">
