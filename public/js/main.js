@@ -100,6 +100,35 @@ jQuery(document).ready(function ($) {
 
 $(document).ready(function () {
 
+    var scrollToTopBtn = $('#scrollToTopBtn');
+    var lastScrollTop = 0;
+
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(window).height();
+
+        if (scrollTop > scrollHeight * 0.9) {
+            scrollToTopBtn.fadeIn();
+        } else if (scrollTop > scrollHeight * 0.3) {
+            if (scrollTop < lastScrollTop) {
+                scrollToTopBtn.fadeIn();
+            } else {
+                scrollToTopBtn.fadeOut();
+            }
+        } else {
+            scrollToTopBtn.fadeOut();
+        }
+        lastScrollTop = scrollTop;
+    });
+
+    scrollToTopBtn.click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 'slow');
+        return false;
+    });
+
     //fix head effect
 
     const stickyDiv = document.querySelector('.nav__wrap');
@@ -130,6 +159,24 @@ $(document).ready(function () {
         setTimeout(function () {
             $(".apslink").toggleClass("apslink2");
         }, 300);
+    });
+
+
+    //show map
+    $(".fixmapbox").fadeOut();
+    $(".searchbymap").on("click", function () {
+        var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+        $(".fixmapbox").fadeIn();
+        $(".main__overlay").addClass("main__overlay__show");
+        $('body').css('padding-right', scrollWidth + 'px');
+        $('body').addClass('modal-open');
+    });
+    $(".main__overlay").click(function () {
+        var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+        $(".main__overlay").removeClass("main__overlay__show");
+        $(".fixmapbox").fadeOut();
+        $('body').removeClass('modal-open');
+        $('body').css('padding-right', '');
     });
 
     $(".select2box__outer").click(function () {
@@ -367,3 +414,61 @@ jQuery(function ($) {
         });
     });
 });
+
+
+// // Инициализация карты
+// var map = L.map('map').setView([51.505, -0.09], 13);
+
+// // Добавление тайлов
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
+
+// // Добавление маркера
+// var marker = L.marker([51.505, -0.09]).addTo(map)
+//     .bindPopup('<b>Hello world!</b><br>I am a popup.')
+//     .openPopup();
+
+
+// Инициализация карты
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+// Добавление тайлов
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Добавление маркера
+// var marker = L.marker([51.505, -0.09]).addTo(map)
+//     .bindPopup('<b>Hello world!</b><br>I am a popup.')
+//     .openPopup();
+
+// Добавление пользовательского элемента вместо маркера 
+var customIcon = L.divIcon({
+    className: 'custom-div-icon',
+    html: "<div id='myCustomElement'><img src='https://i.postimg.cc/7ZnC8gQ1/qozon.jpg' alt='Ваше изображение' /></div>",
+    iconSize: [100, 100],
+    iconAnchor: [50, 50]
+});
+// Устанавливаем пользовательский элемент на карту 
+L.marker([51.505, -0.09], {
+    icon: customIcon
+}).addTo(map);
+
+// Функция для получения местоположения и перемещения карты
+function goToLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            map.setView([lat, lng], 13);
+            L.marker([lat, lng]).addTo(map)
+                .bindPopup('<b>Вы находитесь здесь!</b>')
+                .openPopup();
+        }, function (error) {
+            alert('Ошибка при получении местоположения: ' + error.message);
+        });
+    } else {
+        alert('Ваш браузер не поддерживает геолокацию.');
+    }
+}

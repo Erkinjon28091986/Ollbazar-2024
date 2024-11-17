@@ -1290,6 +1290,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #c7c7c7;
+  height: 30px;
 }
 .asosiycontent .c-carousel__button--next {
   cursor: pointer;
@@ -2151,4 +2153,327 @@ header {
 .navitems2 {
   color: #7d7d7d !important;
   fill: #7d7d7d;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fixmapbox {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  width: 70%;
+  background: rgba(25, 25, 25, 0.638);
+  z-index: 222;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.fixmapbox .fixmapinner {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixmapbox .mylocationGo {
+  position: absolute;
+  top: 100px;
+  z-index: 1001;
+}
+
+#myCustomElement {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border-radius: 50%;
+  margin-top: -22px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#myCustomElement img {
+  border-radius: 50%;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#myCustomElement::before {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  right: 19px;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 14px solid #ffffff;
+  transform: rotate(180deg);
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.leaflet-touch .leaflet-bar a {
+  width: 40px;
+  height: 40px;
+  color: #a2a0a0;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.mapads__item {
+  position: fixed;
+  bottom: 5px;
+  width: 300px;
+  background-color: #ffffff;
+  color: white;
+  z-index: 1001;
+  padding: 20px 20px 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+}
+.mapads__item .item-elon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+  transition: all ease 0.3s;
+}
+.mapads__item .item-elon.visible {
+  opacity: 1;
+}
+.mapads__item .item-elon:hover {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.11);
+  background: #f4f4f4;
+  transition: all ease 0.3s;
+}
+.mapads__item .item-elon .infobagde {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  flex-direction: column;
+  z-index: 1;
+}
+.mapads__item .item-elon .infobagde .vipbadge {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.71);
+  justify-content: center;
+  border-radius: 10px;
+  color: #686867;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+.mapads__item .item-elon .infobagde .vipbadge svg {
+  width: 25px;
+  height: 25px;
+}
+.mapads__item .item-elon .infobagde .flashbadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: rgba(247, 247, 247, 0.87);
+  color: #13b84d;
+  border-radius: 5px;
+}
+.mapads__item .item-elon .infobagde .flashbadge svg {
+  width: 25px;
+  height: 25px;
+}
+.mapads__item .item-elon .infobagde .korildibadge {
+  background: rgba(89, 89, 90, 0.67);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #d6d1d1;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.mapads__item .item-elon .elonimglink {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mapads__item .item-elon .lot-image {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-height: 180px;
+  max-height: 600px;
+  max-width: 100%;
+  transition: all ease 0.3s;
+  z-index: 1;
+}
+.mapads__item .item-elon .lot-image-vipelon {
+  border: 2px solid #ffc107;
+  transition: all ease 0.3s;
+}
+.mapads__item .item-elon .lot-image-flashelon {
+  transition: all ease 0.3s;
+  border: 2px solid #2be043;
+}
+.mapads__item .item-elon .lot-nav {
+  padding: 8px 8px 6px 8px;
+}
+.mapads__item .item-elon .lot-nav .user-img-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 0px 1px #a7a7a7;
+}
+.mapads__item .item-elon .lot-nav .elonfoot {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 3px;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .lot-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #5f5f5f;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .elonNarh {
+  font-size: 17px;
+  color: #858383;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.mapads__item .item-elon .lot-nav .elonfoot a {
+  color: #bcbcbc;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .addtolovelist {
+  position: relative;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .addtolovelist .favorite__added {
+  color: red;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .user-img-box {
+  position: relative;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .user-img-box .status-user {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  right: 12px;
+  border-radius: 50%;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .user-img-box .user-online {
+  background: #1a9522;
+}
+.mapads__item .item-elon .lot-nav .elonfoot .user-img-box .user-offline {
+  background: #8e8e8e;
+}
+.mapads__item .favoicon__show {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  transition: 0.6s;
+  z-index: -2;
+  font-size: 2px;
+  color: transparent;
+  font-weight: 400;
+  transform: translate(50%, -50%);
+}
+.mapads__item .favoicon__show.press {
+  animation: size 0.4s;
+  transform: translate(1%, -60%);
+}
+.mapads__item .favoicon__show.press {
+  bottom: 22px;
+  font-size: 14px;
+  visibility: visible;
+  z-index: 1;
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #e23b3b;
+  }
+  100% {
+    color: transparent;
+  }
+}
+.mapads__item .favoicon__show2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  transition: 0.9s;
+  z-index: -2;
+  font-size: 2px;
+  color: transparent;
+  font-weight: 400;
+  transform: translate(50%, -50%);
+}
+.mapads__item .favoicon__show2.press {
+  animation: size 0.7s;
+  transform: translate(1%, -10%);
+}
+.mapads__item .favoicon__show2.press {
+  bottom: 18px;
+  font-size: 13px;
+  visibility: visible;
+  z-index: 1;
+  transform: scale(0.8);
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: #e23b3b;
+  }
+  100% {
+    color: transparent;
+  }
 }

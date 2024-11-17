@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.11.1/css/flag-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link href="css/hanbazar-icons.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -34,84 +35,84 @@
         </div>
     </div>
     <div class="nav__wrap">
-            <nav class="w70w fdc">
-                <div class="navbox df">
-                    <div class="skeleton mlogobox">
-                        <img src="https://i.postimg.cc/DZZhpjFD/jahonbozor-oq.png" alt="Ollbazar" class="mainlogo">
-                    </div>
-                    <div class="menubox df">
-                        <ul class="df lilar">
-                            <li><a href="#" class="navitems skeleton elyt">
-                                    <i class="icon-information"></i>
-                                    Yordam</a>
-                            </li>
-                            <li>
-                                <div class="select2box__outer navitems skeleton elyt bayrte">
-                                    <div class="select2box ">
-                                        <div class="current__language df"><img
-                                                src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"></div>
-                                    </div>
-                                    <div class="til__dropdown">
-                                        <div class="tillar">Tillar</div>
-                                        <div class="tilich tilikop">
-                                            <div class="control-group">
-                                                <label class="control control--radio">O'zbekcha
-                                                    <input type="radio" name="radio2" checked="checked">
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                                <label class="control control--radio">Қазақша
-                                                    <input type="radio" name="radio2">
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                                <label class="control control--radio">Кыргызча
-                                                    <input type="radio" name="radio2">
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                                <label class="control control--radio">Русский
-                                                    <input type="radio" name="radio2">
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                                <label class="control control--radio">Tоҷикӣ
-                                                    <input type="radio" name="radio2">
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                                <label class="control control--radio">English
-                                                    <input type="radio" name="radio2">
-                                                    <div class="control__indicator"></div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="tillar">Pul birligi</div>
-                                        <div class="tilich vtrew">
-                                            <div class="control-group">
-                                                <div class="pulbir df"><i class="fa-solid fa-caret-right"></i>
-                                                    Oz'bek so'mi - Uzs</div>
-                                            </div>
-                                        </div>
-                                        <div class="tillar">Hudud</div>
-                                        <div class="tilich vtrew">
-                                            <div class="control-group">
-                                                <div class="selected__region">
-                                                    <div class="sel__reg__country"> <i
-                                                            class="fa-solid fa-caret-right"></i>O'zbekiston</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="foottil">O'zgartirish</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="javascript:void(0)" class="menu__user skeleton"><i class="icon-user"></i></a>
-                        <a href="#" class="elonberish skeleton" data-bs-toggle="modal"
-                            data-bs-target="#ElonBerishBolimlariModal">
-                            <span>+</span> E'LON JOYLASH</a>
-                    </div>
+        <nav class="w70w fdc">
+            <div class="navbox df">
+                <div class="skeleton mlogobox">
+                    <img src="https://i.postimg.cc/DZZhpjFD/jahonbozor-oq.png" alt="Ollbazar" class="mainlogo">
                 </div>
-            </nav>
-        </div>
+                <div class="menubox df">
+                    <ul class="df lilar">
+                        <li><a href="#" class="navitems skeleton elyt">
+                                <i class="icon-information"></i>
+                                Yordam</a>
+                        </li>
+                        <li>
+                            <div class="select2box__outer navitems skeleton elyt bayrte">
+                                <div class="select2box ">
+                                    <div class="current__language df"><img
+                                            src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"></div>
+                                </div>
+                                <div class="til__dropdown">
+                                    <div class="tillar">Tillar</div>
+                                    <div class="tilich tilikop">
+                                        <div class="control-group">
+                                            <label class="control control--radio">O'zbekcha
+                                                <input type="radio" name="radio2" checked="checked">
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--radio">Қазақша
+                                                <input type="radio" name="radio2">
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--radio">Кыргызча
+                                                <input type="radio" name="radio2">
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--radio">Русский
+                                                <input type="radio" name="radio2">
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--radio">Tоҷикӣ
+                                                <input type="radio" name="radio2">
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--radio">English
+                                                <input type="radio" name="radio2">
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="tillar">Pul birligi</div>
+                                    <div class="tilich vtrew">
+                                        <div class="control-group">
+                                            <div class="pulbir df"><i class="fa-solid fa-caret-right"></i>
+                                                Oz'bek so'mi - Uzs</div>
+                                        </div>
+                                    </div>
+                                    <div class="tillar">Hudud</div>
+                                    <div class="tilich vtrew">
+                                        <div class="control-group">
+                                            <div class="selected__region">
+                                                <div class="sel__reg__country"> <i
+                                                        class="fa-solid fa-caret-right"></i>O'zbekiston</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="foottil">O'zgartirish</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="menu__user skeleton"><i class="icon-user"></i></a>
+                    <a href="#" class="elonberish skeleton" data-bs-toggle="modal"
+                        data-bs-target="#ElonBerishBolimlariModal">
+                        <span>+</span> E'LON JOYLASH</a>
+                </div>
+            </div>
+        </nav>
+    </div>
     <header>
-        
+
         <div class="markazbox w70w df">
             <div class="searchbox">
                 <div class="search__panel">
@@ -1166,7 +1167,6 @@
                                 </g>
                             </svg>
                         </div>
-
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="" class="elonimglink lot-image-vipelon">
@@ -2245,14 +2245,82 @@
         </div>
     </div>
 
+    <button id="scrollToTopBtn">На верх</button>
+
+    <div class="fixmapbox">
+        <div class="fixmapinner">
+            <div id="map" style="width: 100%; height: 100%;"></div>
+            <button onclick="goToLocation()" class="mylocationGo">Вернуться к моему местоположению</button>
+
+            <div class="mapads__item">
+                <div class="item-elon ">
+                    <div class="infobagde df">
+                        <div class="vipbadge">
+                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                        fill="#ffad49"></path>
+                                    <path
+                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                        fill="#ed7756"></path>
+                                    <path
+                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                        fill="#ffe32d"></path>
+                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                        fill="#ffad49"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="korildibadge">Ko'rildi</div>
+                    </div>
+                    <a href="" class="elonimglink lot-image-vipelon">
+                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                            class="lot-image lazy">
+                    </a>
+                    <div class="lot-nav df">
+                        <div class="user-img-box">
+                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                            <span class="status-user user-online"></span>
+                        </div>
+                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                            <div>
+                                <div class="lot-title">Qazon 4</div>
+                                <div class="elonNarh">2 000 000 Uzs</div>
+                            </div>
+                            <a href="javascript:void(0)" class="addtolovelist">
+                                <i class="fa-solid fa-heart favoicon"></i>
+                                <span class="favoicon__show">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="favoicon__show2">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- jQuery и JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
+    <button id="scrollToTopBtn">На верх</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/main.js"></script>
 </body>
 
