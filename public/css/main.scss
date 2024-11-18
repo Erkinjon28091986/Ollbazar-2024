@@ -360,7 +360,9 @@ header {
                 border-radius: 25px;
                 opacity: 0;
               }
-
+              i {
+                font-size: 18px;
+              }
               &:hover:after {
                 background: hsla(0, 0%, 90%, 0.165);
                 position: absolute;
@@ -370,8 +372,8 @@ header {
               }
             }
             .navitems2 {
-              color: #7d7d7d;
-              fill: #7d7d7d;
+              color: #7292d1;
+              fill: #7292d1;
             }
             .elyt svg {
               width: 24px;
@@ -424,7 +426,7 @@ header {
     .elonberish {
       background: var(--elonjoylash-btn-bg);
       color: var(--elonjoylash-btn-text);
-      border-radius: 5px;
+      border-radius: 15px;
       align-items: center;
       display: flex;
       justify-content: center;
@@ -649,7 +651,7 @@ header {
         width: 100%;
         background: rgb(211 214 219 / 4%);
         height: 50px;
-        border-radius: 5px;
+        border-radius: 15px;
         margin: 0 auto;
         padding-left: 14px;
         position: relative;
@@ -662,30 +664,49 @@ header {
           position: absolute;
           right: 14px;
           i {
-            color: #d2d2d2;
-            font-size: 18px;
+            color: #eeeeee;
+            font-size: 25px;
+          }
+          .shwerq {
+            width: max-content;
+            position: absolute;
+            left: -120px;
+            top: 19px;
+            color: #eeeeee;
+            transition: all ease 0.4s;
+            opacity: 0;
+            visibility: hidden;
           }
         }
         .animation__word {
           color: #fff;
           font-size: 18px;
+          i {
+            font-size: 14px;
+            margin-right: 8px;
+          }
         }
       }
       .searchbymap {
-        width: 55px;
+        position: relative;
+        width: 50px;
         height: 50px;
         overflow: hidden;
-        background: rgba(211, 214, 219, 0.04);
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px 20px;
-        margin-left: 10px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+        margin-right: -11px;
         &:hover i {
-          transform: scale(0.92);
+          transform: scale(1.1);
           transition: all ease 0.4s;
+        }
+        &:hover + .shwerq {
+          left: -130px;
+          color: #fff;
+          transition: all ease 0.4s;
+          opacity: 1;
+          visibility: visible;
         }
         img {
           display: flex;
@@ -693,7 +714,7 @@ header {
           transition: all ease 0.4s;
         }
         i {
-          color: #f0f0f0;
+          color: #fff;
           font-size: 27px;
           transform: scale(1);
           transition: all ease 0.4s;
@@ -1930,7 +1951,6 @@ header {
         opacity: 0;
         z-index: -1;
       }
-
       &:hover:after {
         background: hsl(0deg 0% 100% / 16%);
         position: absolute;
@@ -1943,8 +1963,8 @@ header {
       }
     }
     .navitems2 {
-      color: #7d7d7d;
-      fill: #7d7d7d;
+      color: #7292d1;
+      fill: #7292d1;
     }
   }
 }
@@ -2102,7 +2122,7 @@ header {
       font-weight: bold;
       color: #878787;
       font-size: 11px;
-      width: 26px;
+      width: 25px;
       height: 25px;
       display: flex;
       align-items: center;
@@ -2210,13 +2230,11 @@ header {
   }
 }
 .bayrte {
-  width: 40px;
-  padding: 1px 5px !important;
 }
 
 .navitems2 {
-  color: #7d7d7d !important;
-  fill: #7d7d7d;
+  color: #7292d1 !important;
+  fill: #7292d1;
 }
 #scrollToTopBtn {
   display: none;
@@ -2224,35 +2242,60 @@ header {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: #000;
+  background-color: rgb(108 117 125 / 72%);
   color: #fff;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .fixmapbox {
   position: fixed;
-  inset: 0;
-  height: 100vh;
-  width: 70%;
-  background: rgba(25, 25, 25, 0.638);
-  z-index: 222;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+    inset: 0;
+    height: calc(100vh - 15px);
+    width: 70%;
+    z-index: 222;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    overflow: hidden;
   .fixmapinner {
+    position: relative;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    .mapcarousel {
+      position: absolute;
+    bottom: 14px;
+    z-index: 444;
+    width: 100%;
+    background: rgba(254, 254, 254, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+      .swipermap {
+        img {
+          width: 200px;
+        }
+      }
+    }
   }
   .mylocationGo {
     position: absolute;
     top: 100px;
     z-index: 1001;
+    border: 2px solid rgba(15, 15, 15, 0.26);
+    font-size: 23px;
+    color: #858585;
+    border-radius: 3px;
+    left: 11px;
+    height: 40px;
+    width: 43px;
+    background: #ffffff;
   }
 }
 #myCustomElement {
@@ -2297,15 +2340,13 @@ header {
 }
 
 .mapads__item {
-  position: fixed;
-  bottom: 5px;
-  width: 300px;
   background-color: #ffffff;
   color: white;
   z-index: 1001;
-  padding: 20px 20px 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.28);
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.28);
+  margin: 0 3px;
   .item-elon {
     position: relative;
     display: inline-block;
@@ -2382,13 +2423,14 @@ header {
       border: 2px solid #e0e0e0;
       border-radius: 10px;
       overflow: hidden;
+      cursor: default;
     }
     .lot-image {
       display: block;
       -o-object-fit: cover;
       object-fit: cover;
-      min-height: 180px;
-      max-height: 600px;
+      min-height: 140px;
+      max-height: 160px;
       max-width: 100%;
       transition: all ease 0.3s;
       z-index: 1;
@@ -2430,7 +2472,7 @@ header {
           overflow: hidden;
         }
         .elonNarh {
-          font-size: 17px;
+          font-size: 14px;
           color: #858383;
           font-weight: bold;
           margin-top: 6px;
@@ -2539,4 +2581,131 @@ header {
       color: transparent;
     }
   }
+}
+.mapadsfoot {
+  display: block;
+  text-align: right;
+  margin: 15px 10px 5px 0;
+  a {
+    color: #999;
+    background: #e6e6e6;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+.carousel-3D-swiper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-3D-swiper-title {
+  text-align: center;
+  font-size: 3rem;
+  color: orangered;
+}
+
+.carousel-3D-swiper .swiper-slide {
+  position: relative;
+}
+
+.carousel-3D-swiper .image-wrapper {
+  overflow: hidden;
+  //@apply aspect-video;
+  max-height: 225px;
+}
+
+.carousel-3D-swiper .image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 225px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 8px;
+  -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba(
+          255,
+          0,
+          0,
+          0.1
+        )
+        0%, transparent 32px, transparent 100%);
+}
+
+.details {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+}
+
+.details span {
+  display: block;
+  font-size: 16px;
+  color: #f44336;
+}
+
+.details h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.details p {
+  margin: 8px 0 0;
+  opacity: 0.65;
+  font-size: 14px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.carousel-3D-swiper-section .swiper-pagination-bullet {
+  margin: 0 4px;
+  width: 16px;
+  height: 16px;
+  z-index: 50;
+}
+
+.carousel-3D-swiper-section .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: orange;
+}
+
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top {
+  border-radius: 20px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 20px;
+  font-weight: bold;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  background: rgb(84 83 83 / 61%);
+  border-radius: 5px;
+}
+.swiper-3d {
+  perspective: none;
+  width: 100%;
 }

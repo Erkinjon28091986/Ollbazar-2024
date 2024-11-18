@@ -49,8 +49,9 @@
                         <li>
                             <div class="select2box__outer navitems skeleton elyt bayrte">
                                 <div class="select2box ">
-                                    <div class="current__language df"><img
-                                            src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"></div>
+                                    <div class="current__language df">
+                                        <img src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"> Til
+                                    </div>
                                 </div>
                                 <div class="til__dropdown">
                                     <div class="tillar">Tillar</div>
@@ -117,12 +118,15 @@
             <div class="searchbox">
                 <div class="search__panel">
                     <div class="laerty df">
-                        <div class="animation__word">Qidirmoq</div>
-                        <div class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="animation__word"><i class="fa-solid fa-magnifying-glass"></i> Qidirmoq</div>
+                        <div class="search__icon">
+                            <a href="#" class="searchbymap">
+                                <i class="icon-pin-1"></i>
+                            </a>
+                            <div class="shwerq">Harita orqali qidirish</div>
+                        </div>
                     </div>
-                    <a href="#" class="searchbymap">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
+
                 </div>
             </div>
             <div class="yanabox df">
@@ -2245,14 +2249,427 @@
         </div>
     </div>
 
-    <button id="scrollToTopBtn">На верх</button>
+    <button id="scrollToTopBtn"><i class="icon-up-fat"></i></button>
 
     <div class="fixmapbox">
         <div class="fixmapinner">
             <div id="map" style="width: 100%; height: 100%;"></div>
-            <button onclick="goToLocation()" class="mylocationGo">Вернуться к моему местоположению</button>
+            <button onclick="goToLocation()" class="mylocationGo"><i class="icon-pin-1"></i></button>
+            <div class="mapcarousel">
+                <div class="my-10">
+                    <div class="carousel-3D-swiper-section">
+                        <!-- Slider main container -->
+                        <div class="carousel-3D-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper" style="max-width: 1200px;">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="mapads__item">
+                                        <div class="item-elon ">
+                                            <div class="infobagde df">
+                                                <div class="vipbadge">
+                                                    <svg id="fi_7921539" enable-background="new 0 0 512 512"
+                                                        height="512" viewBox="0 0 512 512" width="512"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                                                fill="#ed7756"></path>
+                                                            <path
+                                                                d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                                                fill="#ffad49"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="korildibadge">Ko'rildi</div>
+                                            </div>
+                                            <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
+                                                <img alt="Damas" src="placeholder.jpg"
+                                                    data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                                    class="lot-image lazy">
+                                            </a>
+                                            <div class="lot-nav df">
+                                                <div class="user-img-box">
+                                                    <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                                        class="seller-avatar">
+                                                    <span class="status-user user-online"></span>
+                                                </div>
+                                                <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                                    <div>
+                                                        <div class="lot-title">Qazon 4</div>
+                                                        <div class="elonNarh">2 000 000 Uzs</div>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="addtolovelist">
+                                                        <i class="fa-solid fa-heart favoicon"></i>
+                                                        <span class="favoicon__show">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <span class="favoicon__show2">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mapadsfoot">
+                                            <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                                            <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                <div class="mapads__item">
+                                        <div class="item-elon ">
+                                            <div class="infobagde df">
+                                                <div class="vipbadge">
+                                                    <svg id="fi_7921539" enable-background="new 0 0 512 512"
+                                                        height="512" viewBox="0 0 512 512" width="512"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                                                fill="#ed7756"></path>
+                                                            <path
+                                                                d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                                                fill="#ffad49"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="korildibadge">Ko'rildi</div>
+                                            </div>
+                                            <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
+                                                <img alt="Damas" src="placeholder.jpg"
+                                                    data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                                    class="lot-image lazy">
+                                            </a>
+                                            <div class="lot-nav df">
+                                                <div class="user-img-box">
+                                                    <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                                        class="seller-avatar">
+                                                    <span class="status-user user-online"></span>
+                                                </div>
+                                                <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                                    <div>
+                                                        <div class="lot-title">Qazon 4</div>
+                                                        <div class="elonNarh">2 000 000 Uzs</div>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="addtolovelist">
+                                                        <i class="fa-solid fa-heart favoicon"></i>
+                                                        <span class="favoicon__show">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <span class="favoicon__show2">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mapadsfoot">
+                                            <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                                            <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                <div class="mapads__item">
+                                        <div class="item-elon ">
+                                            <div class="infobagde df">
+                                                <div class="vipbadge">
+                                                    <svg id="fi_7921539" enable-background="new 0 0 512 512"
+                                                        height="512" viewBox="0 0 512 512" width="512"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                                                fill="#ed7756"></path>
+                                                            <path
+                                                                d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                                                fill="#ffad49"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="korildibadge">Ko'rildi</div>
+                                            </div>
+                                            <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
+                                                <img alt="Damas" src="placeholder.jpg"
+                                                    data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                                    class="lot-image lazy">
+                                            </a>
+                                            <div class="lot-nav df">
+                                                <div class="user-img-box">
+                                                    <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                                        class="seller-avatar">
+                                                    <span class="status-user user-online"></span>
+                                                </div>
+                                                <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                                    <div>
+                                                        <div class="lot-title">Qazon 4</div>
+                                                        <div class="elonNarh">2 000 000 Uzs</div>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="addtolovelist">
+                                                        <i class="fa-solid fa-heart favoicon"></i>
+                                                        <span class="favoicon__show">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <span class="favoicon__show2">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mapadsfoot">
+                                            <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                                            <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                <div class="mapads__item">
+                                        <div class="item-elon ">
+                                            <div class="infobagde df">
+                                                <div class="vipbadge">
+                                                    <svg id="fi_7921539" enable-background="new 0 0 512 512"
+                                                        height="512" viewBox="0 0 512 512" width="512"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                                                fill="#ed7756"></path>
+                                                            <path
+                                                                d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                                                fill="#ffad49"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="korildibadge">Ko'rildi</div>
+                                            </div>
+                                            <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
+                                                <img alt="Damas" src="placeholder.jpg"
+                                                    data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                                    class="lot-image lazy">
+                                            </a>
+                                            <div class="lot-nav df">
+                                                <div class="user-img-box">
+                                                    <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                                        class="seller-avatar">
+                                                    <span class="status-user user-online"></span>
+                                                </div>
+                                                <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                                    <div>
+                                                        <div class="lot-title">Qazon 4</div>
+                                                        <div class="elonNarh">2 000 000 Uzs</div>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="addtolovelist">
+                                                        <i class="fa-solid fa-heart favoicon"></i>
+                                                        <span class="favoicon__show">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <span class="favoicon__show2">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mapadsfoot">
+                                            <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                                            <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                <div class="mapads__item">
+                                        <div class="item-elon ">
+                                            <div class="infobagde df">
+                                                <div class="vipbadge">
+                                                    <svg id="fi_7921539" enable-background="new 0 0 512 512"
+                                                        height="512" viewBox="0 0 512 512" width="512"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                                                fill="#ed7756"></path>
+                                                            <path
+                                                                d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                                                fill="#ffad49"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="korildibadge">Ko'rildi</div>
+                                            </div>
+                                            <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
+                                                <img alt="Damas" src="placeholder.jpg"
+                                                    data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                                    class="lot-image lazy">
+                                            </a>
+                                            <div class="lot-nav df">
+                                                <div class="user-img-box">
+                                                    <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                                        class="seller-avatar">
+                                                    <span class="status-user user-online"></span>
+                                                </div>
+                                                <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                                    <div>
+                                                        <div class="lot-title">Qazon 4</div>
+                                                        <div class="elonNarh">2 000 000 Uzs</div>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="addtolovelist">
+                                                        <i class="fa-solid fa-heart favoicon"></i>
+                                                        <span class="favoicon__show">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <span class="favoicon__show2">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mapadsfoot">
+                                            <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                                            <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                <div class="mapads__item">
+                                        <div class="item-elon ">
+                                            <div class="infobagde df">
+                                                <div class="vipbadge">
+                                                    <svg id="fi_7921539" enable-background="new 0 0 512 512"
+                                                        height="512" viewBox="0 0 512 512" width="512"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path
+                                                                d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                                                fill="#ffad49"></path>
+                                                            <path
+                                                                d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                                                fill="#ed7756"></path>
+                                                            <path
+                                                                d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                                                fill="#ffe32d"></path>
+                                                            <path
+                                                                d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                                                fill="#ffad49"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <div class="korildibadge">Ko'rildi</div>
+                                            </div>
+                                            <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
+                                                <img alt="Damas" src="placeholder.jpg"
+                                                    data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                                    class="lot-image lazy">
+                                            </a>
+                                            <div class="lot-nav df">
+                                                <div class="user-img-box">
+                                                    <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                                        class="seller-avatar">
+                                                    <span class="status-user user-online"></span>
+                                                </div>
+                                                <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                                    <div>
+                                                        <div class="lot-title">Qazon 4</div>
+                                                        <div class="elonNarh">2 000 000 Uzs</div>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="addtolovelist">
+                                                        <i class="fa-solid fa-heart favoicon"></i>
+                                                        <span class="favoicon__show">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <span class="favoicon__show2">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mapadsfoot">
+                                            <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                                            <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pagination -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <!-- <div class="swiper-pagination" style="bottom: -50px;"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="mapads__item">
+            <!-- <div class="mapads__item">
                 <div class="item-elon ">
                     <div class="infobagde df">
                         <div class="vipbadge">
@@ -2280,7 +2697,7 @@
                         </div>
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
+                    <a href="javascript:void(0)" class="elonimglink lot-image-vipelon">
                         <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
                             class="lot-image lazy">
                     </a>
@@ -2306,7 +2723,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="mapadsfoot">
+                    <a href="" class="goto-map-marker"><i class="icon-direct"></i></a>
+                    <a href="" class="goto-ad"><i class="icon-location"></i></a>
+                </div>
+            </div> -->
         </div>
 
     </div>

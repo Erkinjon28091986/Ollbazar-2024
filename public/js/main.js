@@ -45,6 +45,13 @@ const swiper22 = new Swiper('.swiper22', {
     spaceBetween: 12,
 });
 
+const swipermap = new Swiper('.swipermap', {
+    //loop: true,
+    freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+});
+
 
 
 // vip ads carousel
@@ -110,7 +117,7 @@ $(document).ready(function () {
 
         if (scrollTop > scrollHeight * 0.9) {
             scrollToTopBtn.fadeIn();
-        } else if (scrollTop > scrollHeight * 0.3) {
+        } else if (scrollTop > scrollHeight * 0) {
             if (scrollTop < lastScrollTop) {
                 scrollToTopBtn.fadeIn();
             } else {
@@ -136,6 +143,7 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 0) {
             stickyDiv.classList.add('stickyde');
             $('.navitems').addClass('navitems2');
+            $('.current__language').addClass('navitems2');
             $('.elonberish').addClass('elonberishbg');
             $('.menu__user').addClass('navitems2');
             $('.menu__user').css({
@@ -144,6 +152,7 @@ $(document).ready(function () {
         } else {
             stickyDiv.classList.remove('stickyde');
             $('.navitems').removeClass('navitems2');
+            $('.current__language').removeClass('navitems2');
             $('.elonberish').removeClass('elonberishbg');
             $('.menu__user').removeClass('navitems2');
             $('.menu__user').css({
@@ -472,3 +481,50 @@ function goToLocation() {
         alert('Ваш браузер не поддерживает геолокацию.');
     }
 }
+
+
+
+//ads on map
+const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
+    // loop: true,
+    // centeredSlides: true,
+    // slidesPerView: 5,
+	// 	 navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    // pagination: {
+    //   el: ".swiper-pagination"
+    // }
+    direction: 'horizontal',
+  //grabCursor: true,
+  //slidesPerView: 4,
+  spaceBetween: 10,
+  autoplay: false,
+  speed: 600,
+  freeMode: true,
+  //freeMode: true,
+    slidesPerView: 'auto',
+//   breakpoints: {
+//     1200: {
+//       slidesPerView: 3,
+//       spaceBetween: 30
+//     },
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 20
+//     },
+//     320: {
+//       slidesPerView: 1
+//     }
+//   },
+  	 navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination"
+    }
+  });
+
+
