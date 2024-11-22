@@ -7,6 +7,10 @@ $(".closelocation").on("click", function (event) {
     event.preventDefault();
 });
 
+$(".country__select").select2({
+    dropdownParent: $('#searchingModal')
+});
+
 //skeleton effect
 const skeletons = document.querySelectorAll(".skeleton");
 skeletons.forEach((skeleton) => {
@@ -149,6 +153,7 @@ $(document).ready(function () {
             $('.menu__user').css({
                 'background-color': 'hsl(0deg 0% 90% / 80%)'
             });
+            $('.mlogobox__oq').addClass('mlogobox__qora');
         } else {
             stickyDiv.classList.remove('stickyde');
             $('.navitems').removeClass('navitems2');
@@ -158,6 +163,7 @@ $(document).ready(function () {
             $('.menu__user').css({
                 'background-color': 'hsla(0, 0%, 90%, 0.165)'
             });
+            $('.mlogobox__oq').removeClass('mlogobox__qora');
         }
     });
 
@@ -172,10 +178,9 @@ $(document).ready(function () {
 
 
     //show map
-    $(".fixmapbox").fadeOut();
     $(".searchbymap").on("click", function () {
         var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-        $(".fixmapbox").fadeIn();
+        $(".fixmapbox").addClass("show");
         $(".main__overlay").addClass("main__overlay__show");
         $('body').css('padding-right', scrollWidth + 'px');
         $('body').addClass('modal-open');
@@ -183,7 +188,7 @@ $(document).ready(function () {
     $(".main__overlay").click(function () {
         var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
         $(".main__overlay").removeClass("main__overlay__show");
-        $(".fixmapbox").fadeOut();
+        $(".fixmapbox").removeClass("show");
         $('body').removeClass('modal-open');
         $('body').css('padding-right', '');
     });
@@ -207,6 +212,13 @@ $(document).ready(function () {
     $(".main__overlay, .closerightmenu").click(function () {
         $(".main__overlay").removeClass("main__overlay__show");
         $(".rightmenu").removeClass("rightmenu__show");
+        $('body').removeClass('modal-open');
+        $('body').css('padding-right', '');
+    });
+    $(".close__map").click(function () {
+        var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+        $(".main__overlay").removeClass("main__overlay__show");
+        $(".fixmapbox").removeClass("show");
         $('body').removeClass('modal-open');
         $('body').css('padding-right', '');
     });
@@ -417,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function () {
 jQuery(function ($) {
     $(document).on('scroll', function () {
         var scrollPos = $(this).scrollTop();
-        $('.searchbox').css({
+        $('.hideff').css({
             'top': (scrollPos / 3.8) + 'px',
             'opacity': 1 - (scrollPos / 120)
         });
@@ -447,10 +459,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Добавление маркера
-// var marker = L.marker([51.505, -0.09]).addTo(map)
-//     .bindPopup('<b>Hello world!</b><br>I am a popup.')
-//     .openPopup();
 
 // Добавление пользовательского элемента вместо маркера 
 var customIcon = L.divIcon({
@@ -483,48 +491,46 @@ function goToLocation() {
 }
 
 
+$(document).ready(function () {
+    $('.showad').click(function () {
+        $('.ochyop').toggleClass('hidden');
+        $('.showad i').toggleClass('ratate');
+    });
+});
 
-//ads on map
-const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
-    // loop: true,
-    // centeredSlides: true,
-    // slidesPerView: 5,
-	// 	 navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
-    // pagination: {
-    //   el: ".swiper-pagination"
-    // }
-    direction: 'horizontal',
-  //grabCursor: true,
-  //slidesPerView: 4,
-  spaceBetween: 10,
-  autoplay: false,
-  speed: 600,
-  freeMode: true,
-  //freeMode: true,
-    slidesPerView: 'auto',
-//   breakpoints: {
-//     1200: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     320: {
-//       slidesPerView: 1
-//     }
-//   },
-  	 navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    }
-  });
+
+
+// search input
+const products = ["Hurmo", "Hona", "Kitoab", "Kitobq", "Kitobw", "Kitobe", "Kitobr", "Kitobg", "Kitob", "Kigtob", "Kitjob", "Kitob", "Kitobc", "Kitlob", "Kitobz", "Kitobx", "Kitob", "Kit", "Sut", "Sutchi"];
+        const searchInput = document.getElementById('searchinput');
+        const dropdown = document.getElementById('dropdowns');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            dropdown.innerHTML = '';
+            if (query) {
+                const filteredProducts = products.filter(product => product.toLowerCase().startsWith(query));
+                filteredProducts.forEach(product => {
+                    const a = document.createElement('a');
+                    a.href = '#';
+                    a.textContent = product;
+                    dropdown.appendChild(a);
+                });
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!searchInput.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        $(document).ready(function() {
+            $('.country__select').select2();
+        });
+       
 
 
