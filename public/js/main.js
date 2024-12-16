@@ -7,8 +7,49 @@ $(".closelocation").on("click", function (event) {
     event.preventDefault();
 });
 
-$(".country__select").select2({
-    dropdownParent: $('#searchingModal')
+//lika button effect
+document.addEventListener('DOMContentLoaded', function () {
+    var likeButtons = document.querySelectorAll('.like-button');
+
+    likeButtons.forEach(function (likeButton) {
+        var buttonId = likeButton.getAttribute('data-id');
+        var isActive = localStorage.getItem('likeButton-' + buttonId) === 'true';
+        if (isActive) {
+            likeButton.classList.add('active');
+        }
+    });
+
+    likeButtons.forEach(function (likeButton) {
+        likeButton.addEventListener('click', function () {
+            var buttonId = likeButton.getAttribute('data-id');
+            var isActive = likeButton.classList.contains('active');
+
+            likeButton.classList.toggle('active');
+            localStorage.setItem('likeButton-' + buttonId, !isActive);
+
+            if (!isActive) {
+                for (var i = 0; i < 2; i++) {
+                    var floatingHeart = document.createElement('i');
+                    floatingHeart.classList.add('floating-heart', 'heart-icon');
+                    floatingHeart.innerHTML = '<i class="icon-heart"></i>';
+
+                    if (i === 0) {
+                        floatingHeart.classList.add('heart1');
+                    } else {
+                        floatingHeart.classList.add('heart2');
+                    }
+
+                    likeButton.appendChild(floatingHeart);
+
+                    setTimeout(function (heart) {
+                        return function () {
+                            heart.remove();
+                        };
+                    }(floatingHeart), 1000);
+                }
+            }
+        });
+    });
 });
 
 //skeleton effect
@@ -40,23 +81,144 @@ skeletons.forEach((skeleton) => {
 //     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 // });
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     var ithlElement = document.querySelector('.ithl');
+//     var lyutrboxElement = document.querySelector('.lyutrbox');
+//     var lyutr = document.querySelector('.lyutr');
+ 
+
+//     window.addEventListener('scroll', function () {
+//         var ithlTop = ithlElement.getBoundingClientRect().top;
+
+//         if (ithlTop <= 0) {
+//             lyutrboxElement.classList.add('scrolled');
+//             lyutr.classList.add('scrolled2');
+
+//         } else {
+//             lyutrboxElement.classList.remove('scrolled');
+//             lyutr.classList.remove('scrolled2');
+//         }
+//     });
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var ithlElement = document.querySelector('.ithl');
+    var lyutrboxElement = document.querySelector('.lyutrbox');
+    var lyutr = document.querySelector('.lyutr');
+    var itemNameElement = document.querySelector('.itemq__name');
+    var timeoutId;
+
+    window.addEventListener('scroll', function () {
+        var ithlTop = ithlElement.getBoundingClientRect().top;
+
+        if (ithlTop <= 0) {
+            lyutrboxElement.classList.add('scrolled');
+            lyutr.classList.add('scrolled2');
+
+            // Добавляем задержку в 2 секунды перед изменением размера шрифта
+            timeoutId = setTimeout(function () {
+                itemNameElement.style.fontSize = '20px';
+            }, 900);
+
+        } else {
+            lyutrboxElement.classList.remove('scrolled');
+            lyutr.classList.remove('scrolled2');
+
+            // Удаляем задержку и возвращаем размер шрифта к исходному
+            clearTimeout(timeoutId);
+            itemNameElement.style.fontSize = ''; // Вернуть к исходному значению
+        }
+    });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.querySelector('.toggle-button');
+    var toggleButtonBox = document.querySelector('.toggle-button-box');
+    var itemMoreInfo = document.querySelector('.itemmoreinfo');
+    var moreInfoText = itemMoreInfo.querySelector('.moreinfo-text');
+
+    // Проверяем высоту текста и показываем или скрываем кнопку
+    if (moreInfoText.scrollHeight > 300) {
+        toggleButtonBox.style.display = 'block';
+    } else {
+        toggleButtonBox.style.display = 'none';
+    }
+
+    toggleButton.addEventListener('click', function () {
+        itemMoreInfo.classList.toggle('expanded');
+
+        if (itemMoreInfo.classList.contains('expanded')) {
+            toggleButton.textContent = 'Свернуть';
+            $(".dots").toggle();
+        } else {
+            toggleButton.textContent = 'Показать больше';
+
+        }
+    });
+});
+
+
+
+
+
+
 // categories carousel
 
 const swiper22 = new Swiper('.swiper22', {
-    //loop: true,
     freeMode: true,
     slidesPerView: 'auto',
     spaceBetween: 12,
 });
+
+const swiper__pins = new Swiper('.swiper__pins', {
+    freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 5,
+});
+
+const swiper__item = new Swiper('.swiper__item', {
+    freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 1,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        dragSize: 100
+    },
+    mousewheel: {
+        enabled: false,
+    },
+});
+
+// const swiper__item = new Swiper('.swiper__item', {
+//     slideToClickedSlide: true,
+//     slidePerView: "auto",
+//     freeMode: {
+//       enabled: true,
+//       sticky: false,
+//       momentumBounce: false,
+//     },
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//       draggable: true,
+//       dragSize: 100,
+//     },
+//     mousewheel: {
+//       enabled: true,
+//       sensitivity: 4,
+//     },
+//   });
 
 const swipermap = new Swiper('.swipermap', {
-    //loop: true,
     freeMode: true,
     slidesPerView: 'auto',
     spaceBetween: 12,
 });
-
-
 
 // vip ads carousel
 const swiper33 = new Swiper('.swiper33', {
@@ -81,11 +243,7 @@ const swiper33 = new Swiper('.swiper33', {
     },
 });
 
-
-
-
 //click ripple
-
 jQuery(document).ready(function ($) {
     $(".btn-ripple").on("click", function (e) {
         var $span = $('<span class="bc-ripple "></span>');
@@ -108,9 +266,8 @@ jQuery(document).ready(function ($) {
     });
 });
 
-
 $(document).ready(function () {
-
+    // scroll to top
     var scrollToTopBtn = $('#scrollToTopBtn');
     var lastScrollTop = 0;
 
@@ -143,29 +300,44 @@ $(document).ready(function () {
     //fix head effect
 
     const stickyDiv = document.querySelector('.nav__wrap');
+    $('.elonberish').removeClass('elonberishbg');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             stickyDiv.classList.add('stickyde');
+            $('.nav__wrap').addClass('navwrap2');
             $('.navitems').addClass('navitems2');
             $('.current__language').addClass('navitems2');
             $('.elonberish').addClass('elonberishbg');
-            $('.menu__user').addClass('navitems2');
-            $('.menu__user').css({
-                'background-color': 'hsl(0deg 0% 90% / 80%)'
-            });
+            $('.menu__user').addClass('menu__user2');
             $('.mlogobox__oq').addClass('mlogobox__qora');
+
+            // Сохранение состояния в localStorage
+            localStorage.setItem('isScrolled', 'true');
         } else {
             stickyDiv.classList.remove('stickyde');
+            $('.nav__wrap').removeClass('navwrap2');
             $('.navitems').removeClass('navitems2');
             $('.current__language').removeClass('navitems2');
             $('.elonberish').removeClass('elonberishbg');
-            $('.menu__user').removeClass('navitems2');
-            $('.menu__user').css({
-                'background-color': 'hsla(0, 0%, 90%, 0.165)'
-            });
+            $('.menu__user').removeClass('menu__user2');
             $('.mlogobox__oq').removeClass('mlogobox__qora');
+
+            // Сохранение состояния в localStorage
+            localStorage.setItem('isScrolled', 'false');
         }
     });
+    $(document).ready(function () {
+        if (localStorage.getItem('isScrolled') === 'true') {
+            stickyDiv.classList.add('stickyde');
+            $('.nav__wrap').addClass('navwrap2');
+            $('.navitems').addClass('navitems2');
+            $('.current__language').addClass('navitems2');
+            $('.elonberish').addClass('elonberishbg');
+            $('.menu__user').addClass('menu__user2');
+            $('.mlogobox__oq').addClass('mlogobox__qora');
+        }
+    });
+
 
     //fix window for load apps
     $(".apparrow").on("click", function () {
@@ -175,7 +347,6 @@ $(document).ready(function () {
             $(".apslink").toggleClass("apslink2");
         }, 300);
     });
-
 
     //show map
     $(".searchbymap").on("click", function () {
@@ -193,14 +364,40 @@ $(document).ready(function () {
         $('body').css('padding-right', '');
     });
 
-    $(".select2box__outer").click(function () {
-        var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-        $(".til__dropdown").toggleClass("til__dropdown2");
+    //main dropdown window
+    $(document).ready(function () {
+        $(".select2box__outer").click(function () {
+            var $dropdown = $(this).find(".til__dropdown");
+            $(".til__dropdown").not($dropdown).removeClass("til__dropdown2");
+            $(".til__dropdown").not($dropdown).removeClass("til__dropdown__menu2");
+            $dropdown.toggleClass("til__dropdown2");
+            $dropdown.toggleClass("til__dropdown__menu2");
+        });
 
+        // Закрыть выпадающее меню при клике вне его
+        $(document).click(function (event) {
+            if (!$(event.target).closest(".select2box__outer").length) {
+                $(".til__dropdown").removeClass("til__dropdown2");
+                $(".til__dropdown").removeClass("til__dropdown__menu2");
+            }
+        });
     });
+
+
+    // $(".select2box__outer").click(function () {
+    //     var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+    //     $(".til__dropdown").toggleClass("til__dropdown2");
+
+    // });
+    // $(".rightmenutil").click(function () {
+    //     var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+    //     $(".til__dropdown__menu").toggleClass("til__dropdown__menu2");
+
+    // });
     $(".main__overlay").click(function () {
         $(".til__dropdown").removeClass("til__dropdown2");
     });
+
     //right sidebar menu
     $(".menu__user").click(function () {
         var scrollWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -301,28 +498,6 @@ $(document).ready(function () {
 })(jQuery);
 */
 
-// const swiper = new Swiper('.swiper', {
-//     // modules: [Navigation, A11y],
-//     direction: 'horizontal',
-//     loop: true,
-//     navigation: {
-//         nextEl: '.c-carousel__button--next',
-//         prevEl: '.c-carousel__button--prev',
-//     },
-//     slidesPerView: 'auto',
-//     spaceBetween: 12,
-//     a11y: {
-//         prevSlideMessage: 'Previous slide',
-//         nextSlideMessage: 'Next slide',
-//     },
-//     autoplay: {
-//         delay: 48000,
-//     },
-//     autoplay: {
-//         disableOnInteraction: false,
-//         pauseOnMouseEnter: true,
-//     },
-// });
 
 $(function () {
     $(".addtolovelist").click(function () {
@@ -433,23 +608,13 @@ jQuery(function ($) {
             'top': (scrollPos / 3.8) + 'px',
             'opacity': 1 - (scrollPos / 120)
         });
+        if (scrollPos > 0) {
+            $('.hideff').css('pointer-events', 'none');
+        } else {
+            $('.hideff').css('pointer-events', 'auto');
+        }
     });
 });
-
-
-// // Инициализация карты
-// var map = L.map('map').setView([51.505, -0.09], 13);
-
-// // Добавление тайлов
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// }).addTo(map);
-
-// // Добавление маркера
-// var marker = L.marker([51.505, -0.09]).addTo(map)
-//     .bindPopup('<b>Hello world!</b><br>I am a popup.')
-//     .openPopup();
-
 
 // Инициализация карты
 var map = L.map('map').setView([51.505, -0.09], 13);
@@ -458,7 +623,6 @@ var map = L.map('map').setView([51.505, -0.09], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
 
 // Добавление пользовательского элемента вместо маркера 
 var customIcon = L.divIcon({
@@ -490,7 +654,6 @@ function goToLocation() {
     }
 }
 
-
 $(document).ready(function () {
     $('.showad').click(function () {
         $('.ochyop').toggleClass('hidden');
@@ -500,37 +663,122 @@ $(document).ready(function () {
 
 
 
-// search input
-const products = ["Hurmo", "Hona", "Kitoab", "Kitobq", "Kitobw", "Kitobe", "Kitobr", "Kitobg", "Kitob", "Kigtob", "Kitjob", "Kitob", "Kitobc", "Kitlob", "Kitobz", "Kitobx", "Kitob", "Kit", "Sut", "Sutchi"];
-        const searchInput = document.getElementById('searchinput');
-        const dropdown = document.getElementById('dropdowns');
 
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            dropdown.innerHTML = '';
-            if (query) {
-                const filteredProducts = products.filter(product => product.toLowerCase().startsWith(query));
-                filteredProducts.forEach(product => {
-                    const a = document.createElement('a');
-                    a.href = '#';
-                    a.textContent = product;
-                    dropdown.appendChild(a);
-                });
-                dropdown.style.display = 'block';
-            } else {
-                dropdown.style.display = 'none';
-            }
-        });
+//search by words
+const products = [
+    "Hurmo", "Hona", "Kitoab", "Kitobq", "Kitobw", "Kitobe",
+    "Kitobr", "Kitobg", "Kitob", "Kigtob", "Kitjob", "Kitob",
+    "Kitobc", "Kitlob", "Kitobz", "Kitobx", "Kitob", "Kit",
+    "Sut", "Sutchi"
+];
 
-        document.addEventListener('click', function(event) {
-            if (!searchInput.contains(event.target) && !dropdown.contains(event.target)) {
-                dropdown.style.display = 'none';
-            }
-        });
+const categories = {
+    "Hurmo": "Fruit",
+    "Hona": "Place",
+    "Kitoab": "Book",
+    "Kitobq": "Book",
+    "Kitobw": "Book",
+    "Kitobe": "Book",
+    "Kitobr": "Book",
+    "Kitobg": "Book",
+    "Kitob": "Book",
+    "Kigtob": "Book",
+    "Kitjob": "Book",
+    "Kitobc": "Book",
+    "Kitlob": "Book",
+    "Kitobz": "Book",
+    "Kitobx": "Book",
+    "Kit": "Misc",
+    "Sut": "Dairy",
+    "Sutchi": "Dairy"
+};
 
-        $(document).ready(function() {
-            $('.country__select').select2();
-        });
-       
+const searchInput = document.getElementById('searchinput');
+const dropdown = document.getElementById('dropdowns');
+
+searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+
+    dropdown.innerHTML = '';
+
+    if (query) {
+        const filteredProducts = products.filter(product => product.toLowerCase().startsWith(query));
+
+        if (filteredProducts.length > 0) {
+            filteredProducts.forEach(product => {
+                const a = document.createElement('a');
+                a.href = '#';
+                a.textContent = product;
+
+                const span = document.createElement('span');
+                span.textContent = ` ${categories[product]}`;
+                a.appendChild(span);
+
+                dropdown.appendChild(a);
+            });
+        } else {
+            const noResults = document.createElement('div');
+            noResults.textContent = `"${this.value}" не найдено`;
+            noResults.style.color = 'red';
+            dropdown.appendChild(noResults);
+        }
+
+        dropdown.style.display = 'block';
+    } else {
+        dropdown.style.display = 'none';
+    }
+});
+
+document.addEventListener('click', function (event) {
+    if (!searchInput.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+    }
+});
 
 
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function() {
+//     $('.country__select').select2();
+// });
+
+//search main page
+$(".country__select").select2({
+    dropdownParent: $("#searchingModal")
+});
+$(".region__select").select2({
+    dropdownParent: $("#searchingModal")
+});
+
+document.getElementById('searchinput').addEventListener('input', function (e) {
+    if (this.value) {
+        document.getElementById('resetinp').classList.add('showresetbtn');
+    } else {
+        document.getElementById('resetinp').classList.remove('showresetbtn');
+    }
+});
+$('.resetinp').click(function () {
+    $('.resetinp').removeClass('showresetbtn');
+});
+
+$('.search__history').fadeOut();
+$('.animation__word').click(function () {
+    $('.searchpopup').addClass('show');
+    setTimeout(function () {
+        $('.search__history').fadeIn();
+    }, 600);
+});
+$('.closesearchpopup').click(function () {
+    $('.search__history').fadeOut();
+    setTimeout(function () {
+        $('.searchpopup').removeClass('show');
+    }, 600);
+});

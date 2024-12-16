@@ -35,22 +35,28 @@
         </div>
     </div>
     <div class="nav__wrap">
-        <nav class="w70w fdc">
+        <nav class="navwidth fdc">
             <div class="navbox df">
                 <a href="javascript:void(0)" class="mlogobox">
                     <i class="icon-hanbazar-black mlogobox__oq"></i>
                 </a>
                 <div class="menubox df">
                     <ul class="df lilar">
-                        <li><a href="#" class="navitems skeleton elyt">
+                        <li><a href="#" class="navitems elyt fruye hoverefs">
+                                <i class="icon-list"></i>
+                                Bo'limlar <i class="icon-down-open-mini menupasticon"></i>
+                            </a>
+                        </li>
+                        <li><a href="#" class="navitems elyt">
                                 <i class="icon-information"></i>
                                 Yordam</a>
                         </li>
                         <li>
-                            <div class="select2box__outer navitems skeleton elyt bayrte">
+                            <div class="select2box__outer elyt bayrte">
                                 <div class="select2box ">
-                                    <div class="current__language df">
+                                    <div class="current__language navitems df">
                                         <img src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"> Til
+                                        <i class="icon-down-open-mini menupasticon"></i>
                                     </div>
                                 </div>
                                 <div class="til__dropdown">
@@ -104,9 +110,8 @@
                             </div>
                         </li>
                     </ul>
-                    <a href="javascript:void(0)" class="menu__user skeleton"><i class="icon-user"></i></a>
-                    <a href="#" class="elonberish skeleton" data-bs-toggle="modal"
-                        data-bs-target="#ElonBerishBolimlariModal">
+                    <a href="javascript:void(0)" class="menu__user navitems"><i class="icon-user"></i></a>
+                    <a href="#" class="elonberish elonberishbg" data-bs-toggle="modal" data-bs-target="#ElonBerishBolimlariModal">
                         <span>+</span> E'LON JOYLASH</a>
                 </div>
             </div>
@@ -116,7 +121,7 @@
 
         <div class="markazbox w70w df">
             <div class="centralbox df hideff">
-                <h1 class="brandtitle" datatitle="pagetitle">HANBAZAR</h1>
+                <h1 class="brandtitle" datatitle="pagetitle">Hanbazar</h1>
                 <div class="subbrandtitle">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, vel nesciunt numquam est consectetur
                     laboriosam ipsum deserunt non cupiditate. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -233,35 +238,7 @@
                                 </div>
                                 <div class="c-carousel__item swiper-slide">
                                     <a href="" class="cat__item btn-ripple">
-                                        <img class="ishboricon" src="https://i.postimg.cc/W1My5q7X/ishbor.png"
-                                            alt="ishbor">
-                                        <span>Ish Bor</span>
-                                    </a>
-                                </div>
-                                <div class="c-carousel__item swiper-slide">
-                                    <a href="" class="cat__item btn-ripple">
-                                        <img class="telefonicon" src="https://i.postimg.cc/jSPjvc9m/telefon5.png"
-                                            alt="Telefon">
-                                        <span>Telefon</span>
-                                    </a>
-                                </div>
-                                <div class="c-carousel__item swiper-slide">
-                                    <a href="#" class="cat__item btn-ripple" tabindex="0">
-                                        <img class="tehnikaicon" src="https://i.postimg.cc/zGF47Rz8/texnika-1.png"
-                                            alt="Tehnika">
-                                        <span>Texnika</span>
-                                    </a>
-                                </div>
-                                <div class="c-carousel__item swiper-slide">
-                                    <a href="#" class="cat__item btn-ripple">
-                                        <img class="hizmaticon" src="https://i.postimg.cc/J44T8dMV/hizmaticon.png"
-                                            alt="hizmatkorsatish">
-                                        <span>Hizmat ko'rsatish</span>
-                                    </a>
-                                </div>
-                                <div class="c-carousel__item swiper-slide">
-                                    <a href="" class="cat__item btn-ripple">
-                                        <img class="ishboricon" src="https://i.postimg.cc/W1My5q7X/ishbor.png"
+                                        <img class="ishboricon" src="https://i.postimg.cc/JnFPbBSH/jobs.png"
                                             alt="ishbor">
                                         <span>Ish Bor</span>
                                     </a>
@@ -285,6 +262,83 @@
                                         <img class="hizmaticon" src="https://i.postimg.cc/J44T8dMV/hizmaticon.png"
                                             alt="hizmatkorsatish">
                                         <span>Hizmatlar</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="uyjihozlaricon" src="https://i.postimg.cc/MGYtHLWT/imgbin-sofa-png.png"
+                                            alt="ishbor">
+                                        <span>Uy jihozlari</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="kiyimlaricon" src="https://i.postimg.cc/x8g3TNY4/odejdi.png"
+                                            alt="Telefon">
+                                        <span>Kiyimlar</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="forwomens" src="https://i.postimg.cc/Px263Rcc/womens.png"
+                                            alt="Telefon">
+                                        <span>Ayollar uchun</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="forchildrens" src="https://i.postimg.cc/05WqBW17/babycar.png"
+                                            alt="Telefon">
+                                        <span>Bolalar uchun</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="soatlaricon" src="https://i.postimg.cc/4xLwcxn9/ukrash.png"
+                                            alt="Telefon">
+                                        <span>Soat va ziynatlar</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="#" class="cat__item btn-ripple" tabindex="0">
+                                        <img class="uskunaicon" src="https://i.postimg.cc/9FYgkz7K/instrument.png"
+                                            alt="Tehnika">
+                                        <span>Asbob va uskuna</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="#" class="cat__item btn-ripple">
+                                        <img class="qurilishicon" src="https://i.postimg.cc/DZ3YDGxV/qurilish.png"
+                                            alt="hizmatkorsatish">
+                                        <span>Qurilish</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="sporticon" src="https://i.postimg.cc/qMQXn5S6/ball.png"
+                                            alt="Telefon">
+                                        <span>Sport</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="animalicon" src="https://i.postimg.cc/FKG17ywm/catanddog.png"
+                                            alt="Telefon">
+                                        <span>Hayvonlar</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="giftsicon" src="https://i.postimg.cc/YqJdsgnp/gift.png"
+                                            alt="Telefon">
+                                        <span>Hadya</span>
+                                    </a>
+                                </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <a href="" class="cat__item btn-ripple">
+                                        <img class="othersicon" src="https://i.postimg.cc/nLs8j5Vn/others.png"
+                                            alt="Telefon">
+                                        <span>Boshqalar</span>
                                     </a>
                                 </div>
                             </div>
@@ -668,7 +722,7 @@
             <p class="htitle">Yangi e'lonlar</p>
             <div class="c-carousel__controls" style="--swiper-navigation-color: pink;">
                 <a href="javascript:void(0)" class="adnewads" data-bs-toggle="modal"
-                    data-bs-target="#ElonBerishBolimlariModal">+ E'lon joylash</a>
+                    data-bs-target="#ElonBerishBolimlariModal"><i class="icon-filter5"></i>Saralash</a>
             </div>
         </div>
         <div class="masonty__box">
@@ -701,7 +755,7 @@
 
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
-                    <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
+                    <a href="{{ route('details') }}" class="elonimglink adtofavdouble lot-image-vipelon">
                         <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
                             class="lot-image lazy" alt="Damas">
                     </a>
@@ -2145,7 +2199,7 @@
                         <div class="c-carousel__item swiper-slide">
                             <a href="" class="cat__item btn-ripple">
                                 <img class="telefonicon" src="https://i.postimg.cc/jSPjvc9m/telefon5.png" alt="Telefon">
-                                <span>Telefon va aksesuarlar</span>
+                                <span>Telefon va <br> aksesuarlar</span>
                             </a>
                         </div>
                         <div class="c-carousel__item swiper-slide">
@@ -2198,7 +2252,7 @@
         </div>
     </div>
 
-    <!-- aside menu -->
+    <!-- aside rightmenu menu -->
     <div class="drobwrap rightmenu">
         <a href="javascript:void(0)" class="closerightmenu"><i class="icon-close"></i></a>
         <div class="rmenuinner">
@@ -2255,6 +2309,65 @@
                 </div>
             </div>
             <a href="#" class="foottil">O'zgartirish</a> -->
+        </div>
+        <div class="rightmenufoot">
+            <div class="select2box__outer elyt bayrte hoverefs">
+                <div class="select2box ">
+                    <div class="current__language df">
+                        <img src="https://i.postimg.cc/2SJG8TGH/uzbekistan.png" alt="uz"> Til
+                        <i class="icon-down-open-mini menupasticon"></i>
+                    </div>
+                </div>
+                <div class="til__dropdown til__dropdown__menu">
+                    <div class="tillar">Tillar</div>
+                    <div class="tilich tilikop">
+                        <div class="control-group">
+                            <label class="control control--radio">O'zbekcha
+                                <input type="radio" name="radio2" checked="checked">
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Қазақша
+                                <input type="radio" name="radio2">
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Кыргызча
+                                <input type="radio" name="radio2">
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Русский
+                                <input type="radio" name="radio2">
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">Tоҷикӣ
+                                <input type="radio" name="radio2">
+                                <div class="control__indicator"></div>
+                            </label>
+                            <label class="control control--radio">English
+                                <input type="radio" name="radio2">
+                                <div class="control__indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tillar">Pul birligi</div>
+                    <div class="tilich vtrew">
+                        <div class="control-group">
+                            <div class="pulbir df"><i class="fa-solid fa-caret-right"></i>
+                                Oz'bek so'mi - Uzs</div>
+                        </div>
+                    </div>
+                    <div class="tillar">Hudud</div>
+                    <div class="tilich vtrew">
+                        <div class="control-group">
+                            <div class="selected__region">
+                                <div class="sel__reg__country"> <i class="fa-solid fa-caret-right"></i>O'zbekiston</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="foottil">O'zgartirish</a>
+                </div>
+            </div>
+            <a href="#" class="elyt hoverefs" style="padding: 12px;">
+                <i class="icon-information"></i>Yordam</a>
         </div>
     </div>
 
@@ -2356,16 +2469,19 @@
 
     <div class="searchpopup">
         <div class="search__wrap df">
-            <form action="" class="inputwrap df">
-                <i class="icon-search-2 iconsearchi"></i>
-                <div class="vcitr df">
-                    <input type="text" class="searchinput" id="searchinput" placeholder="Qidiruv">
-                    <button type="reset" class="resetinp"><i class="icon-close"></i></button>
-                </div>
-                <a href="#" class="open__regions" data-bs-toggle="modal" data-bs-target="#searchingModal"><i
-                        class="icon-location"></i> Bobur mahalla</a>
-                <a href="" class="qidirbtn">Qidirish</a>
-            </form>
+            <div class="fyopp df">
+                <a href="#" class="closesearchpopup"><i class="icon-close"></i></a>
+                <form action="" class="inputwrap df">
+                    <i class="icon-search-2 iconsearchi"></i>
+                    <div class="vcitr df">
+                        <input type="text" class="searchinput" id="searchinput" placeholder="Qidiruv">
+                        <button type="reset" class="resetinp" id="resetinp"><i class="icon-close"></i></button>
+                    </div>
+                    <a href="#" class="open__regions" data-bs-toggle="modal" data-bs-target="#searchingModal"><i
+                            class="icon-location"></i> Bobur mahalla</a>
+                    <a href="" class="qidirbtn">Qidirish</a>
+                </form>
+            </div>
             <div class="search__history df">
                 <div class="last__user df">
                     <p class="lutitle">Ohirgi qidiruvingiz</p>
@@ -2423,7 +2539,7 @@
     </div>
     <!-- modal regions for searching -->
     <div class="modal fade" id="searchingModal" aria-labelledby="searchingModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="width: 300px">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Hududni tanlang</h5>
@@ -2431,17 +2547,27 @@
                 </div>
                 <div class="modal-body">
                     <div class="country__selectbox">
-                        <select class="country__select" name="state">
+                        <div class="seltitle">Country</div>
+                        <select class="country__select" name="state" data-placeholder="Select a country">
                             <option value="all">Butun Uzbekiston</option>
                             <option value="tash">Toshkent shaxri</option>
                             <option value="tashv">Toshkent voliyati</option>
                             <option value="sird">Sirdaryo viloyati</option>
                         </select>
                     </div>
+                    <div class="country__selectbox">
+                        <div class="seltitle">Region</div>
+                        <select class="region__select" name="state" data-placeholder="Select a region">
+                            <option value="all">Butun Tashkent</option>
+                            <option value="tash">Mirobod tumani</option>
+                            <option value="tashv">Yunusobod tumani</option>
+                            <option value="sird">Bertemir tumani</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
-                    <button type="button" class="btn btn-primary">Saqlash</button>
+                    <button type="button" class="btn btn-secondary bekorbtn" data-bs-dismiss="modal">Yopish</button>
+                    <button type="button" class="btn btn-primary tasdiqbtn">Saqlash</button>
                 </div>
             </div>
         </div>
