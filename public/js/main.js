@@ -1,25 +1,28 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var itemHeadElement = document.querySelector('.itemhead');
-    var pins__carausel = document.querySelector('.pins__carausel');
+    var itemhead = document.querySelector('.itemhead');
 
-    function updateIthrClass() {
-        var itemHeadTop = itemHeadElement.getBoundingClientRect().top;
+    function updateShadow() {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-        if (itemHeadTop <= 0) {
-            pins__carausel.classList.add('pins__carausel__hide');
+        if (scrollPosition > 50) {
+            itemhead.classList.add('headshadow');
         } else {
-            pins__carausel.classList.remove('pins__carausel__hide');
+            itemhead.classList.remove('headshadow');
         }
     }
 
-    // Вызов функции при загрузке страницы
-    updateIthrClass();
+    // Определяем состояние элемента при загрузке страницы
+    updateShadow();
 
-    // Добавление обработчика события прокрутки
-    window.onscroll = updateIthrClass;
+    // Добавляем обработчик события прокрутки
+    window.addEventListener('scroll', updateShadow);
+
+    // Добавляем обработчик события изменения размера окна
+    window.addEventListener('resize', updateShadow);
 });
+
 
 
 

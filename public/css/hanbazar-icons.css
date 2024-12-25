@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'hanbazar-icons';
-  src: url('font/hanbazar-icons.eot?73084122');
-  src: url('font/hanbazar-icons.eot?73084122#iefix') format('embedded-opentype'),
-       url('font/hanbazar-icons.woff2?73084122') format('woff2'),
-       url('font/hanbazar-icons.woff?73084122') format('woff'),
-       url('font/hanbazar-icons.ttf?73084122') format('truetype'),
-       url('font/hanbazar-icons.svg?73084122#hanbazar-icons') format('svg');
+  font-family: 'hanbazar-icons'; 
+  src: url('font/hanbazar-icons.eot?38676539');
+  src: url('font/hanbazar-icons.eot?38676539#iefix') format('embedded-opentype'),
+       url('font/hanbazar-icons.woff2?38676539') format('woff2'),
+       url('font/hanbazar-icons.woff?38676539') format('woff'),
+       url('font/hanbazar-icons.ttf?38676539') format('truetype'),
+       url('font/hanbazar-icons.svg?38676539#hanbazar-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'hanbazar-icons';
-    src: url('../font/hanbazar-icons.svg?73084122#hanbazar-icons') format('svg');
+    src: url('../font/hanbazar-icons.svg?38676539#hanbazar-icons') format('svg');
   }
 }
 */
@@ -272,6 +272,17 @@
 .icon-hanbazar-black:before { content: '\e8d7'; } /* '' */
 .icon-hanbazar-flat-color:before { content: '\e8d8'; } /* '' */
 .icon-hanbazar-gradient-color:before { content: '\e8d9'; } /* '' */
+.icon-share2-1:before { content: '\e8da'; } /* '' */
+.icon-sharearrow:before { content: '\e8db'; } /* '' */
+.icon-shareq2:before { content: '\e8dc'; } /* '' */
+.icon-smartphoneww:before { content: '\e8dd'; } /* '' */
+.icon-ban:before { content: '\e8de'; } /* '' */
+.icon-stop-1:before { content: '\e8df'; } /* '' */
+.icon-callw:before { content: '\e8e0'; } /* '' */
+.icon-chat33:before { content: '\e8e1'; } /* '' */
+.icon-emailee:before { content: '\e8e2'; } /* '' */
+.icon-notificationqa:before { content: '\e8e3'; } /* '' */
+.icon-notificationww:before { content: '\e8e4'; } /* '' */
 .icon-retweet:before { content: '\f02b'; } /* '' */
 .icon-ok-circled:before { content: '\f06d'; } /* '' */
 .icon-cancel-circled:before { content: '\f06e'; } /* '' */
@@ -287,6 +298,3 @@
 .icon-comment:before { content: '\f4ac'; } /* '' */
 .icon-lock-1:before { content: '\f512'; } /* '' */
 .icon-lock-open-1:before { content: '\f513'; } /* '' */
-
-
-

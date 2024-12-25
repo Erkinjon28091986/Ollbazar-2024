@@ -21,8 +21,26 @@
     <!-- <x-second-menu></x-second-menu> -->
     <main>
         <div class="hcontainer hwidth">
+            <div class="itemhead df">
+                <div class="ithl">
+                    <div class="name__price">
+                        <h2 class="item__name">Samsung Galaxy S24 Ultra</h2>
+                        <p class="item__price">8000000 <span>Uzs</span> </p>
+                    </div>
+                </div>
+                <div class="ithr">
+                    <!-- <div class="like-button-container">
+                        <button class="like-button">
+                            <i class="icon-heart likeicon"></i>
+                        </button>
+                    </div> -->
+                    <a href="/" class="closeitem"> <i class="icon-close"></i> </a>
+                </div>
+            </div>
             <div class="item__images">
-                <a href="/" class="closeitem"> <i class="icon-close"></i> </a>
+                <div class="infobagde df">
+                    <div class="korildibadge">Ko'rildi</div>
+                </div>
                 <div class="item__images__box">
                     <div class="c-carousel">
                         <div class="c-carousel__wrapper swiper swiperbox__categories swiper__item">
@@ -51,18 +69,19 @@
                                             data-src="https://i.postimg.cc/qM4jjL0G/s24-ultra5.jpg" alt="Kobalt">
                                     </div>
                                 </div>
+                                <div class="c-carousel__item swiper-slide">
+                                    <div class="img__item reklama__item">
+                                        <p>REKLAMA</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="itemhead df">
-                <div class="ithl">
-                    <div class="name__price">
-                        <h2 class="item__name">Samsung Galaxy S24 Ultra</h2>
-                        <p class="item__price">8000000 <span>Uzs</span> </p>
-                    </div>
+            <div class="yanamal df">
+                <div class="joerw">
                     <div class="pins__carausel">
                         <div class="swiper swiper__pins">
                             <div class="swiper-wrapper categories">
@@ -85,15 +104,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="ithr">
+                <div class="botrebox df">
+                    <a href="" class="hideitem csew" tooltip="Boshqa ko'rsatmaslik" flow="left">
+                        <i class="icon-ban"></i>
+                    </a>
+                    <a href="" class="sharebox csew" tooltip="Ulashish" flow="left">
+                        <i class="icon-share2-1"></i>
+                    </a>
                     <div class="like-button-container">
-                        <button class="like-button">
-                            <!-- <i class="heart-icon heart-icon"></i> -->
+                        <button class="like-button" tooltip="Saraga qo'shish" flow="left">
                             <i class="icon-heart likeicon"></i>
                         </button>
                     </div>
                 </div>
-
             </div>
 
             <hr class="hdivider">
@@ -189,8 +212,8 @@
 
                 </div>
                 <div class="rightserbox df">
-                    <a href="" class="sellermsg"> <i class="icon-comment-1"></i></a>
-                    <a href="javascript:void(0)" class="sellerphone"><i class="icon-iphone"></i>Show number</a>
+                    <a href="" class="sellermsg"> <i class="icon-chat33"></i></a>
+                    <a href="javascript:void(0)" class="sellerphone"><i class="icon-callw"></i>Show number</a>
                 </div>
             </div>
             <hr class="hdivider" style="margin-top: 0">
@@ -255,7 +278,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <span class="status-user user-online"></span>
+                                        <div class="user__lasttime"></div>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -312,7 +335,39 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <span class="status-user user-online"></span>
+                                        <div class="user__lasttime"></div>
+                                    </div>
+                                    <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
+                                        <div>
+                                            <div class="lot-title">Samsung Galaxy S 24 Ultra, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
+                                            <div class="elonNarh">2 000 000 Uzs</div>
+                                        </div>
+                                        <div class="like-button-container">
+                                            <button class="like-button">
+                                                <!-- <i class="heart-icon heart-icon"></i> -->
+                                                <i class="icon-heart likeicon"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-carousel__item swiper-slide">
+                            <div class="item-elon">
+                                <div class="infobagde df">
+                                    <div class="korildibadge">Ko'rildi</div>
+                                </div>
+                                <a href="{{ route('details') }}" class="elonimglink adtofavdouble">
+                                    <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
+                                        class="lot-image lazy" alt="Damas">
+                                </a>
+                                <div class="lot-nav df">
+                                    <div class="user-img-box">
+                                        <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
+                                            class="seller-avatar">
+                                        <div class="user__lasttime"></div>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -370,7 +425,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <span class="status-user user-online"></span>
+                                        <div class="user__lasttime"></div>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -428,7 +483,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <span class="status-user user-online"></span>
+                                        <div class="user__lasttime"></div>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -486,65 +541,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <span class="status-user user-online"></span>
-                                    </div>
-                                    <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
-                                        <div>
-                                            <div class="lot-title">Samsung Galaxy S 24 Ultra, ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
-                                            <div class="elonNarh">2 000 000 Uzs</div>
-                                        </div>
-                                        <div class="like-button-container">
-                                            <button class="like-button">
-                                                <!-- <i class="heart-icon heart-icon"></i> -->
-                                                <i class="icon-heart likeicon"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <div class="item-elon">
-                                <div class="infobagde df">
-                                    <div class="vipbadge">
-                                        <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
-                                            viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
-                                            <g>
-                                                <path
-                                                    d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                                    fill="#ffe32d"></path>
-                                                <path
-                                                    d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                                    fill="#ffad49"></path>
-                                                <path
-                                                    d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                                    fill="#ffad49"></path>
-                                                <path
-                                                    d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                                    fill="#ed7756"></path>
-                                                <path
-                                                    d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                                    fill="#ffe32d"></path>
-                                                <path
-                                                    d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                                    fill="#ffad49"></path>
-                                            </g>
-                                        </svg>
-                                    </div>
-
-                                    <div class="korildibadge">Ko'rildi</div>
-                                </div>
-                                <a href="{{ route('details') }}" class="elonimglink adtofavdouble lot-image-vipelon">
-                                    <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
-                                        class="lot-image lazy" alt="Damas">
-                                </a>
-                                <div class="lot-nav df">
-                                    <div class="user-img-box">
-                                        <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
-                                            class="seller-avatar">
-                                        <span class="status-user user-online"></span>
+                                        <div class="user__lasttime"></div>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
