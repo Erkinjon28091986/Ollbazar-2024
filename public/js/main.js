@@ -1,3 +1,30 @@
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var itemHeadElement = document.querySelector('.itemhead');
+    var pins__carausel = document.querySelector('.pins__carausel');
+
+    function updateIthrClass() {
+        var itemHeadTop = itemHeadElement.getBoundingClientRect().top;
+
+        if (itemHeadTop <= 0) {
+            pins__carausel.classList.add('pins__carausel__hide');
+        } else {
+            pins__carausel.classList.remove('pins__carausel__hide');
+        }
+    }
+
+    // Вызов функции при загрузке страницы
+    updateIthrClass();
+
+    // Добавление обработчика события прокрутки
+    window.onscroll = updateIthrClass;
+});
+
+
+
+
+
 $(".closelocation").on("click", function (event) {
     $(".jcaic, .locadress").fadeOut();
     setTimeout(function () {
@@ -85,7 +112,7 @@ skeletons.forEach((skeleton) => {
 //     var ithlElement = document.querySelector('.ithl');
 //     var lyutrboxElement = document.querySelector('.lyutrbox');
 //     var lyutr = document.querySelector('.lyutr');
- 
+
 
 //     window.addEventListener('scroll', function () {
 //         var ithlTop = ithlElement.getBoundingClientRect().top;
@@ -102,7 +129,7 @@ skeletons.forEach((skeleton) => {
 // });
 
 
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
     var ithlElement = document.querySelector('.ithl');
     var lyutrboxElement = document.querySelector('.lyutrbox');
@@ -117,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
             lyutrboxElement.classList.add('scrolled');
             lyutr.classList.add('scrolled2');
 
-            // Добавляем задержку в 2 секунды перед изменением размера шрифта
             timeoutId = setTimeout(function () {
                 itemNameElement.style.fontSize = '20px';
             }, 900);
@@ -126,13 +152,12 @@ document.addEventListener('DOMContentLoaded', function () {
             lyutrboxElement.classList.remove('scrolled');
             lyutr.classList.remove('scrolled2');
 
-            // Удаляем задержку и возвращаем размер шрифта к исходному
             clearTimeout(timeoutId);
-            itemNameElement.style.fontSize = ''; // Вернуть к исходному значению
+            itemNameElement.style.fontSize = ''; 
         }
     });
 });
-
+*/
 
 
 
@@ -142,7 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var itemMoreInfo = document.querySelector('.itemmoreinfo');
     var moreInfoText = itemMoreInfo.querySelector('.moreinfo-text');
 
-    // Проверяем высоту текста и показываем или скрываем кнопку
     if (moreInfoText.scrollHeight > 300) {
         toggleButtonBox.style.display = 'block';
     } else {
@@ -163,12 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
-
 // categories carousel
-
 const swiper22 = new Swiper('.swiper22', {
     freeMode: true,
     slidesPerView: 'auto',
@@ -179,6 +198,16 @@ const swiper__pins = new Swiper('.swiper__pins', {
     freeMode: true,
     slidesPerView: 'auto',
     spaceBetween: 5,
+});
+
+const swiper__similar = new Swiper('.swiper__similar', {
+    freeMode: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.c-carousel__button--next',
+        prevEl: '.c-carousel__button--prev',
+    },
 });
 
 const swiper__item = new Swiper('.swiper__item', {
@@ -195,24 +224,7 @@ const swiper__item = new Swiper('.swiper__item', {
     },
 });
 
-// const swiper__item = new Swiper('.swiper__item', {
-//     slideToClickedSlide: true,
-//     slidePerView: "auto",
-//     freeMode: {
-//       enabled: true,
-//       sticky: false,
-//       momentumBounce: false,
-//     },
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//       draggable: true,
-//       dragSize: 100,
-//     },
-//     mousewheel: {
-//       enabled: true,
-//       sensitivity: 4,
-//     },
-//   });
+
 
 const swipermap = new Swiper('.swipermap', {
     freeMode: true,
@@ -235,9 +247,7 @@ const swiper33 = new Swiper('.swiper33', {
         nextSlideMessage: 'Next slide',
     },
     autoplay: {
-        delay: 13000,
-    },
-    autoplay: {
+        delay: 1300,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
@@ -303,7 +313,7 @@ $(document).ready(function () {
     $('.elonberish').removeClass('elonberishbg');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
-            stickyDiv.classList.add('stickyde');
+            //stickyDiv.classList.add('stickyde');
             $('.nav__wrap').addClass('navwrap2');
             $('.navitems').addClass('navitems2');
             $('.current__language').addClass('navitems2');
@@ -314,7 +324,7 @@ $(document).ready(function () {
             // Сохранение состояния в localStorage
             localStorage.setItem('isScrolled', 'true');
         } else {
-            stickyDiv.classList.remove('stickyde');
+            //stickyDiv.classList.remove('stickyde');
             $('.nav__wrap').removeClass('navwrap2');
             $('.navitems').removeClass('navitems2');
             $('.current__language').removeClass('navitems2');
@@ -328,7 +338,7 @@ $(document).ready(function () {
     });
     $(document).ready(function () {
         if (localStorage.getItem('isScrolled') === 'true') {
-            stickyDiv.classList.add('stickyde');
+            //stickyDiv.classList.add('stickyde');
             $('.nav__wrap').addClass('navwrap2');
             $('.navitems').addClass('navitems2');
             $('.current__language').addClass('navitems2');
@@ -782,3 +792,32 @@ $('.closesearchpopup').click(function () {
         $('.searchpopup').removeClass('show');
     }, 600);
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var userbox = document.querySelector('.userbox');
+
+    function updateUserboxShadow() {
+        var userboxBottom = userbox.getBoundingClientRect().bottom;
+        var viewportHeight = window.innerHeight;
+
+        if (userboxBottom >= viewportHeight) {
+            userbox.classList.add('sticky-shadow');
+        } else {
+            userbox.classList.remove('sticky-shadow');
+        }
+    }
+
+    updateUserboxShadow();
+    window.addEventListener('scroll', updateUserboxShadow);
+    window.addEventListener('resize', updateUserboxShadow);
+});
+
+
+
+
+
+
+
+
+

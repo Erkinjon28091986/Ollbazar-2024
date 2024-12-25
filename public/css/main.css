@@ -1271,6 +1271,7 @@ header {
 }
 .asosiycontent .swipercontrolbox .htitle {
   font-weight: bold;
+  font-size: 17px;
 }
 .asosiycontent .u-wrapper {
   margin-top: 79px;
@@ -1473,7 +1474,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #c7c7c7;
+  color: #adadad;
   height: 30px;
 }
 .asosiycontent .c-carousel__button--next {
@@ -1527,7 +1528,7 @@ header {
 .masonry .item-elon {
   position: relative;
   display: inline-block;
-  margin: 20px 0 0 0;
+  margin: 12px 0 0 0;
   width: 100%;
   transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -3044,6 +3045,9 @@ header {
   flex-direction: column;
   border-radius: 10px;
 }
+.searchpopup .search__history .last__user .lubox .cpiyt {
+  text-transform: uppercase;
+}
 .searchpopup .search__history .last__global {
   width: 100%;
   height: -moz-max-content;
@@ -3248,16 +3252,17 @@ header {
 }
 
 .userbox {
-  height: 70px;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
   position: sticky;
-  top: 0;
+  bottom: 0;
+  padding: 16px 0;
   z-index: 88;
-  overflow: hidden;
   background: #f0f0f0;
   transition: all 0.3s ease;
+}
+.userbox.sticky-shadow {
+  box-shadow: 0 -5px 5px -5px rgba(51, 51, 51, 0.25);
 }
 .userbox .leftuserbox {
   padding: 0;
@@ -3266,6 +3271,19 @@ header {
   height: auto;
   transform: translateY(0);
   transition: all 0.3s ease;
+}
+.userbox .leftuserbox .lyutr .useravabox {
+  position: relative;
+  display: flex;
+}
+.userbox .leftuserbox .lyutr .useravabox .user__lasttime {
+  position: absolute;
+  bottom: 0px;
+  right: -3px;
+  width: 12px;
+  height: 12px;
+  background: #999;
+  border-radius: 50%;
 }
 .userbox .leftuserbox .lyutrbox {
   height: 0;
@@ -3299,8 +3317,11 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.userbox .leftuserbox .sellername {
+  color: #444;
+}
 .userbox .leftuserbox .sellername .sellerstatus img {
-  width: 25px;
+  width: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3314,27 +3335,81 @@ header {
   font-size: 14px;
 }
 .userbox .leftuserbox .userinn .sellername {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.userbox .leftuserbox .userinn .sellername a {
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus {
+  margin-left: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus:hover .showloyalbox {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  transition: all ease 0.3s;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus .showloyalbox {
+  position: absolute;
+  top: -186px;
+  left: -61px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  opacity: 0;
+  transform: scale(0.93);
+  visibility: hidden;
+  transition: all ease 0.3s;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus .showloyalbox img {
+  width: 70px;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus .showloyalbox .loyaltitle {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus .showloyalbox .loyalsubtitle {
+  font-size: 15px;
+  color: #979797;
+}
+.userbox .leftuserbox .userinn .sellername .sellerstatus .showloyalbox .loyalbtn {
+  padding: 10px 15px;
+  background: #528cdc;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-size: 16px;
 }
 .userbox .rightserbox .sellermsg {
-  padding: 10px 10px;
+  padding: 15px 20px;
   background: #979797;
   border-radius: 5px;
   color: #fff;
+  font-size: 20px;
 }
 .userbox .rightserbox .sellerphone {
-  padding: 10px 10px;
+  padding: 15px 20px;
   background: #5c90dc;
   border-radius: 5px;
   color: #fff;
   margin-left: 7px;
-}
-.userbox .rightserbox .closeitem {
-  padding: 10px 10px;
-  background: #b5b6b7;
-  border-radius: 5px;
-  color: #fff;
-  margin-left: 7px;
+  font-size: 20px;
 }
 
 .itemmoreinfo::first-letter {
@@ -3377,9 +3452,28 @@ header {
   margin-right: 4px;
 }
 
+.item__images {
+  position: relative;
+}
+.item__images .closeitem {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  padding: 10px 10px;
+  background: rgba(79, 78, 78, 0.45);
+  border-radius: 5px;
+  color: #d1d1d1;
+  margin-left: 7px;
+  z-index: 99;
+}
+
 .itemhead {
+  position: sticky;
+  background: #f0f0f0;
   align-items: center;
   justify-content: space-between;
+  top: 0;
+  z-index: 99;
 }
 .itemhead .ithl .pins__carausel {
   margin-top: 10px;
@@ -3486,14 +3580,16 @@ header {
 
 .itemmoreinfo {
   position: relative;
-  max-height: 300px; /* Изначально показываем до 300 пикселей текста */
+  max-height: 300px;
+  /* Изначально показываем до 300 пикселей текста */
   overflow: hidden;
   padding-bottom: 30px;
   transition: max-height 0.3s ease;
 }
 
 .itemmoreinfo.expanded {
-  max-height: none; /* Убираем ограничение высоты при разворачивании */
+  max-height: none;
+  /* Убираем ограничение высоты при разворачивании */
 }
 
 .toggle-button-box {
@@ -3562,4 +3658,234 @@ header {
 .floating-heart:nth-child(2) {
   left: 7px;
   animation-delay: 0.3s;
+}
+
+.similarbox {
+  margin-bottom: 15px;
+}
+.similarbox .item-elon {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 200px;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+  transition: all ease 0.3s;
+}
+.similarbox .item-elon.visible {
+  opacity: 1;
+}
+.similarbox .item-elon:hover {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.11);
+  background: #f4f4f4;
+  transition: all ease 0.3s;
+}
+.similarbox .item-elon .infobagde {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  flex-direction: column;
+  z-index: 1;
+}
+.similarbox .item-elon .infobagde .vipbadge {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.71);
+  justify-content: center;
+  border-radius: 10px;
+  color: #686867;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+.similarbox .item-elon .infobagde .vipbadge svg {
+  width: 25px;
+  height: 25px;
+}
+.similarbox .item-elon .infobagde .flashbadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: rgba(247, 247, 247, 0.87);
+  color: #13b84d;
+  border-radius: 5px;
+}
+.similarbox .item-elon .infobagde .flashbadge svg {
+  width: 25px;
+  height: 25px;
+}
+.similarbox .item-elon .infobagde .korildibadge {
+  background: rgba(89, 89, 90, 0.67);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #d6d1d1;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.similarbox .item-elon .elonimglink {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.similarbox .item-elon .lot-image {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-height: 180px;
+  max-height: 600px;
+  max-width: 100%;
+  transition: all ease 0.3s;
+  z-index: 1;
+}
+.similarbox .item-elon .lot-image-vipelon {
+  border: 2px solid #ffc107;
+  transition: all ease 0.3s;
+}
+.similarbox .item-elon .lot-image-flashelon {
+  transition: all ease 0.3s;
+  border: 2px solid #2be043;
+}
+.similarbox .item-elon .lot-nav {
+  padding: 8px 8px 6px 8px;
+}
+.similarbox .item-elon .lot-nav .user-img-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 0px 1px #a7a7a7;
+}
+.similarbox .item-elon .lot-nav .elonfoot {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 3px;
+}
+.similarbox .item-elon .lot-nav .elonfoot .lot-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #5f5f5f;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.similarbox .item-elon .lot-nav .elonfoot .elonNarh {
+  font-size: 17px;
+  color: #858383;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.similarbox .item-elon .lot-nav .elonfoot a {
+  color: #bcbcbc;
+}
+.similarbox .item-elon .lot-nav .elonfoot .addtolovelist {
+  position: relative;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.similarbox .item-elon .lot-nav .elonfoot .addtolovelist .favorite__added {
+  color: red;
+}
+.similarbox .item-elon .lot-nav .elonfoot .user-img-box {
+  position: relative;
+}
+.similarbox .item-elon .lot-nav .elonfoot .user-img-box .status-user {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  right: 12px;
+  border-radius: 50%;
+}
+.similarbox .item-elon .lot-nav .elonfoot .user-img-box .user-online {
+  background: #1a9522;
+}
+.similarbox .item-elon .lot-nav .elonfoot .user-img-box .user-offline {
+  background: #8e8e8e;
+}
+.similarbox .item-elon .lot-nav .elonfoot .like-button-container {
+  align-self: flex-start;
+  margin-top: 7px;
+}
+.similarbox .item-elon .lot-nav .elonfoot .like-button-container .like-button .likeicon {
+  font-size: 18px;
+}
+.similarbox .item-elon .lot-nav .elonfoot .like-button-container .floating-heart {
+  position: absolute;
+  font-size: 16px;
+  color: red;
+  animation: floatUp 1s ease forwards;
+  left: 1px;
+  margin-right: -50%;
+  transform: translateX(-50%, -50%);
+  top: 0px;
+  z-index: 77;
+}
+.similarbox .item-elon .lot-nav .elonfoot .like-button-container .floating-heart:nth-child(2) {
+  left: 1px;
+  animation-delay: 0.3s;
+}
+.similarbox .htitlebox {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.similarbox .htitlebox .htitle {
+  font-size: 17px;
+  font-weight: bold;
+  color: #555;
+}
+.similarbox .htitlebox .c-carousel__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #adadad;
+  height: 30px;
+}
+.similarbox .htitlebox .c-carousel__button--next {
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+}
+.similarbox .htitlebox .c-carousel__button--prev {
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.similarbox .htitlebox .c-carousel__button--prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.pins__carausel__hide {
+  height: 0;
+  opacity: 0;
 }

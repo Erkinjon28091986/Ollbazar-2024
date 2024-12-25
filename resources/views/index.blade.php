@@ -401,15 +401,11 @@
                                     <p class="vipadprice">23 000 000 <span class="currents">Uzs</span></p>
                                     <div class="hidefoot df faveffect__parent " data-item-id="unique-id-1">
                                         <div class="regelon"><i class="fa-solid fa-location-dot"></i> Andijon</div>
-                                        <a href="javascript:void(0)" class="addtolovelist">
-                                            <i class="fa-solid fa-heart favoicon"></i>
-                                            <span class="favoicon__show">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                            <span class="favoicon__show2">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
+                                        <div class="like-button-container">
+                                            <button class="like-button">
+                                                <i class="icon-heart likeicon"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -451,15 +447,11 @@
                                     <p class="vipadprice">98 000 <span class="currents">Uzs</span></p>
                                     <div class="hidefoot df faveffect__parent" data-item-id="unique-id-2">
                                         <div class="regelon"><i class="fa-solid fa-location-dot"></i> Andijon</div>
-                                        <a href="javascript:void(0)" class="addtolovelist">
-                                            <i class="fa-solid fa-heart favoicon"></i>
-                                            <span class="favoicon__show">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                            <span class="favoicon__show2">
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
+                                        <div class="like-button-container">
+                                            <button class="like-button">
+                                                <i class="icon-heart likeicon"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -756,7 +748,7 @@
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="{{ route('details') }}" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
                             class="lot-image lazy" alt="Damas">
                     </a>
                     <div class="lot-nav df">
@@ -766,7 +758,7 @@
                         </div>
                         <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                             <div>
-                                <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                <div class="lot-title">Samsung Galaxy S 24 Ultra, ipsum dolor sit amet consectetur adipisicing elit.
                                     Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
                                 <div class="elonNarh">2 000 000 Uzs</div>
                             </div>
@@ -812,7 +804,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -846,7 +838,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -934,7 +926,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -1019,7 +1011,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1052,7 +1044,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1086,7 +1078,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1172,7 +1164,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1206,7 +1198,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -1293,7 +1285,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -1358,7 +1350,7 @@
                     </div>
                     <a href="" class="elonimglink">
                         <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
+                            data-src="https://i.postimg.cc/CLbnP8D5/kugo.jpg"
                             class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
@@ -1383,7 +1375,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1418,7 +1410,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1453,7 +1445,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1518,7 +1510,7 @@
                     </div>
                     <a href="" class="elonimglink">
                         <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
+                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg"
                             class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
@@ -1544,7 +1536,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1578,7 +1570,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -1668,7 +1660,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -1733,7 +1725,7 @@
                     </div>
                     <a href="" class="elonimglink">
                         <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://jahonbozor.uz/storage/19920/6702563e79449_1000054145.jpg"
+                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg"
                             class="lot-image lazy">
                     </a>
                     <div class="lot-nav df">
@@ -1759,7 +1751,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1794,7 +1786,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1825,7 +1817,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1857,7 +1849,7 @@
                         <div class="korildibadge">Ko'rildi</div>
                     </div>
                     <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
                             class="lot-image lazy" alt="Damas">
                     </a>
                     <div class="lot-nav df">
@@ -1914,7 +1906,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -1948,7 +1940,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -2036,7 +2028,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon ">
@@ -2125,7 +2117,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
                 <div class="item-elon">
@@ -2159,7 +2151,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="https://jahonbozor.uz/elondetail/106011" id="elon-id" class="overlay-elon-items"></a>
+                        <a href="" id="elon-id" class="overlay-elon-items"></a>
                     </div>
                 </div>
 
