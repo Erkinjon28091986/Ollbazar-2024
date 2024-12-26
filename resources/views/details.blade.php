@@ -570,7 +570,12 @@
                     </div>
                 </div>
             </div>
+            <hr class="hdivider" style="margin: 0 0 10px 0">
+        <div class="footpanel df">
+            <a href="" class="report__item"> <i class="icon-flag-filled"></i> Shikoyat</a>
         </div>
+        </div>
+        
     </main>
 
     <div class="main__overlay"></div>
@@ -587,7 +592,7 @@
                                 <div class="naut-inner df fdc">
                                     <div class="nautin df">
                                         <a href="tel:+998121234567" id="telop">998 12 123 45 67</a>
-                                        <a href="javascript:void(0)" tooltip="Nusxa olish" flow="up" class="copytel"><i
+                                        <a href="javascript:void(0)" id="infoClick" tooltip="Nusxa olish" flow="up" class="copytel"><i
                                                 class="icon-copy-2"></i></a>
                                     </div>
                                     <div class="listwt df">
@@ -606,11 +611,9 @@
                         </div>
                         <img src="https://i.postimg.cc/DzDjfv8r/calling.png" alt="" class="showtelimg">
                     </div>
-                    <hr class="hdivider">
                     <div class="showtelnote">
                         Telefon raqamni <strong>Hanbazar</strong> dan olganingizni ayting.
                     </div>
-                    <hr class="hdivider">
                     <div class="telshowed df">
                         <p>Ko'rildi: <span>4</span></p>
                         <button class="yopmodal" data-bs-dismiss="modal">Yopish</button>

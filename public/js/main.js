@@ -907,7 +907,7 @@ iziToast.settings({
 
   // info
   $('#infoClick').click(function () {
-    iziToast.info({position: "center", title: 'Hello', message: 'iziToast.info()'});
+    iziToast.info({position: "bottomRight", title: 'Nusha', message: 'olindi!'});
   }); // ! click
 
   // success
@@ -950,7 +950,7 @@ iziToast.settings({
       ]
     });
 
-  }); // ! .click()
+  }); 
 
 $('#any').click(function(){
 iziToast.error({

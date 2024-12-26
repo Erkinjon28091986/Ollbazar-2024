@@ -3707,7 +3707,7 @@ header {
 }
 
 .similarbox {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 .similarbox .item-elon {
   position: relative;
@@ -4242,13 +4242,23 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
   margin: 2px;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc:first-child {
-  margin: 0;
+  margin: 0 2px 0 0;
+}
+.custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc:first-child img {
+  border-radius: 0 5px 5px 5px;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc img {
   width: 20px;
   height: 18px;
   display: flex;
-  border-radius: 1px;
+  border-radius: 5px 5px 5px 5px;
+}
+.custommodals .custombody .showtelnote {
+  background: #e8e8e8;
+  padding: 10px;
+  border-radius: 10px;
+  color: #555;
+  margin: 10px 0;
 }
 .custommodals .custombody .telshowed {
   display: flex;
@@ -4263,4 +4273,16 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 14px;
+}
+
+.footpanel {
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.footpanel a {
+  padding: 5px 10px;
+  background: rgba(136, 136, 136, 0.489);
+  color: #666464;
+  border-radius: 5px;
 }

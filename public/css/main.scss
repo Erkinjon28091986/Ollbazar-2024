@@ -4408,7 +4408,7 @@ header {
 }
 
 .similarbox {
-    margin-bottom: 15px;
+    margin-bottom: 0;
 
     .item-elon {
         position: relative;
@@ -4992,14 +4992,20 @@ button.toastYoq.iziToast-buttons-child.revealIn {
                             .tosoc {
                                 margin: 2px;
                                 &:first-child{
-                                    margin: 0;
+                                    margin: 0 2px 0 0;
+                                    img {
+                                        
+                                        border-radius: 0 5px 5px 5px;
+                                       
+                                    }
                                 }
 
                                 img {
                                     width: 20px;
                                     height: 18px;
                                     display: flex;
-                                    border-radius: 1px;
+                                    border-radius: 5px 5px 5px 5px;
+                                    
                                 }
                             }
                         }
@@ -5007,6 +5013,13 @@ button.toastYoq.iziToast-buttons-child.revealIn {
 
                 }
             }
+        }
+        .showtelnote {
+            background: #e8e8e8;
+            padding: 10px;
+            border-radius: 10px;
+            color: #555;
+            margin: 10px 0;
         }
 
         .telshowed {
@@ -5024,5 +5037,16 @@ button.toastYoq.iziToast-buttons-child.revealIn {
                 font-size: 14px;
             }
         }
+    }
+}
+.footpanel{
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    a{
+        padding: 5px 10px;
+        background: rgba(136, 136, 136, 0.489);
+        color: #666464;
+        border-radius: 5px;
     }
 }
