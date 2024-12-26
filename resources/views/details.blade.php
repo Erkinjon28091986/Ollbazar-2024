@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.11.1/css/flag-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/izitoast/dist/css/iziToast.min.css">
     <link href="css/hanbazar-icons.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
@@ -105,7 +106,8 @@
                     </div>
                 </div>
                 <div class="botrebox df">
-                    <a href="" class="hideitem csew" tooltip="Boshqa ko'rsatmaslik" flow="left">
+                    <a href="javascript:void(0)" class="hideitem csew" id="customClick" tooltip="Boshqa ko'rsatmaslik"
+                        flow="left">
                         <i class="icon-ban"></i>
                     </a>
                     <a href="" class="sharebox csew" tooltip="Ulashish" flow="left">
@@ -198,11 +200,14 @@
                                 <div class="sellerstatus">
                                     <img src="https://i.postimg.cc/cL2b71bR/goldbadge.webp" alt="">
                                     <div class="showloyalbox">
-                                        <img src="https://i.postimg.cc/cL2b71bR/goldbadge.webp" alt="">
-                                        <hr class="hdivider" style="margin: 0 0 8px 0">
-                                        <p class="loyaltitle">Yangi</p>
-                                        <p class="loyalsubtitle">Sodiqlik ko'rsatkichi</p>
-                                        <a href="" class="loyalbtn">Haqida</a>
+                                        <div class="range-container stsishonch">
+                                            <img id="rangeImage" src="https://i.postimg.cc/zDWy0FhV/gift-001.png"
+                                                alt="Basic Image" />
+                                            <output id="rangeValue">Yangi - 1</output>
+                                            <input type="range" class="custom-range" id="customRange" min="0" max="100"
+                                                step="1" value="0">
+                                            <div id="outsubtext">11111</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +218,8 @@
                 </div>
                 <div class="rightserbox df">
                     <a href="" class="sellermsg"> <i class="icon-chat33"></i></a>
-                    <a href="javascript:void(0)" class="sellerphone"><i class="icon-callw"></i>Show number</a>
+                    <a href="javascript:void(0)" class="sellerphone" data-bs-toggle="modal"
+                        data-bs-target="#showtelnumModal"><i class="icon-callw"></i>Show number</a>
                 </div>
             </div>
             <hr class="hdivider" style="margin-top: 0">
@@ -570,86 +576,46 @@
     <div class="main__overlay"></div>
 
     <!-- Modal -->
-    <div class="modal fade sheetmodal" id="ElonBerishBolimlariModal" tabindex="-1" aria-labelledby="sheetModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="showtelnumModal" tabindex="-1" aria-labelledby="sheetModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custommodals">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Marhamat bo'limni tanlang</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="sheetmodal__categories">
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="javascript:void(0)" class="cat__item btn-ripple" tabindex="0">
-                                <img class="avtoicon" src="https://i.postimg.cc/tC85Wvd6/spark.png" alt="avtomobil">
-                                <span>Avtomobil</span>
-                            </a>
+                <div class="modal-body custombody df fdc">
+                    <div class="telyox df">
+                        <div class="telbox">
+                            <p class="jpew">Sotuvchi telefon raqami</p>
+                            <div class="naut">
+                                <div class="naut-inner df fdc">
+                                    <div class="nautin df">
+                                        <a href="tel:+998121234567" id="telop">998 12 123 45 67</a>
+                                        <a href="javascript:void(0)" tooltip="Nusxa olish" flow="up" class="copytel"><i
+                                                class="icon-copy-2"></i></a>
+                                    </div>
+                                    <div class="listwt df">
+                                       <a href="" class="tosoc">
+                                        <img src="img\telegram.webp" alt="">
+                                       </a>
+                                       <a href="" class="tosoc">
+                                        <img src="img\viber.webp" alt="">
+                                       </a>
+                                       <a href="" class="tosoc">
+                                        <img src="img\whatsapp.webp" alt="">
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="" class="cat__item btn-ripple">
-                                <img class="uyjoyicon" src="https://i.postimg.cc/7LKmR3JM/uyjoy2.png" alt="uyjoy">
-                                <span>Uy-joy</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="" class="cat__item btn-ripple">
-                                <img class="ishboricon" src="https://i.postimg.cc/W1My5q7X/ishbor.png" alt="ishbor">
-                                <span>Ish Bor</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="" class="cat__item btn-ripple">
-                                <img class="telefonicon" src="https://i.postimg.cc/jSPjvc9m/telefon5.png" alt="Telefon">
-                                <span>Telefon va aksesuarlar</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="#" class="cat__item btn-ripple" tabindex="0">
-                                <img class="tehnikaicon" src="https://i.postimg.cc/zGF47Rz8/texnika-1.png"
-                                    alt="Tehnika">
-                                <span>Texnika</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="#" class="cat__item btn-ripple">
-                                <img class="hizmaticon" src="https://i.postimg.cc/J44T8dMV/hizmaticon.png"
-                                    alt="hizmatkorsatish">
-                                <span>Hizmatlar</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="" class="cat__item btn-ripple">
-                                <img class="ishboricon" src="https://i.postimg.cc/W1My5q7X/ishbor.png" alt="ishbor">
-                                <span>Ish Bor</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="" class="cat__item btn-ripple">
-                                <img class="telefonicon" src="https://i.postimg.cc/jSPjvc9m/telefon5.png" alt="Telefon">
-                                <span>Telefon</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="#" class="cat__item btn-ripple" tabindex="0">
-                                <img class="tehnikaicon" src="https://i.postimg.cc/zGF47Rz8/texnika-1.png"
-                                    alt="Tehnika">
-                                <span>Texnika</span>
-                            </a>
-                        </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="#" class="cat__item btn-ripple">
-                                <img class="hizmaticon" src="https://i.postimg.cc/J44T8dMV/hizmaticon.png"
-                                    alt="hizmatkorsatish">
-                                <span>Hizmatlar</span>
-                            </a>
-                        </div>
+                        <img src="https://i.postimg.cc/DzDjfv8r/calling.png" alt="" class="showtelimg">
+                    </div>
+                    <hr class="hdivider">
+                    <div class="showtelnote">
+                        Telefon raqamni <strong>Hanbazar</strong> dan olganingizni ayting.
+                    </div>
+                    <hr class="hdivider">
+                    <div class="telshowed df">
+                        <p>Ko'rildi: <span>4</span></p>
+                        <button class="yopmodal" data-bs-dismiss="modal">Yopish</button>
                     </div>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -985,6 +951,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/izitoast/dist/js/iziToast.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

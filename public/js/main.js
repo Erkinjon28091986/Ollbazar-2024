@@ -1,3 +1,72 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var rangeContainer = document.querySelector('.range-container');
+    var rangeInput = document.getElementById('customRange');
+    var rangeValue = document.getElementById('rangeValue');
+    var rangeImage = document.getElementById('rangeImage');
+    var subText = document.getElementById('outsubtext');
+  
+    function updateSliderPosition() {
+        if (rangeContainer.classList.contains('stsyangi')) {
+            rangeInput.value = 32.33;
+        } else if (rangeContainer.classList.contains('stsusta')) {
+            rangeInput.value = 65.33;
+          } else if (rangeContainer.classList.contains('stsishonch')) {
+            rangeInput.value = 100;
+        } else {
+            rangeInput.value = 0;
+        }
+        updateSlider();
+    }
+
+    function updateSlider() {
+        var value = rangeInput.value;
+        var text;
+        var subText2;
+        var imageUrl;
+        var color1, color2, color3;
+        var thumbColor;
+
+        if (value < 32.33) {
+            text = 'Yangi sotuvchi';
+            subText2 = 'Yangi a`zo bol`gan. E`lonlari soni ortib bormoqda';
+            imageUrl = 'https://i.postimg.cc/7hzfv605/silver-badge.png';
+            color1 = '#5e5959';
+            color2 = '#5e5959';
+            color3 = '#999';
+            thumbColor = '#413d3d';
+        } else if (value < 65.33) {
+            text = 'Ishonchli';
+            subText2 = 'Ushbu sotuvchining e`lonlari soni 100tadan ko`p.';
+            imageUrl = 'https://i.postimg.cc/j5mLkNwV/bronza-badge.png';
+            color1 = '#999';
+            color2 = '#c77808';
+            color3 = '#999';
+            thumbColor = '#fe5513';
+        } else {
+            text = 'Ommamop';
+            subText2 = 'Eng ko`p haridorlarga ega va 200 dan ortiq e`lonlari mavjud.';
+            imageUrl = ' https://i.postimg.cc/dQZ7ZWpJ/gold-badge.png';
+            color1 = '#999';
+            color2 = '#999';
+            color3 = '#e3b500';
+            thumbColor = '#e3b500';
+        }
+
+        rangeValue.textContent = text;
+        subText.textContent = subText2;
+        rangeImage.src = imageUrl;
+        rangeImage.alt = text + ' Image';
+        rangeInput.style.setProperty('--thumb-color', thumbColor);
+
+        document.documentElement.style.setProperty('--color1', color1);
+        document.documentElement.style.setProperty('--color2', color2);
+        document.documentElement.style.setProperty('--color3', color3);
+    }
+
+    rangeInput.addEventListener('input', updateSlider);
+
+    updateSliderPosition(); 
+});
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -819,7 +888,76 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//--------------Izi TOAST--------------------------
+iziToast.settings({
+    timeout: 3000, // default timeout
+    resetOnHover: true,
+    // icon: '', // icon class
+    transitionIn: 'flipInX1',
+    transitionOut: 'flipOutX1',
+    position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+    onOpen: function () {
+      
+    },
+    onClose: function () {
+      
+    }
+  });
 
+
+  // info
+  $('#infoClick').click(function () {
+    iziToast.info({position: "center", title: 'Hello', message: 'iziToast.info()'});
+  }); // ! click
+
+  // success
+  $('#successClick').click(function () {
+    iziToast.success({timeout: 5000, icon: 'fa fa-chrome', title: 'OK', message: 'iziToast.sucess() with custom icon!'});
+  }); // ! .click
+
+  // warning
+  $('#warningClick').click(function () {
+    iziToast.warning({position: "bottomLeft", title: 'Caution', message: '日本語環境のテスト'});
+  });
+
+  // error
+  $('#errorClick').click(function () {
+    iziToast.error({title: 'Error', message: 'Illegal operation'});
+  });
+
+  // custom toast
+  $('#customClick').click(function () {
+
+    iziToast.show({
+      color: 'dark',
+      icon: 'fas fa-exclamation-circle',  
+      title: 'E`lon',
+      message: 'boshqa ko`rsatilmaydi!',
+      position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+      progressBarColor: 'rgb(0, 136, 255)',
+      buttons: [
+        [
+          '<button class="toastHa">Yaxshi</button>',
+        ],
+        [
+          '<button class="toastYoq">Bekor qilish</button>',
+          function (instance, toast) {
+            instance.hide({
+              transitionOut: 'fadeOutUp'
+            }, toast);
+          }
+        ]
+      ]
+    });
+
+  }); // ! .click()
+
+$('#any').click(function(){
+iziToast.error({
+  title: 'Errorカラー',
+  message: 'iziToast.error()'
+});
+});
 
 
 
