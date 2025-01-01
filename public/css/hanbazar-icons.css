@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'hanbazar-icons'; 
-  src: url('font/hanbazar-icons.eot?38676539');
-  src: url('font/hanbazar-icons.eot?38676539#iefix') format('embedded-opentype'),
-       url('font/hanbazar-icons.woff2?38676539') format('woff2'),
-       url('font/hanbazar-icons.woff?38676539') format('woff'),
-       url('font/hanbazar-icons.ttf?38676539') format('truetype'),
-       url('font/hanbazar-icons.svg?38676539#hanbazar-icons') format('svg');
+  font-family: 'hanbazar-icons';
+  src: url('font/hanbazar-icons.eot?80312889');
+  src: url('font/hanbazar-icons.eot?80312889#iefix') format('embedded-opentype'),
+       url('font/hanbazar-icons.woff2?80312889') format('woff2'),
+       url('font/hanbazar-icons.woff?80312889') format('woff'),
+       url('font/hanbazar-icons.ttf?80312889') format('truetype'),
+       url('font/hanbazar-icons.svg?80312889#hanbazar-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'hanbazar-icons';
-    src: url('../font/hanbazar-icons.svg?38676539#hanbazar-icons') format('svg');
+    src: url('../font/hanbazar-icons.svg?80312889#hanbazar-icons') format('svg');
   }
 }
 */
@@ -283,6 +283,28 @@
 .icon-emailee:before { content: '\e8e2'; } /* '' */
 .icon-notificationqa:before { content: '\e8e3'; } /* '' */
 .icon-notificationww:before { content: '\e8e4'; } /* '' */
+.icon-stars:before { content: '\e8e5'; } /* '' */
+.icon-stars3:before { content: '\e8e6'; } /* '' */
+.icon-working-hours:before { content: '\e8e7'; } /* '' */
+.icon-24-7:before { content: '\e8e8'; } /* '' */
+.icon-celebration:before { content: '\e8e9'; } /* '' */
+.icon-confetti:before { content: '\e8ea'; } /* '' */
+.icon-clock:before { content: '\e8eb'; } /* '' */
+.icon-confettid1:before { content: '\e8ec'; } /* '' */
+.icon-confettiww:before { content: '\e8ed'; } /* '' */
+.icon-decrease:before { content: '\e8ee'; } /* '' */
+.icon-decrease22:before { content: '\e8ef'; } /* '' */
+.icon-down-arrosw:before { content: '\e8f0'; } /* '' */
+.icon-confettiwe:before { content: '\e8f1'; } /* '' */
+.icon-down-left-arrow:before { content: '\e8f2'; } /* '' */
+.icon-hour:before { content: '\e8f3'; } /* '' */
+.icon-party:before { content: '\e8f4'; } /* '' */
+.icon-sparkle3:before { content: '\e8f5'; } /* '' */
+.icon-sparkles:before { content: '\e8f6'; } /* '' */
+.icon-open:before { content: '\e8f7'; } /* '' */
+.icon-flag23:before { content: '\e8f8'; } /* '' */
+.icon-sparkle:before { content: '\e8f9'; } /* '' */
+.icon-24-hour:before { content: '\e8fa'; } /* '' */
 .icon-retweet:before { content: '\f02b'; } /* '' */
 .icon-ok-circled:before { content: '\f06d'; } /* '' */
 .icon-cancel-circled:before { content: '\f06e'; } /* '' */
@@ -291,6 +313,7 @@
 .icon-circle:before { content: '\f111'; } /* '' */
 .icon-link-ext-alt:before { content: '\f14c'; } /* '' */
 .icon-sliders:before { content: '\f1de'; } /* '' */
+.icon-share-1:before { content: '\f1e0'; } /* '' */
 .icon-window-maximize:before { content: '\f2d0'; } /* '' */
 .icon-window-minimize:before { content: '\f2d1'; } /* '' */
 .icon-window-restore:before { content: '\f2d2'; } /* '' */

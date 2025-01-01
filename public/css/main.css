@@ -1631,7 +1631,6 @@ header {
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
-  margin-right: 10px;
   border: 2px solid #ffffff;
   box-shadow: 0px 0px 0px 1px #a7a7a7;
 }
@@ -1640,6 +1639,7 @@ header {
   justify-content: space-between;
   width: 100%;
   padding-right: 3px;
+  margin-left: 8px;
 }
 .masonry .item-elon .lot-nav .elonfoot .lot-title {
   font-size: 16px;
@@ -2707,7 +2707,6 @@ header {
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
-  margin-right: 10px;
   border: 2px solid #ffffff;
   box-shadow: 0px 0px 0px 1px #a7a7a7;
 }
@@ -2716,6 +2715,7 @@ header {
   justify-content: space-between;
   width: 100%;
   padding-right: 3px;
+  margin-left: 8px;
 }
 .mapads__item .item-elon .lot-nav .elonfoot .lot-title {
   font-size: 16px;
@@ -3047,6 +3047,27 @@ header {
 }
 .searchpopup .search__history .last__user .lubox .cpiyt {
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchpopup .search__history .last__user .lubox .cpiyt .closethis {
+  display: inline-flex;
+  margin: 0 -5px 0 4px;
+  height: 15px;
+  align-items: center;
+  padding-left: 3px;
+  justify-content: center;
+  padding-top: 1px;
+  border-radius: 3px;
+  transition: all ease 0.3s;
+}
+.searchpopup .search__history .last__user .lubox .cpiyt .closethis:hover {
+  background: rgba(79, 78, 78, 0.08);
+  transition: all ease 0.3s;
+}
+.searchpopup .search__history .last__user .lubox .cpiyt .closethis i {
+  font-size: 8px;
 }
 .searchpopup .search__history .last__global {
   width: 100%;
@@ -3220,8 +3241,11 @@ header {
 }
 
 .itemimg {
-  height: 50vh;
+  height: 50vmax;
   border-radius: 10px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper__item {
@@ -3231,7 +3255,7 @@ header {
 
 .name__price .item__price {
   font-size: 20px;
-  color: #555555;
+  color: #8b8a8a;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -3315,9 +3339,11 @@ header {
 .userbox .leftuserbox .useravatar {
   width: 50px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 0px 1px #d1d0d0;
 }
 .userbox .leftuserbox .sellername {
   color: #444;
@@ -3364,6 +3390,7 @@ header {
   padding: 10px 20px;
   background: rgb(255, 255, 255);
   text-align: center;
+  cursor: default;
   border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   opacity: 0;
@@ -3533,10 +3560,14 @@ header {
 }
 .itemhead .ithr .closeitem {
   padding: 10px 10px;
-  background: rgba(79, 78, 78, 0.16);
   border-radius: 5px;
   color: #848383;
   margin-left: 7px;
+  transition: all ease 0.3s;
+}
+.itemhead .ithr .closeitem:hover {
+  background: rgba(79, 78, 78, 0.08);
+  transition: all ease 0.3s;
 }
 .itemhead .ithr .favorite__added {
   color: red;
@@ -3838,7 +3869,7 @@ header {
   justify-content: space-between;
   width: 100%;
   padding-right: 3px;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 .similarbox .item-elon .lot-nav .elonfoot .lot-title {
   font-size: 16px;
@@ -4195,6 +4226,7 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
   }
 }
 .showtelimg {
+  display: none;
   width: 122px;
 }
 
@@ -4207,12 +4239,16 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
   align-items: center;
 }
 .custommodals .custombody .telyox {
+  width: 100%;
   position: relative;
   align-items: center;
   margin-top: 10px;
 }
+.custommodals .custombody .telyox .telbox {
+  width: 100%;
+}
 .custommodals .custombody .telyox .telbox .jpew {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
   color: #555;
@@ -4220,15 +4256,27 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
 .custommodals .custombody .telyox .telbox .naut {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+.custommodals .custombody .telyox .telbox .naut .naut-inner {
+  width: 100%;
+}
+.custommodals .custombody .telyox .telbox .naut .naut-inner .nautin {
+  width: 100%;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .nautin #telop {
   position: relative;
   background: #3781ee;
-  border-radius: 10px 10px 10px 0;
+  border-radius: 10px;
   padding: 10px;
   color: #fff;
+  width: 100%;
+  font-size: 20px;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .nautin .copytel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   background: #999;
   border-radius: 10px;
@@ -4237,15 +4285,13 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .listwt {
   align-items: center;
+  margin-top: 5px;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc {
   margin: 2px;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc:first-child {
   margin: 0 2px 0 0;
-}
-.custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc:first-child img {
-  border-radius: 0 5px 5px 5px;
 }
 .custommodals .custombody .telyox .telbox .naut .naut-inner .listwt .tosoc img {
   width: 20px;
@@ -4282,7 +4328,31 @@ button.toastYoq.iziToast-buttons-child.revealIn:hover {
 }
 .footpanel a {
   padding: 5px 10px;
-  background: rgba(136, 136, 136, 0.489);
   color: #666464;
   border-radius: 5px;
+  transition: all ease 0.3s;
+}
+.footpanel a:hover {
+  background: rgba(79, 78, 78, 0.08);
+  transition: all ease 0.3s;
+}
+
+.user-img-box {
+  position: relative;
+  height: 100%;
+}
+.user-img-box .status-user {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 0px;
+  right: 0;
+  border-radius: 50%;
+  border: 2px solid #f0f0f0;
+}
+.user-img-box .user-online {
+  background: #1a9522;
+}
+.user-img-box .user-offline {
+  background: #8e8e8e;
 }

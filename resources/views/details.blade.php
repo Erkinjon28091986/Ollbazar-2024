@@ -70,11 +70,6 @@
                                             data-src="https://i.postimg.cc/qM4jjL0G/s24-ultra5.jpg" alt="Kobalt">
                                     </div>
                                 </div>
-                                <div class="c-carousel__item swiper-slide">
-                                    <div class="img__item reklama__item">
-                                        <p>REKLAMA</p>
-                                    </div>
-                                </div>
                             </div>
                             <div class="swiper-scrollbar"></div>
                         </div>
@@ -190,9 +185,9 @@
             <div class="userbox df">
                 <div class="leftuserbox df fdc">
                     <div class="lyutr df">
-                        <div class="useravabox">
+                        <div class="useravabox user-img-box">
                             <img src="https://i.postimg.cc/qv0h97XL/kjl.jpg" alt="user" class="useravatar">
-                            <div class="user__lasttime"></div>
+                            <span class="status-user user-online"></span>
                         </div>
                         <div class="userinn df fdc">
                             <div class="sellername">
@@ -284,7 +279,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <div class="user__lasttime"></div>
+                                            <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -341,7 +336,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <div class="user__lasttime"></div>
+                                            <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -373,7 +368,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <div class="user__lasttime"></div>
+                                            <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -431,7 +426,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <div class="user__lasttime"></div>
+                                            <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -489,7 +484,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <div class="user__lasttime"></div>
+                                            <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -547,7 +542,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                        <div class="user__lasttime"></div>
+                                            <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -579,6 +574,7 @@
     </main>
 
     <div class="main__overlay"></div>
+    <button id="scrollToTopBtn"><i class="icon-up-fat"></i></button>
 
     <!-- Modal -->
     <div class="modal fade" id="showtelnumModal" tabindex="-1" aria-labelledby="sheetModalLabel" aria-hidden="true">
@@ -742,7 +738,7 @@
         </div>
     </div>
 
-    <button id="scrollToTopBtn"><i class="icon-up-fat"></i></button>
+
 
     <div class="fixmapbox">
         <div class="fixmapinner">
@@ -857,7 +853,7 @@
                 <div class="last__user df">
                     <p class="lutitle">Ohirgi qidiruvingiz</p>
                     <div class="lubox df">
-                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu</a>
+                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu  </a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malisdfsbu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Mibu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malssadsafdsafsdfibu</a>
@@ -950,7 +946,6 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
-    <button id="scrollToTopBtn">На верх</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>

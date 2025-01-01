@@ -2478,10 +2478,10 @@
                 <div class="last__user df">
                     <p class="lutitle">Ohirgi qidiruvingiz</p>
                     <div class="lubox df">
-                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu</a>
-                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malisdfsbu</a>
-                        <a href="" rel="nofollow" class="last__user__item cpiyt">Mibu</a>
-                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malssadsafdsafsdfibu</a>
+                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malibu <span class="closethis"> <i class="icon-close"></i> </span></a>
+                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malisdfsbu</a>
+                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Mibu</a>
+                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malssadsafdsafsdfibu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malisdfdsbu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malidfabu</a>

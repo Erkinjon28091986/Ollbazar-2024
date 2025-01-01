@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var rangeContainer = document.querySelector('.range-container');
     var rangeInput = document.getElementById('customRange');
     var rangeValue = document.getElementById('rangeValue');
     var rangeImage = document.getElementById('rangeImage');
     var subText = document.getElementById('outsubtext');
-  
+
     function updateSliderPosition() {
         if (rangeContainer.classList.contains('stsyangi')) {
             rangeInput.value = 32.33;
         } else if (rangeContainer.classList.contains('stsusta')) {
             rangeInput.value = 65.33;
-          } else if (rangeContainer.classList.contains('stsishonch')) {
+        } else if (rangeContainer.classList.contains('stsishonch')) {
             rangeInput.value = 100;
         } else {
             rangeInput.value = 0;
@@ -65,8 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     rangeInput.addEventListener('input', updateSlider);
 
-    updateSliderPosition(); 
+    updateSliderPosition();
 });
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -283,8 +284,8 @@ const swiper__similar = new Swiper('.swiper__similar', {
 });
 
 const swiper__item = new Swiper('.swiper__item', {
-    freeMode: true,
-    slidesPerView: 'auto',
+    freeMode: false,
+    slidesPerView: 1,
     spaceBetween: 1,
     scrollbar: {
         el: '.swiper-scrollbar',
@@ -828,9 +829,14 @@ document.addEventListener('click', function (event) {
 
 
 
-// $(document).ready(function() {
-//     $('.country__select').select2();
-// });
+$(document).ready(function () {
+    const items = document.querySelectorAll('.last__user__item');
+    items.forEach(item => {
+        item.querySelector('.closethis').addEventListener('click', function () {
+            item.style.display = 'none';
+        });
+    });
+});
 
 //search main page
 $(".country__select").select2({
@@ -897,68 +903,80 @@ iziToast.settings({
     transitionOut: 'flipOutX1',
     position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
     onOpen: function () {
-      
+
     },
     onClose: function () {
-      
+
     }
-  });
+});
 
 
-  // info
-  $('#infoClick').click(function () {
-    iziToast.info({position: "bottomRight", title: 'Nusha', message: 'olindi!'});
-  }); // ! click
+// info
+$('#infoClick').click(function () {
+    iziToast.info({
+        position: "bottomRight",
+        title: 'Nusha',
+        message: 'olindi!'
+    });
+}); // ! click
 
-  // success
-  $('#successClick').click(function () {
-    iziToast.success({timeout: 5000, icon: 'fa fa-chrome', title: 'OK', message: 'iziToast.sucess() with custom icon!'});
-  }); // ! .click
+// success
+$('#successClick').click(function () {
+    iziToast.success({
+        timeout: 5000,
+        icon: 'fa fa-chrome',
+        title: 'OK',
+        message: 'iziToast.sucess() with custom icon!'
+    });
+}); // ! .click
 
-  // warning
-  $('#warningClick').click(function () {
-    iziToast.warning({position: "bottomLeft", title: 'Caution', message: '日本語環境のテスト'});
-  });
+// warning
+$('#warningClick').click(function () {
+    iziToast.warning({
+        position: "bottomLeft",
+        title: 'Caution',
+        message: '日本語環境のテスト'
+    });
+});
 
-  // error
-  $('#errorClick').click(function () {
-    iziToast.error({title: 'Error', message: 'Illegal operation'});
-  });
+// error
+$('#errorClick').click(function () {
+    iziToast.error({
+        title: 'Error',
+        message: 'Illegal operation'
+    });
+});
 
-  // custom toast
-  $('#customClick').click(function () {
+// custom toast
+$('#customClick').click(function () {
 
     iziToast.show({
-      color: 'dark',
-      icon: 'fas fa-exclamation-circle',  
-      title: 'E`lon',
-      message: 'boshqa ko`rsatilmaydi!',
-      position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
-      progressBarColor: 'rgb(0, 136, 255)',
-      buttons: [
-        [
-          '<button class="toastHa">Yaxshi</button>',
-        ],
-        [
-          '<button class="toastYoq">Bekor qilish</button>',
-          function (instance, toast) {
-            instance.hide({
-              transitionOut: 'fadeOutUp'
-            }, toast);
-          }
+        color: 'dark',
+        icon: 'fas fa-exclamation-circle',
+        title: 'E`lon',
+        message: 'boshqa ko`rsatilmaydi!',
+        position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+        progressBarColor: 'rgb(0, 136, 255)',
+        buttons: [
+            [
+                '<button class="toastHa">Yaxshi</button>',
+            ],
+            [
+                '<button class="toastYoq">Bekor qilish</button>',
+                function (instance, toast) {
+                    instance.hide({
+                        transitionOut: 'fadeOutUp'
+                    }, toast);
+                }
+            ]
         ]
-      ]
     });
 
-  }); 
-
-$('#any').click(function(){
-iziToast.error({
-  title: 'Errorカラー',
-  message: 'iziToast.error()'
-});
 });
 
-
-
-
+$('#any').click(function () {
+    iziToast.error({
+        title: 'Errorカラー',
+        message: 'iziToast.error()'
+    });
+});
