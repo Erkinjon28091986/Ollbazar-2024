@@ -1,3 +1,168 @@
+
+
+
+
+//-----------------------chat page-----------------
+document.addEventListener("DOMContentLoaded", () => {
+    const chatBlocks = document.querySelectorAll(".chat-block");
+    const selectionPanel = document.getElementById("selection-panel");
+    const selectedInfo = document.getElementById("selected-info");
+    const deleteBtn = document.getElementById("delete-btn");
+    let selectedChats = new Set();
+    
+    chatBlocks.forEach(chat => {
+        // Обработка клика на аватар
+        const avatar = chat.querySelector(".flipbox");
+        avatar.addEventListener("click", event => {
+            event.stopPropagation(); // Остановить всплытие события
+            const chatId = chat.getAttribute("data-id");
+            const flipbox = chat.querySelector(".flipcheck"); // Найти flipbox внутри текущего chat-block
+            if (chat.classList.contains("selected")) {
+                chat.classList.remove("selected");
+                flipbox.classList.remove("flipshow");
+                selectedChats.delete(chatId);  
+            } else {
+                chat.classList.add("selected");
+                flipbox.classList.add("flipshow");
+                selectedChats.add(chatId);  
+            }
+            updateSelectionPanel();
+        });
+
+        // Обработка клика на chat-info (переход на страницу чата)
+        const chatInfo = chat.querySelector(".chat-info");
+        chatInfo.addEventListener("click", () => {
+            const chatId = chat.getAttribute("data-id");
+            // Переход на страницу чата (замените URL на актуальный)
+            window.location.href = `/chat/${chatId}`;
+        });
+    });
+
+    // Обновление верхней панели
+    function updateSelectionPanel() {
+        if (selectedChats.size > 0) {
+            selectionPanel.classList.remove("panelhidden");
+            selectedInfo.textContent = selectedChats.size === chatBlocks.length
+                ? "Selected: All"
+                : `Selected: ${selectedChats.size}`;
+        } else {
+            selectionPanel.classList.add("panelhidden");
+        }
+    }
+
+    // Удаление выбранных чатов
+    deleteBtn.addEventListener("click", () => {
+        selectedChats.forEach(chatId => {
+            const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
+            chat.remove();
+        });
+        selectedChats.clear();
+        updateSelectionPanel();
+    });
+});
+
+
+
+
+
+
+$(document).ready(function () {
+    $('.category-button').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('.tabcontent').offset().top
+        }, 1400);
+    });
+
+    const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A2', '#33FFA2'];
+
+    document.querySelectorAll('.confetiss').forEach((confeti, index) => {
+        const setRandomPosition = () => {
+            const randomTop = Math.random() * 100;
+            const randomLeft = Math.random() * 100;
+            confeti.style.top = randomTop + '%';
+            confeti.style.left = randomLeft + '%';
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            confeti.style.backgroundColor = randomColor;
+        };
+
+        setRandomPosition();
+
+        // Устанавливаем задержку анимации для каждой конфеты
+        confeti.style.animationDelay = `${index * 0.5}s`;
+
+        // Добавляем событие завершения анимации
+        confeti.addEventListener('animationiteration', setRandomPosition);
+    });
+});
+
+
+
+//-number counter animation
+$('.mycounter').each(function () {
+    $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1500,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+
+// ----------subscribe---unsubscribe
+let subscribed = false;
+
+function toggleSubscription() {
+    const button = document.getElementById('subscribeButton');
+    const icon = button.querySelector('.icon');
+    const text = button.querySelector('span:nth-child(2)');
+
+    subscribed = !subscribed;
+
+    if (subscribed) {
+        icon.innerHTML = '<i class="icon-minus-1 icon"></i>';
+        text.innerHTML = 'Unsubscribe';
+        button.style.backgroundColor = '#de5e6a'; // Change button color to red
+    } else {
+        icon.innerHTML = '<i class="icon-plus-1 icon"></i>';
+        text.innerHTML = 'Subscribe';
+        button.style.backgroundColor = '#6e8dce'; // Change button color to blue
+    }
+}
+
+
+// profile page swiper tabs
+// ----------swiper-slider---------
+var swiper = '';
+$(window).on('load', function () {
+    swiper = new Swiper('#tabs-slider', {
+        loop: false,
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        spaceBetween: 5,
+        mousewheel: true,
+        slideToClickedSlide: true,
+        centeredSlides: false,
+        navigation: {
+            nextEl: '.slider-next',
+            prevEl: '.slider-prev',
+        }
+    });
+});
+
+
+$(".category-button").click(function () {
+    $(".category-button").removeClass("active");
+    $(this).addClass('active');
+    var getid = $(this).data('id');
+    $(".data-text").removeClass('active');
+    $("#" + getid).addClass("active");
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var rangeContainer = document.querySelector('.range-container');
     var rangeInput = document.getElementById('customRange');
@@ -388,11 +553,11 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 0) {
             //stickyDiv.classList.add('stickyde');
             $('.nav__wrap').addClass('navwrap2');
-            $('.navitems').addClass('navitems2');
-            $('.current__language').addClass('navitems2');
-            $('.elonberish').addClass('elonberishbg');
-            $('.menu__user').addClass('menu__user2');
-            $('.mlogobox__oq').addClass('mlogobox__qora');
+            $('.nav__wrap .navitems').addClass('navitems2');
+            $('.nav__wrap .current__language').addClass('navitems2');
+            $('.nav__wrap .elonberish').addClass('elonberishbg');
+            $('.nav__wrap .menu__user').addClass('menu__user2');
+            $('.nav__wrap .mlogobox__oq').addClass('mlogobox__qora');
 
             // Сохранение состояния в localStorage
             localStorage.setItem('isScrolled', 'true');
@@ -412,12 +577,12 @@ $(document).ready(function () {
     $(document).ready(function () {
         if (localStorage.getItem('isScrolled') === 'true') {
             //stickyDiv.classList.add('stickyde');
-            $('.nav__wrap').addClass('navwrap2');
-            $('.navitems').addClass('navitems2');
-            $('.current__language').addClass('navitems2');
-            $('.elonberish').addClass('elonberishbg');
-            $('.menu__user').addClass('menu__user2');
-            $('.mlogobox__oq').addClass('mlogobox__qora');
+            $('.nav__wrap .nav__wrap').addClass('navwrap2');
+            $('.nav__wrap .navitems').addClass('navitems2');
+            $('.nav__wrap .current__language').addClass('navitems2');
+            $('.nav__wrap .elonberish').addClass('elonberishbg');
+            $('.nav__wrap .menu__user').addClass('menu__user2');
+            $('.nav__wrap .mlogobox__oq').addClass('mlogobox__qora');
         }
     });
 
@@ -980,3 +1145,5 @@ $('#any').click(function () {
         message: 'iziToast.error()'
     });
 });
+
+

@@ -1,4 +1,4 @@
-<div class="nav__wrap">
+<div class="nav2__wrap nav2">
         <nav class="navwidth fdc">
             <div class="navbox df">
                 <a href="javascript:void(0)" class="mlogobox">

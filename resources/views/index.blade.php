@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hanbazar - bepul e'lonlar taxtasi</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
@@ -2256,13 +2255,13 @@
                 </div>
             </div>
             <ul class="df lilar dropmenular">
-                <li><a href="#" class="mnavitems skeleton elyt eluyenv">
+                <li><a href="{{ route('profile') }}" class="mnavitems skeleton elyt eluyenv">
                         <i class="icon-user"></i>
-                        Mening honam</a></li>
+                        My profile</a></li>
                 <li><a href="#" class="mnavitems skeleton elyt">
                         <i class="icon-wallet6"></i>
                         Hisobim</a></li>
-                <li><a href="#" class="mnavitems skeleton elyt">
+                <li><a href="{{ route('chat') }}" class="mnavitems skeleton elyt">
                         <i class="icon-email"></i>
                         Hatdon</a></li>
                 <li><a href="#" class="mnavitems skeleton elyt">
@@ -2567,11 +2566,8 @@
 
 
     <!-- jQuery и JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-
-    <button id="scrollToTopBtn">На верх</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>

@@ -196,8 +196,16 @@
                                     <img src="https://i.postimg.cc/cL2b71bR/goldbadge.webp" alt="">
                                     <div class="showloyalbox">
                                         <div class="range-container stsishonch">
-                                            <img id="rangeImage" src="https://i.postimg.cc/zDWy0FhV/gift-001.png"
-                                                alt="Basic Image" />
+                                            <div class="confetibox">
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                            </div>
+                                            <img id="rangeImage" class="rangeimage"
+                                                src="https://i.postimg.cc/zDWy0FhV/gift-001.png" alt="Basic Image" />
                                             <output id="rangeValue">Yangi - 1</output>
                                             <input type="range" class="custom-range" id="customRange" min="0" max="100"
                                                 step="1" value="0">
@@ -279,7 +287,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                            <span class="status-user user-online"></span>
+                                        <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -336,7 +344,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                            <span class="status-user user-online"></span>
+                                        <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -368,7 +376,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                            <span class="status-user user-online"></span>
+                                        <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -426,7 +434,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                            <span class="status-user user-online"></span>
+                                        <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -484,7 +492,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                            <span class="status-user user-online"></span>
+                                        <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -542,7 +550,7 @@
                                     <div class="user-img-box">
                                         <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2"
                                             class="seller-avatar">
-                                            <span class="status-user user-online"></span>
+                                        <span class="status-user user-online"></span>
                                     </div>
                                     <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
                                         <div>
@@ -566,17 +574,17 @@
                 </div>
             </div>
             <hr class="hdivider" style="margin: 0 0 10px 0">
-        <div class="footpanel df">
-            <a href="" class="report__item"> <i class="icon-flag-filled"></i> Shikoyat</a>
+            <div class="footpanel df">
+                <a href="" class="report__item"> <i class="icon-flag-filled"></i> Shikoyat</a>
+            </div>
         </div>
-        </div>
-        
+
     </main>
 
     <div class="main__overlay"></div>
     <button id="scrollToTopBtn"><i class="icon-up-fat"></i></button>
 
-    <!-- Modal -->
+    <!-- Modal tel number -->
     <div class="modal fade" id="showtelnumModal" tabindex="-1" aria-labelledby="sheetModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custommodals">
             <div class="modal-content">
@@ -588,19 +596,19 @@
                                 <div class="naut-inner df fdc">
                                     <div class="nautin df">
                                         <a href="tel:+998121234567" id="telop">998 12 123 45 67</a>
-                                        <a href="javascript:void(0)" id="infoClick" tooltip="Nusxa olish" flow="up" class="copytel"><i
-                                                class="icon-copy-2"></i></a>
+                                        <a href="javascript:void(0)" id="infoClick" tooltip="Nusxa olish" flow="up"
+                                            class="copytel"><i class="icon-copy-2"></i></a>
                                     </div>
                                     <div class="listwt df">
-                                       <a href="" class="tosoc">
-                                        <img src="img\telegram.webp" alt="">
-                                       </a>
-                                       <a href="" class="tosoc">
-                                        <img src="img\viber.webp" alt="">
-                                       </a>
-                                       <a href="" class="tosoc">
-                                        <img src="img\whatsapp.webp" alt="">
-                                       </a>
+                                        <a href="" class="tosoc">
+                                            <img src="img\telegram.webp" alt="">
+                                        </a>
+                                        <a href="" class="tosoc">
+                                            <img src="img\viber.webp" alt="">
+                                        </a>
+                                        <a href="" class="tosoc">
+                                            <img src="img\whatsapp.webp" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -853,7 +861,7 @@
                 <div class="last__user df">
                     <p class="lutitle">Ohirgi qidiruvingiz</p>
                     <div class="lubox df">
-                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu  </a>
+                        <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu </a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malisdfsbu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Mibu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malssadsafdsafsdfibu</a>

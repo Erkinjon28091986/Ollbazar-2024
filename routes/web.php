@@ -23,5 +23,12 @@ Route::get('/details', function () {
 })->name('details');
 
 
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
 
+
+Route::get('/chat', function () {
+    return view('chat');
+})->name('chat');
 
