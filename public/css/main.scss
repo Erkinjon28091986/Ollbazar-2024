@@ -122,7 +122,7 @@ ul {
   opacity: 0;
   visibility: hidden;
   transition: all ease 0.3s;
-  z-index: 88;
+  z-index: 101;
 }
 
 .main__overlay__show {
@@ -2870,7 +2870,7 @@ header {
     rgba(23, 185, 210, 0.98) 100%
   );
   width: 340px;
-  z-index: 99;
+  z-index: 102;
   padding: 35px 20px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -6052,9 +6052,8 @@ h1.fm-title {
   }
 }
 #selection-panel.panelhidden {
-  
   opacity: 0;
-  
+
   visibility: hidden;
   transform: rotateX(90deg);
   transition: all ease 0.3s;
@@ -6064,6 +6063,8 @@ h1.fm-title {
 }
 
 .deletebtn {
+  width: 32px;
+  height: 30px;
   border: none;
   color: #767676;
   padding: 5px;
@@ -6073,6 +6074,7 @@ h1.fm-title {
   }
 }
 .pinbtn {
+  position: relative;
   border: none;
   color: #767676;
   border-radius: 3px;
@@ -6082,6 +6084,8 @@ h1.fm-title {
   &:hover {
     background: $lighthoverBgcolor;
   }
+}
+.pinnedbtn {
 }
 .chat-block {
   display: flex;
@@ -6151,7 +6155,7 @@ h1.fm-title {
       display: inline-flex;
       align-items: center;
       font-weight: bold;
-      cursor: grabbing;
+      display: none;
     }
   }
 }
@@ -6186,7 +6190,7 @@ h1.fm-title {
   .flipcheck {
     position: absolute;
     width: 50px;
-    background: rgb(37 114 228 / 62%);
+    background: rgb(140 140 140 / 62%);
     color: #fff;
     font-size: 17px;
     height: 50px;
@@ -6207,4 +6211,286 @@ h1.fm-title {
     transform: scale(1);
     transition: all ease 0.3s;
   }
+}
+.chat-block.pinned {
+  border: 1px dashed rgb(0 123 255 / 37%);
+}
+
+.fixheadbox {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    -45deg,
+    rgba(28, 63, 185, 0.76) 0%,
+    rgba(28, 206, 234, 0.82) 100%
+  );
+  height: 80px;
+  width: 80%;
+  margin: auto;
+  border-radius: 0 0 5px 5px;
+  .headbox {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    .pagetitle {
+      font-size: 18px;
+      color: #ededed;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all ease 0.3s;
+    }
+    .gobackbtn {
+      font-size: 30px;
+      color: #ededed;
+      border-radius: 5px;
+      height: 40px;
+      width: 45px;
+      line-height: 40px;
+      text-align: center;
+      transition: all ease 0.3s;
+      &:hover {
+        background: rgb(98 111 194 / 25%);
+        transition: all ease 0.3s;
+      }
+    }
+  }
+}
+
+.walletpanel {
+  height: auto;
+  align-items: baseline;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.totalbalancebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  .tbalance {
+    //background: rgb(89 126 191 / 73%);
+    //padding: 15px 20px;
+    border-radius: 5px;
+    width: 60%;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    //box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 8%);
+    .walhead {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .totalbalace {
+      font-size: 25px;
+      font-weight: bold;
+      color: #f3f3f3;
+    }
+    .balancetitle {
+      color: #e2e2e2;
+      margin-bottom: 8px;
+    }
+  }
+  .hcoinbox {
+    width: 100%;
+    background: rgb(57 124 194 / 55%);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 8%);
+    .hancoinbalance {
+      color: #ededed;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .balancetitle {
+      color: #e2e2e2;
+      margin-bottom: 3px;
+    }
+    .exchcoin {
+      color: #fff;
+      font-size: 19px;
+      transition: all ease 0.3s;
+      padding: 6px 3px;
+      border-radius: 3px;
+      &:hover {
+        color: rgb(87 124 189);
+        background: rgb(255 255 255 / 66%);
+        transition: all ease 0.3s;
+      }
+      &:active {
+        transform: scale(0.937);
+        transition: all ease 0.3s;
+      }
+    }
+  }
+}
+.walletfunc {
+  width: 60%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  a {
+    color: rgb(255 255 255 / 80%);
+    border: 1px solid rgb(255 255 255 / 25%);
+    padding: 8px;
+    border-radius: 3px;
+    margin-left: 3px;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 8%);
+    &:hover {
+      color: rgb(87 124 189);
+      background: rgb(255 255 255 / 66%);
+      transition: all ease 0.3s;
+    }
+    &:active {
+      transform: scale(0.937);
+      transition: all ease 0.3s;
+    }
+  }
+  .sendwal {
+    i {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.detailitems {
+  display: flex;
+  background: rgb(255 255 255 / 55%);
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  transition: all ease 0.3s;
+  &:hover {
+    background: rgb(255 255 255 / 85%);
+    transition: all ease 0.3s;
+  }
+  &:hover > .showdetails {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.3s;
+  }
+  &:active {
+    transform: scale(0.987);
+    transition: all ease 0.3s;
+  }
+  .detailimg {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    .showdetails {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      color: #fff;
+      background: rgb(118 118 118);
+      opacity: 0;
+      transform: scale(.5);
+      visibility: hidden;
+      transition: all ease 0.3s;
+      border-radius: 10px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .detailstatus {
+    position: relative;
+    background: #e56b77;
+    font-weight: bold;
+  }
+  .detailstatusplus {
+    font-weight: bold;
+    background: #49ca8e;
+  }
+  .detailstatustransfer {
+    background: #64a3f7;
+    line-height: 26px;
+    .myarrows {
+      font-size: 13px;
+      transform: rotate(190deg);
+      display: inline-flex;
+    }
+  }
+
+  .detailstatuschange {
+    background: #9e9e9e;
+    line-height: 26px;
+    i {
+      font-size: 13px;
+    }
+  }
+  .detailtext {
+    margin-left: 8px;
+    .dettext {
+      font-weight: bold;
+      color: #333;
+    }
+    .detailata {
+      font-size: 14px;
+      color: #888;
+      margin-top: 3px;
+    }
+  }
+  .deropl {
+    align-items: center;
+  }
+  .detailsumma {
+    align-items: flex-end;
+    .summasi {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .currencytype {
+      color: #888;
+    }
+  }
+}
+
+.vutre {
+  color: #999;
+  margin-bottom: -8px;
+}
+
+.detailitems {
+  display: flex;
+  background: rgb(255 255 255 / 55%);
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  transition: all ease 0.3s;
+  &:hover {
+    background: rgb(255 255 255 / 85%);
+    transition: all ease 0.3s;
+  }
+  &:hover .showdetails {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.3s;
+  }
+}
+.vlart{
+  margin-bottom: 10px;
 }

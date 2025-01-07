@@ -2258,9 +2258,9 @@
                 <li><a href="{{ route('profile') }}" class="mnavitems skeleton elyt eluyenv">
                         <i class="icon-user"></i>
                         My profile</a></li>
-                <li><a href="#" class="mnavitems skeleton elyt">
+                <li><a href="{{ route('wallet') }}" class="mnavitems skeleton elyt">
                         <i class="icon-wallet6"></i>
-                        Hisobim</a></li>
+                        Wallet</a></li>
                 <li><a href="{{ route('chat') }}" class="mnavitems skeleton elyt">
                         <i class="icon-email"></i>
                         Hatdon</a></li>

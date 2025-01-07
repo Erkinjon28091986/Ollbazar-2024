@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+    <title>Wallet</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
@@ -18,156 +18,150 @@
 
 <body>
     <x-rightmenu></x-rightmenu>
-    <div class="fixheadbox">
+    <div class="fixheadbox walletpanel">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
-            <p class="pagetitle">Chat</p>
+            <p class="pagetitle">Wallet</p>
+        </div>
+        <div class="totalbalancebox">
+            <div class="tbalance">
+                <div class="walhead df fdc">
+                    <p class="balancetitle">Total Balance</p>
+                    <div class="totalbalace">400 000 <span class="valyuta">Uzs</span></div>
+                </div>
+                <div class="hcoinbox">
+                    <div class="hcoininner">
+                        <p class="balancetitle">Hancoin balance</p>
+                        <div class="hancoinbalance">120</div>
+                    </div>
+                    <a href="" class="exchcoin" tooltip="Exchange" flow="left"><i class="icon-exchange-2"></i> </a>
+                </div>
+            </div>
+            <div class="walletfunc">
+                <a href="" class="topupwal" tooltip="Topup" flow="left"><i class="icon-plus"></i> Topup</a>
+                <a href="" class="sendwal" tooltip="Send money in system" flow="left"><i
+                        class="icon-down-left-arrow"></i> Send</a>
+                <a href="" class="winthdrawwal" tooltip="Send money out system" flow="left"><i class="icon-minus-2"></i>
+                    Withdraw</a>
+                <a href="" class="rekvizitos" tooltip="Wallet details" flow="left"><i class="icon-indent-left"></i> </a>
+            </div>
+
         </div>
     </div>
     <div class="prowrap w70w mt100">
         <div class="breadcrumswrap df">
-            <a href="" class="breads">Home</a>
-            <a href="" class="breads">Chat</a>
+            <p class="vutre">Last transactions</p>
         </div>
-        <div class="chatcontainer">
-            <div id="selection-panel" class="panelhidden">
-                <span id="selected-info">Выбрано: 0</span>
-                <div class="leftwrte df">
-                    <button id="pin-btn" class="pinbtn" tooltip="Pin chat" flow="left"><i class="icon-pin34"></i>
-                    </button>
-                    <button id="delete-btn" class="deletebtn" tooltip="Remove chat" flow="left"><i
-                            class="icon-deletese"></i> </button>
-                </div>
-
-            </div>
-            <div id="chat-list">
-                <div class="chat-block" data-id="1">
-                    <div class="flipbox df user-img-box">
-                        <div class="flipcheck"><i class="icon-ok"></i></div>
-                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar" class="chatavatar">
-                        <span class="status-user user-online"></span>
-                    </div>
-                    <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"> Привет! Как дела?</a>
-                    </div>
-                    <div class="chat-status df">
-                        <div class="chatsthead">
-                            <div class="chatdata">14:32, today</div>
-                        </div>
-                        <div class="chatstfoot df">
-                            <span class="chatbadge">3</span>
-                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-block" data-id="2">
-                    <div class="flipbox df user-img-box">
-                        <div class="flipcheck"><i class="icon-ok"></i></div>
-                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar" class="chatavatar">
-                        <span class="status-user user-online"></span>
-                    </div>
-                    <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
-                            vecherom</a>
-                    </div>
-                    <div class="chat-status df">
-                        <div class="chatsthead">
-                            <div class="chatdata">14:32, today</div>
-                        </div>
-                        <div class="chatstfoot df">
-                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-block" data-id="3">
-                    <div class="flipbox df user-img-box">
-                        <div class="flipcheck"><i class="icon-ok"></i></div>
-                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar" class="chatavatar">
-                        <span class="status-user user-online"></span>
-                    </div>
-                    <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
-                            vecherom</a>
-                    </div>
-                    <div class="chat-status df">
-                        <div class="chatsthead">
-                            <div class="chatdata">14:32, today</div>
-                        </div>
-                        <div class="chatstfoot df">
-                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-block" data-id="4">
-                    <div class="flipbox df user-img-box">
-                        <div class="flipcheck"><i class="icon-ok"></i></div>
-                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar" class="chatavatar">
-                        <span class="status-user user-online"></span>
-                    </div>
-                    <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
-                            vecherom</a>
-                    </div>
-                    <div class="chat-status df">
-                        <div class="chatsthead">
-                            <div class="chatdata">14:32, today</div>
-                        </div>
-                        <div class="chatstfoot df">
-                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-block" data-id="6">
-                    <div class="flipbox df user-img-box">
-                        <div class="flipcheck"><i class="icon-ok"></i></div>
-                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar" class="chatavatar">
-                        <span class="status-user user-online"></span>
-                    </div>
-                    <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status unread-status"><i class="icon-read"></i>
-                            </span> Привет! Как дела?</a>
-                    </div>
-                    <div class="chat-status df">
-                        <div class="chatsthead">
-                            <div class="chatdata">14:32, today</div>
-                        </div>
-                        <div class="chatstfoot df">
-                            <span class="chatbadge">1</span>
-                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-block" data-id="7">
-                    <div class="flipbox df user-img-box">
-                        <div class="flipcheck"><i class="icon-ok"></i></div>
-                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar" class="chatavatar">
-                        <span class="status-user user-online"></span>
-                    </div>
-                    <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-                            dolorem nesciunt perspiciatis cumque itaque repellat vel inventore repudiandae aut
-                            asperiores!</a>
-                    </div>
-                    <div class="chat-status df">
-                        <div class="chatsthead">
-                            <div class="chatdata">14:32, today</div>
-                        </div>
-                        <div class="chatstfoot df">
-                        <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="hdivider" style="margin-bottom: 0">
-
     </div>
+    <div class="prowrap w70w">
+        <div class="tabcontent">
+            <div class="category-lists-slider vlart">
+                <div class="swiper-container" id="tabs-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="category-button active" data-id="data1">
+                                Toltal balance
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-button" data-id="data2">
+                                Hancoin
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-button" data-id="data3">
+                                Address
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-button slider-prev"><i class="fa fa-chevron-left"></i></div>
+                <div class="slider-button slider-next"><i class="fa fa-chevron-right"></i></div>
+            </div>
+            <div class="tabitems">
+                <div class="data-text active" id="data1">
+                    <div class="walstory df">
+                        <div class="detailitems ">
+                            <div class="deropl df">
+                                <div class="detailimg detailstatus">- <a href="javascript:void(0)"
+                                        class="showdetails"><i class="icon-eye"></i> </a> </div>
+                                <div class="detailtext df fdc">
+                                    <div class="dettext">Snyatiye</div>
+                                    <div class="detailata">21.03.2025</div>
+                                </div>
+                            </div>
+                            <div class="detailsumma df fdc">
+                                <div class="summasi">-230 000</div> <span class="currencytype">Uzs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="walstory df">
+                        <div class="detailitems ">
+                            <div class="deropl df">
+                                <div class="detailimg detailstatusplus">+ <a href="javascript:void(0)"
+                                        class="showdetails"><i class="icon-eye"></i> </a></div>
+                                <div class="detailtext df fdc">
+                                    <div class="dettext">Popolneniye</div>
+                                    <div class="detailata">27.03.2025</div>
+                                </div>
+                            </div>
+                            <div class="detailsumma df fdc">
+                                <div class="summasi">40 000</div> <span class="currencytype">Uzs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="walstory df">
+                        <div class="detailitems ">
+                            <div class="deropl df">
+                                <div class="detailimg detailstatuschange"><i class="icon-exchange-2"></i><a
+                                        href="javascript:void(0)" class="showdetails"><i class="icon-eye"></i> </a>
+                                </div>
+                                <div class="detailtext df fdc">
+                                    <div class="dettext">Exchange</div>
+                                    <div class="detailata">27.03.2025</div>
+                                </div>
+                            </div>
+                            <div class="detailsumma df fdc">
+                                <div class="summasi">7 000</div> <span class="currencytype">Uzs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="walstory df">
+                        <div class="detailitems ">
+                            <div class="deropl df">
+                                <div class="detailimg detailstatustransfer"><i
+                                        class="icon-down-left-arrow myarrows"></i><a href="javascript:void(0)"
+                                        class="showdetails"><i class="icon-eye"></i> </a></div>
+                                <div class="detailtext df fdc">
+                                    <div class="dettext">Transfer</div>
+                                    <div class="detailata">02.04.2025</div>
+                                </div>
+                            </div>
+                            <div class="detailsumma df fdc">
+                                <div class="summasi">122 000</div> <span class="currencytype">Uzs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-text" id="data2">
+                    GFGDGD
+                </div>
+                <div class="data-text" id="data3">
+                    <div class="sellersaddress">
+                        <i class="icon-map"></i>
+                        <div class="nopreq df">
+                            <div class="country-s xwet">Uzbekistan,</div>
+                            <div class="region-s xwet">Andijon viloyati,</div>
+                            <div class="city-s xwet">Asaka tumani</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- Modal sale ads  -->
     <div class="modal fade sheetmodal" id="profiladfunkModal" tabindex="-1" aria-labelledby="sheetModalLabel"
@@ -261,7 +255,7 @@
                                             </div>
                                             <div class="df fdc byt">
                                                 <div class="bytes">SIMPLE <span class="vipnarhi">Free</span></div>
-                                                <span>Платные тарифы поможет найти покупалеля гарозде бистрее.</span>
+                                                1 <span>Платные тарифы поможет найти покупалеля гарозде бистрее.</span>
                                             </div>
                                         </label>
                                     </div>

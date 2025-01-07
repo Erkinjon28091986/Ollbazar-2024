@@ -1,15 +1,12 @@
-
-
-
-
-//-----------------------chat page-----------------
 document.addEventListener("DOMContentLoaded", () => {
     const chatBlocks = document.querySelectorAll(".chat-block");
     const selectionPanel = document.getElementById("selection-panel");
     const selectedInfo = document.getElementById("selected-info");
     const deleteBtn = document.getElementById("delete-btn");
+    const pinBtn = document.getElementById("pin-btn");
     let selectedChats = new Set();
-    
+    let pinnedChats = new Set();
+
     chatBlocks.forEach(chat => {
         // Обработка клика на аватар
         const avatar = chat.querySelector(".flipbox");
@@ -20,33 +17,92 @@ document.addEventListener("DOMContentLoaded", () => {
             if (chat.classList.contains("selected")) {
                 chat.classList.remove("selected");
                 flipbox.classList.remove("flipshow");
-                selectedChats.delete(chatId);  
+                selectedChats.delete(chatId);
             } else {
                 chat.classList.add("selected");
                 flipbox.classList.add("flipshow");
-                selectedChats.add(chatId);  
+                selectedChats.add(chatId);
             }
             updateSelectionPanel();
+            updatePinButtonVisibility();
         });
 
-        // Обработка клика на chat-info (переход на страницу чата)
-        const chatInfo = chat.querySelector(".chat-info");
-        chatInfo.addEventListener("click", () => {
+        // Обработка клика на кнопку Pin внутри чата
+        const pinChatBtn = chat.querySelector(".pinningbutton");
+        pinChatBtn.addEventListener("click", () => {
+            event.stopPropagation(); // Остановить всплытие события
             const chatId = chat.getAttribute("data-id");
-            // Переход на страницу чата (замените URL на актуальный)
-            window.location.href = `/chat/${chatId}`;
+            togglePinChat(chatId);
         });
     });
+
+    // Обработка клика на кнопку Pin в верхней панели
+    pinBtn.addEventListener("click", () => {
+        if (selectedChats.size === 1) {
+            const chatId = Array.from(selectedChats)[0];
+            togglePinChat(chatId);
+        }
+    });
+
+    // Функция для закрепления/открепления чата
+    function togglePinChat(chatId) {
+        const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
+        if (!chat) return;
+
+        const pinChatBtn = chat.querySelector(".pinningbutton");
+
+        if (pinnedChats.has(chatId)) {
+            // Если чат уже закреплен, открепляем его
+            chat.classList.remove("pinned");
+            pinnedChats.delete(chatId);
+            // Перемещаем чат в исходное положение
+            chat.parentNode.appendChild(chat);
+            // Скрываем кнопку Pin внутри чата
+            pinChatBtn.style.display = "none";
+        } else {
+            // Если чат не закреплен, закрепляем его
+            if (pinnedChats.size < 5) {
+                chat.classList.add("pinned");
+                pinnedChats.add(chatId);
+                // Перемещаем чат в начало списка
+                chat.parentNode.insertBefore(chat, chat.parentNode.firstChild);
+                // Показываем кнопку Pin внутри чата
+                pinChatBtn.style.display = "block";
+            } else {
+                alert("Максимальное количество закрепленных чатов - 5.");
+            }
+        }
+        updateSelectionPanel();
+        updatePinButtonClass();
+    }
 
     // Обновление верхней панели
     function updateSelectionPanel() {
         if (selectedChats.size > 0) {
             selectionPanel.classList.remove("panelhidden");
-            selectedInfo.textContent = selectedChats.size === chatBlocks.length
-                ? "Selected: All"
-                : `Selected: ${selectedChats.size}`;
+            selectedInfo.textContent = selectedChats.size === chatBlocks.length ?
+                "Выбрано: Все" :
+                `Выбрано: ${selectedChats.size}`;
         } else {
             selectionPanel.classList.add("panelhidden");
+        }
+    }
+
+    // Обновление класса кнопки Pin в верхней панели
+    function updatePinButtonClass() {
+        if (pinnedChats.size > 0) {
+            pinBtn.classList.add("pinnedbtn");
+        } else {
+            pinBtn.classList.remove("pinnedbtn");
+        }
+    }
+
+    // Обновление видимости кнопки Pin в верхней панели
+    function updatePinButtonVisibility() {
+        if (selectedChats.size === 1) {
+            pinBtn.style.display = "block";
+        } else {
+            pinBtn.style.display = "none";
         }
     }
 
@@ -58,9 +114,209 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         selectedChats.clear();
         updateSelectionPanel();
+        updatePinButtonClass();
+        updatePinButtonVisibility();
     });
 });
 
+
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const chatBlocks = document.querySelectorAll(".chat-block");
+//     const selectionPanel = document.getElementById("selection-panel");
+//     const selectedInfo = document.getElementById("selected-info");
+//     const deleteBtn = document.getElementById("delete-btn");
+//     const pinBtn = document.getElementById("pin-btn");
+//     let selectedChats = new Set();
+//     let pinnedChats = new Set();
+
+//     chatBlocks.forEach(chat => {
+//         // Обработка клика на аватар
+//         const avatar = chat.querySelector(".flipbox");
+//         avatar.addEventListener("click", event => {
+//             event.stopPropagation(); // Остановить всплытие события
+//             const chatId = chat.getAttribute("data-id");
+//             const flipbox = chat.querySelector(".flipcheck"); // Найти flipbox внутри текущего chat-block
+//             if (chat.classList.contains("selected")) {
+//                 chat.classList.remove("selected");
+//                 flipbox.classList.remove("flipshow");
+//                 selectedChats.delete(chatId);
+//             } else {
+//                 chat.classList.add("selected");
+//                 flipbox.classList.add("flipshow");
+//                 selectedChats.add(chatId);
+//             }
+//             updateSelectionPanel();
+//         });
+
+//         // Обработка клика на кнопку Pin внутри чата
+//         const pinChatBtn = chat.querySelector(".pinningbutton");
+//         pinChatBtn.addEventListener("click", () => {
+//             event.stopPropagation(); // Остановить всплытие события
+//             const chatId = chat.getAttribute("data-id");
+//             togglePinChat(chatId);
+//         });
+//     });
+
+//     // Обработка клика на кнопку Pin в верхней панели
+//     pinBtn.addEventListener("click", () => {
+//         if (selectedChats.size === 1) {
+//             const chatId = Array.from(selectedChats)[0];
+//             togglePinChat(chatId);
+//         }
+//     });
+
+//     // Функция для закрепления/открепления чата
+//     function togglePinChat(chatId) {
+//         const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
+//         if (!chat) return;
+
+//         const pinChatBtn = chat.querySelector(".pinningbutton");
+
+//         if (pinnedChats.has(chatId)) {
+//             // Если чат уже закреплен, открепляем его
+//             chat.classList.remove("pinned");
+//             pinnedChats.delete(chatId);
+//             // Перемещаем чат в исходное положение
+//             chat.parentNode.appendChild(chat);
+//             // Скрываем кнопку Pin внутри чата
+//             pinChatBtn.style.display = "none";
+//         } else {
+//             // Если чат не закреплен, закрепляем его
+//             if (pinnedChats.size < 5) {
+//                 chat.classList.add("pinned");
+//                 pinnedChats.add(chatId);
+//                 // Перемещаем чат в начало списка
+//                 chat.parentNode.insertBefore(chat, chat.parentNode.firstChild);
+//                 // Показываем кнопку Pin внутри чата
+//                 pinChatBtn.style.display = "block";
+//             } else {
+//                 alert("Максимальное количество закрепленных чатов - 5.");
+//             }
+//         }
+//         updateSelectionPanel();
+//         updatePinButtonClass();
+//     }
+
+//     // Обновление верхней панели
+//     function updateSelectionPanel() {
+//         if (selectedChats.size > 0) {
+//             selectionPanel.classList.remove("panelhidden");
+//             selectedInfo.textContent = selectedChats.size === chatBlocks.length ?
+//                 "Выбрано: Все" :
+//                 `Выбрано: ${selectedChats.size}`;
+//         } else {
+//             selectionPanel.classList.add("panelhidden");
+//         }
+//     }
+
+//     // Обновление класса кнопки Pin в верхней панели
+//     function updatePinButtonClass() {
+//         if (pinnedChats.size > 0) {
+//             pinBtn.classList.add("pinnedbtn");
+//         } else {
+//             pinBtn.classList.remove("pinnedbtn");
+//         }
+//     }
+
+//     // Удаление выбранных чатов
+//     deleteBtn.addEventListener("click", () => {
+//         selectedChats.forEach(chatId => {
+//             const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
+//             chat.remove();
+//         });
+//         selectedChats.clear();
+//         updateSelectionPanel();
+//         updatePinButtonClass();
+//     });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const chatBlocks = document.querySelectorAll(".chat-block");
+//     const selectionPanel = document.getElementById("selection-panel");
+//     const selectedInfo = document.getElementById("selected-info");
+//     const deleteBtn = document.getElementById("delete-btn");
+//     const pinBtn = document.getElementById("pin-btn");
+//     let selectedChats = new Set();
+//     let pinnedChats = new Set();
+
+//     chatBlocks.forEach(chat => {
+//         // Обработка клика на аватар
+//         const avatar = chat.querySelector(".flipbox");
+//         avatar.addEventListener("click", event => {
+//             event.stopPropagation(); // Остановить всплытие события
+//             const chatId = chat.getAttribute("data-id");
+//             const flipbox = chat.querySelector(".flipcheck"); // Найти flipbox внутри текущего chat-block
+//             if (chat.classList.contains("selected")) {
+//                 chat.classList.remove("selected");
+//                 flipbox.classList.remove("flipshow");
+//                 selectedChats.delete(chatId);
+//             } else {
+//                 chat.classList.add("selected");
+//                 flipbox.classList.add("flipshow");
+//                 selectedChats.add(chatId);
+//             }
+//             updateSelectionPanel();
+//         });
+//     });
+
+//     // Обработка клика на кнопку Pin в верхней панели
+//     pinBtn.addEventListener("click", () => {
+//         if (selectedChats.size === 1) {
+//             const chatId = Array.from(selectedChats)[0];
+//             togglePinChat(chatId);
+//         }
+//     });
+
+//     // Функция для закрепления/открепления чата
+//     function togglePinChat(chatId) {
+//         const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
+//         if (!chat) return;
+
+//         if (pinnedChats.has(chatId)) {
+//             // Если чат уже закреплен, открепляем его
+//             chat.classList.remove("pinned");
+//             pinnedChats.delete(chatId);
+//             // Перемещаем чат в исходное положение
+//             chat.parentNode.appendChild(chat);
+//         } else {
+//             // Если чат не закреплен, закрепляем его
+//             if (pinnedChats.size < 5) {
+//                 chat.classList.add("pinned");
+//                 pinnedChats.add(chatId);
+//                 // Перемещаем чат в начало списка
+//                 chat.parentNode.insertBefore(chat, chat.parentNode.firstChild);
+//             } else {
+//                 alert("Максимальное количество закрепленных чатов - 5.");
+//             }
+//         }
+//         updateSelectionPanel();
+//     }
+
+//     // Обновление верхней панели
+//     function updateSelectionPanel() {
+//         if (selectedChats.size > 0) {
+//             selectionPanel.classList.remove("panelhidden");
+//             selectedInfo.textContent = selectedChats.size === chatBlocks.length ?
+//                 "Выбрано: Все" :
+//                 `Выбрано: ${selectedChats.size}`;
+//         } else {
+//             selectionPanel.classList.add("panelhidden");
+//         }
+//     }
+
+//     // Удаление выбранных чатов
+//     deleteBtn.addEventListener("click", () => {
+//         selectedChats.forEach(chatId => {
+//             const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
+//             chat.remove();
+//         });
+//         selectedChats.clear();
+//         updateSelectionPanel();
+//     });
+// });
 
 
 
@@ -139,8 +395,9 @@ var swiper = '';
 $(window).on('load', function () {
     swiper = new Swiper('#tabs-slider', {
         loop: false,
+        freeMode: true,
         slidesPerView: "auto",
-        allowTouchMove: false,
+        //allowTouchMove: false,
         spaceBetween: 5,
         mousewheel: true,
         slideToClickedSlide: true,
@@ -1145,5 +1402,3 @@ $('#any').click(function () {
         message: 'iziToast.error()'
     });
 });
-
-

@@ -17,7 +17,12 @@
 </head>
 
 <body>
-    <x-second-menu></x-second-menu>
+<div class="fixheadbox">
+        <div class="w70w df headbox">
+            <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
+            <p class="pagetitle">My profile</p>
+        </div>
+    </div>
     <x-rightmenu></x-rightmenu>
     <div class="prowrap w70w mt100">
         <div class="breadcrumswrap df">
@@ -540,6 +545,7 @@
             </div>
         </div>
     </div>
+    <div class="main__overlay"></div>
 
 
 

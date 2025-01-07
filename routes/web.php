@@ -32,3 +32,6 @@ Route::get('/chat', function () {
     return view('chat');
 })->name('chat');
 
+Route::get('/wallet', function () {
+    return view('wallet');
+})->name('wallet');
