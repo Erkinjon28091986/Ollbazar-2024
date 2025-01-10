@@ -1,3 +1,77 @@
+
+  
+
+
+$(document).ready(function () {
+      //---------------add new add-------------
+      let currentStep = 1;
+
+      function showStep(step) {
+          const steps = document.querySelectorAll('.step');
+          const indicators = document.querySelectorAll('.step-indicator');
+          steps.forEach((stepElement, index) => {
+              stepElement.classList.remove('active');
+              if (index + 1 === step) {
+                  stepElement.classList.add('active');
+              }
+          });
+          indicators.forEach((indicator, index) => {
+              indicator.classList.remove('active');
+              if (index + 1 === step) {
+                  indicator.classList.add('active');
+              }
+          });
+  
+          const progress = document.getElementById('progress');
+          progress.style.width = (step - 1) * 33.33 + 33.33 + '%';
+      }
+  
+      function changeStep(stepChange) {
+          const stepsCount = document.querySelectorAll('.step').length;
+          currentStep += stepChange;
+          if (currentStep < 1) currentStep = 1;
+          if (currentStep > stepsCount) currentStep = stepsCount;
+          showStep(currentStep);
+      }
+  
+      function nextStep() {
+          const currentForm = document.querySelector(`#step-${currentStep} form`);
+          const elements = currentForm.querySelectorAll('.validate');
+          let isValid = true;
+  
+          elements.forEach(element => {
+              if (!element.checkValidity()) {
+                  element.classList.add('invalid');
+                  isValid = false;
+              } else {
+                  element.classList.remove('invalid');
+              }
+          });
+  
+          if (isValid) {
+              changeStep(1);
+          }
+      }
+  
+      document.getElementById('prevBtn').addEventListener('click', function () {
+          changeStep(-1);
+      });
+  
+      showStep(currentStep);
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const chatBlocks = document.querySelectorAll(".chat-block");
     const selectionPanel = document.getElementById("selection-panel");
@@ -123,211 +197,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const chatBlocks = document.querySelectorAll(".chat-block");
-//     const selectionPanel = document.getElementById("selection-panel");
-//     const selectedInfo = document.getElementById("selected-info");
-//     const deleteBtn = document.getElementById("delete-btn");
-//     const pinBtn = document.getElementById("pin-btn");
-//     let selectedChats = new Set();
-//     let pinnedChats = new Set();
-
-//     chatBlocks.forEach(chat => {
-//         // Обработка клика на аватар
-//         const avatar = chat.querySelector(".flipbox");
-//         avatar.addEventListener("click", event => {
-//             event.stopPropagation(); // Остановить всплытие события
-//             const chatId = chat.getAttribute("data-id");
-//             const flipbox = chat.querySelector(".flipcheck"); // Найти flipbox внутри текущего chat-block
-//             if (chat.classList.contains("selected")) {
-//                 chat.classList.remove("selected");
-//                 flipbox.classList.remove("flipshow");
-//                 selectedChats.delete(chatId);
-//             } else {
-//                 chat.classList.add("selected");
-//                 flipbox.classList.add("flipshow");
-//                 selectedChats.add(chatId);
-//             }
-//             updateSelectionPanel();
-//         });
-
-//         // Обработка клика на кнопку Pin внутри чата
-//         const pinChatBtn = chat.querySelector(".pinningbutton");
-//         pinChatBtn.addEventListener("click", () => {
-//             event.stopPropagation(); // Остановить всплытие события
-//             const chatId = chat.getAttribute("data-id");
-//             togglePinChat(chatId);
-//         });
-//     });
-
-//     // Обработка клика на кнопку Pin в верхней панели
-//     pinBtn.addEventListener("click", () => {
-//         if (selectedChats.size === 1) {
-//             const chatId = Array.from(selectedChats)[0];
-//             togglePinChat(chatId);
-//         }
-//     });
-
-//     // Функция для закрепления/открепления чата
-//     function togglePinChat(chatId) {
-//         const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
-//         if (!chat) return;
-
-//         const pinChatBtn = chat.querySelector(".pinningbutton");
-
-//         if (pinnedChats.has(chatId)) {
-//             // Если чат уже закреплен, открепляем его
-//             chat.classList.remove("pinned");
-//             pinnedChats.delete(chatId);
-//             // Перемещаем чат в исходное положение
-//             chat.parentNode.appendChild(chat);
-//             // Скрываем кнопку Pin внутри чата
-//             pinChatBtn.style.display = "none";
-//         } else {
-//             // Если чат не закреплен, закрепляем его
-//             if (pinnedChats.size < 5) {
-//                 chat.classList.add("pinned");
-//                 pinnedChats.add(chatId);
-//                 // Перемещаем чат в начало списка
-//                 chat.parentNode.insertBefore(chat, chat.parentNode.firstChild);
-//                 // Показываем кнопку Pin внутри чата
-//                 pinChatBtn.style.display = "block";
-//             } else {
-//                 alert("Максимальное количество закрепленных чатов - 5.");
-//             }
-//         }
-//         updateSelectionPanel();
-//         updatePinButtonClass();
-//     }
-
-//     // Обновление верхней панели
-//     function updateSelectionPanel() {
-//         if (selectedChats.size > 0) {
-//             selectionPanel.classList.remove("panelhidden");
-//             selectedInfo.textContent = selectedChats.size === chatBlocks.length ?
-//                 "Выбрано: Все" :
-//                 `Выбрано: ${selectedChats.size}`;
-//         } else {
-//             selectionPanel.classList.add("panelhidden");
-//         }
-//     }
-
-//     // Обновление класса кнопки Pin в верхней панели
-//     function updatePinButtonClass() {
-//         if (pinnedChats.size > 0) {
-//             pinBtn.classList.add("pinnedbtn");
-//         } else {
-//             pinBtn.classList.remove("pinnedbtn");
-//         }
-//     }
-
-//     // Удаление выбранных чатов
-//     deleteBtn.addEventListener("click", () => {
-//         selectedChats.forEach(chatId => {
-//             const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
-//             chat.remove();
-//         });
-//         selectedChats.clear();
-//         updateSelectionPanel();
-//         updatePinButtonClass();
-//     });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const chatBlocks = document.querySelectorAll(".chat-block");
-//     const selectionPanel = document.getElementById("selection-panel");
-//     const selectedInfo = document.getElementById("selected-info");
-//     const deleteBtn = document.getElementById("delete-btn");
-//     const pinBtn = document.getElementById("pin-btn");
-//     let selectedChats = new Set();
-//     let pinnedChats = new Set();
-
-//     chatBlocks.forEach(chat => {
-//         // Обработка клика на аватар
-//         const avatar = chat.querySelector(".flipbox");
-//         avatar.addEventListener("click", event => {
-//             event.stopPropagation(); // Остановить всплытие события
-//             const chatId = chat.getAttribute("data-id");
-//             const flipbox = chat.querySelector(".flipcheck"); // Найти flipbox внутри текущего chat-block
-//             if (chat.classList.contains("selected")) {
-//                 chat.classList.remove("selected");
-//                 flipbox.classList.remove("flipshow");
-//                 selectedChats.delete(chatId);
-//             } else {
-//                 chat.classList.add("selected");
-//                 flipbox.classList.add("flipshow");
-//                 selectedChats.add(chatId);
-//             }
-//             updateSelectionPanel();
-//         });
-//     });
-
-//     // Обработка клика на кнопку Pin в верхней панели
-//     pinBtn.addEventListener("click", () => {
-//         if (selectedChats.size === 1) {
-//             const chatId = Array.from(selectedChats)[0];
-//             togglePinChat(chatId);
-//         }
-//     });
-
-//     // Функция для закрепления/открепления чата
-//     function togglePinChat(chatId) {
-//         const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
-//         if (!chat) return;
-
-//         if (pinnedChats.has(chatId)) {
-//             // Если чат уже закреплен, открепляем его
-//             chat.classList.remove("pinned");
-//             pinnedChats.delete(chatId);
-//             // Перемещаем чат в исходное положение
-//             chat.parentNode.appendChild(chat);
-//         } else {
-//             // Если чат не закреплен, закрепляем его
-//             if (pinnedChats.size < 5) {
-//                 chat.classList.add("pinned");
-//                 pinnedChats.add(chatId);
-//                 // Перемещаем чат в начало списка
-//                 chat.parentNode.insertBefore(chat, chat.parentNode.firstChild);
-//             } else {
-//                 alert("Максимальное количество закрепленных чатов - 5.");
-//             }
-//         }
-//         updateSelectionPanel();
-//     }
-
-//     // Обновление верхней панели
-//     function updateSelectionPanel() {
-//         if (selectedChats.size > 0) {
-//             selectionPanel.classList.remove("panelhidden");
-//             selectedInfo.textContent = selectedChats.size === chatBlocks.length ?
-//                 "Выбрано: Все" :
-//                 `Выбрано: ${selectedChats.size}`;
-//         } else {
-//             selectionPanel.classList.add("panelhidden");
-//         }
-//     }
-
-//     // Удаление выбранных чатов
-//     deleteBtn.addEventListener("click", () => {
-//         selectedChats.forEach(chatId => {
-//             const chat = document.querySelector(`.chat-block[data-id="${chatId}"]`);
-//             chat.remove();
-//         });
-//         selectedChats.clear();
-//         updateSelectionPanel();
-//     });
-// });
-
 
 
 
 
 $(document).ready(function () {
-    $('.category-button').on('click', function () {
-        $('html, body').animate({
-            scrollTop: $('.tabcontent').offset().top
-        }, 1400);
-    });
+
 
     const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A2', '#33FFA2'];
 

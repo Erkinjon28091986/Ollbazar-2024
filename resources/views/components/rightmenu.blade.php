@@ -14,33 +14,33 @@
                     My profile</a></li>
             <li><a href="{{ route('wallet') }}" class="mnavitems skeleton elyt">
                     <i class="icon-wallet6"></i>
-                    Hisobim</a></li>
+                    Wallet</a></li>
             <li><a href="{{ route('chat') }}" class="mnavitems skeleton elyt">
                     <i class="icon-email"></i>
-                    Hatdon</a></li>
-            <li><a href="#" class="mnavitems skeleton elyt">
+                    Chat</a></li>
+            <li><a href="{{ route('favorites') }}" class="mnavitems skeleton elyt">
                     <i class="icon-heart-filled"></i>
-                    Sevimli</a></li>
-            <li><a href="#" class="mnavitems skeleton elyt">
+                   Favorites</a></li>
+            <li><a href="{{ route('notification') }}" class="mnavitems skeleton elyt">
                     <i class="icon-bell"></i>
-                    Habarnoma</a></li>
+                    Notification</a></li>
             <li><a href="#" class="mnavitems skeleton elyt">
                     <i class="icon-settings"></i>
-                    Sozlama</a></li>
+                    Setiing</a></li>
             <li><a href="#" class="mnavitems skeleton elyt">
                     <i class="icon-logout"></i>
-                    Chiqish</a></li>
+                    Log out</a></li>
         </ul>
         <div class="wallet-wdj df">
             <div class="hshapka df">
-                <span><i class="icon-wallet6"></i>Hisobingiz</span>
+                <span><i class="icon-wallet6"></i>Total balance</span>
                 <span class="valyutas">uzs</span>
             </div>
             <div class="walloy df">
                 <div class="myhisob df">
                     <div class="hcount">1 400 566</div>
                 </div>
-                <a href=""><i class="icon-right-open"></i></a>
+                <a href="{{ route('wallet') }}"><i class="icon-right-open"></i></a>
             </div>
         </div>
         <!-- <div class="tillar">Hudud</div>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="til__dropdown til__dropdown__menu">
-                <div class="tillar">Tillar</div>
+                <div class="tillar">Language</div>
                 <div class="tilich tilikop">
                     <div class="control-group">
                         <label class="control control--radio">O'zbekcha
@@ -91,14 +91,14 @@
                         </label>
                     </div>
                 </div>
-                <div class="tillar">Pul birligi</div>
+                <div class="tillar">Currency</div>
                 <div class="tilich vtrew">
                     <div class="control-group">
                         <div class="pulbir df"><i class="fa-solid fa-caret-right"></i>
                             Oz'bek so'mi - Uzs</div>
                     </div>
                 </div>
-                <div class="tillar">Hudud</div>
+                <div class="tillar">Location</div>
                 <div class="tilich vtrew">
                     <div class="control-group">
                         <div class="selected__region">
@@ -106,10 +106,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="foottil">O'zgartirish</a>
+                <a href="#" class="foottil">Change</a>
             </div>
         </div>
         <a href="#" class="elyt hoverefs" style="padding: 12px;">
-            <i class="icon-information"></i>Yordam</a>
+            <i class="icon-information"></i>Help</a>
     </div>
 </div>

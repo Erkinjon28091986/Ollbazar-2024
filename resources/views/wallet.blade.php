@@ -55,7 +55,7 @@
     </div>
     <div class="prowrap w70w">
         <div class="tabcontent">
-            <div class="category-lists-slider vlart">
+            <div class="category-lists-slider vlarttt">
                 <div class="swiper-container" id="tabs-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">

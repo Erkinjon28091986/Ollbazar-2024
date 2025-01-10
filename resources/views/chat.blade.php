@@ -29,6 +29,7 @@
             <a href="" class="breads">Home</a>
             <a href="" class="breads">Chat</a>
         </div>
+        
         <div class="chatcontainer">
             <div id="selection-panel" class="panelhidden">
                 <span id="selected-info">Выбрано: 0</span>

@@ -35,3 +35,21 @@ Route::get('/chat', function () {
 Route::get('/wallet', function () {
     return view('wallet');
 })->name('wallet');
+
+Route::get('/favorites', function () {
+    return view('favorites');
+})->name('favorites');
+
+Route::get('/notification', function () {
+    return view('notification');
+})->name('notification');
+
+
+Route::get('/setting', function () {
+    return view('setting');
+})->name('setting');
+
+Route::get('/addform', function () {
+    return view('addform');
+})->name('addform');
+
