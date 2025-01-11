@@ -16,8 +16,13 @@
 </head>
 
 <body>
-    <div class="mainwrap">
-        <h4 class="addtitle">Place an ad </h4>
+    <div class="fixheadbox">
+        <div class="w70w df headbox">
+            <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
+            <p class="pagetitle">E'lon joylash</p>
+        </div>
+    </div>
+    <div class="mainwrap uiwrap">
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
         </div>
@@ -25,62 +30,125 @@
         <div id="steps">
             <div class="step active" id="step-1">
                 <div class="step-title">
-                    <h5>Details</h5>
-                    <span>1/3 шаг</span>
+                    <h5>E'lon haqida</h5>
+                    <span>1/3 bosqich</span>
                 </div>
-                <form id="form-1">
+
+                <form id="form-1" class="form-1 hform">
                     <div class="field df hinputgroup">
-                        <label for="name">Lot name</label>
-                        <input class="hinput validate" placeholder="Lot name" type="text" id="name" name="name" required>
-                        <span class="error">Это поле обязательно для заполнения.</span>
+                        <label for="name">E'lon nomi</label>
+                        <input class="hinput validate" placeholder="Lot name" type="text" id="name" name="name"
+                            required>
+                        <span class="error">E'lon nomini kiriting</span>
                     </div>
                     <div class="field df hinputgroup">
-                        <label for="aboutlot">About</label>
+                        <label for="aboutlot">Batafsil</label>
                         <div class="outputcount"><span class="outsrew">0</span>/2000</div>
-                        <textarea class="hinput theihgt validate" maxlength="2000" placeholder="About lot" name="aboutlot" id="aboutlot" required></textarea>
-                        <span class="error">Введите about lot</span>
+                        <textarea class="hinput theihgt validate" maxlength="2000" placeholder="About lot"
+                            name="aboutlot" id="aboutlot" required></textarea>
+                        <span class="error">Batafsil ma'lumot</span>
                     </div>
                     <div class="field df hinputgroup">
-                        <label for="priceInput">Price</label>
-                        <input oninput="formatNumber(this)" class="hinput validate" placeholder="1 000 000" type="number" id="priceInput" name="priceInput" required>
-                        <span class="error">Введите stenu</span>
-                        <div class="currencytype">Uzs</div>
-                    </div>
-                    <div class="zapt df"><p class="laytitle">Upload images</p><div class="maximgnote">Max images: 4</div> </div>
-                    <div class="upload__box">
-                        <div class="upload__btn-box field df hinputgroup">
-                            <label for="imgload" class="upload__btn dertye">+ Push Push</label>
-                            <input type="file" multiple data-max_length="4" class="hinput upload__inputfile dertye validate" id="imgload" name="imgload">
-                            <span class="error">Please loading images</span>
+                        <label for="priceInput">Narxi</label>
+
+                        <div class="hradiot fdc">
+                            <input oninput="formatNumber(this)" class="hinput validate" placeholder="1 000 000"
+                                type="number" id="priceInput" name="priceInput" required>
+                            <span class="error">Narxini ko'rsating</span>
+                            <div class="currencytype">Uzs</div>
                         </div>
-                        <div class="upload__img-wrap"></div>
                     </div>
+                    <div class="field df precentprice">
+                        <div class="zapt df">
+                            <p class="laytitle">Nasiya savdo</p>
+                        </div>
+                        <div class="hradio-container">
+                            <input type="radio" id="no" name="paymentOption" value="Нет" checked>
+                            <label for="no">Yo'q</label>
+                            <input type="radio" id="credit" name="paymentOption" value="Kredit">
+                            <label for="credit">Kredit</label>
+                            <input type="radio" id="installment" name="paymentOption" value="Bo'lib to'lash">
+                            <label for="installment">Bo'lib to'lash</label>
+                        </div>
+                        <div class="hradiot df fdc yashiru">
+                            <div class="hradiot">
+                                <input type="number" id="initialPayment" class="hinput validate"
+                                    placeholder="Boshlang'ich to'lov">
+                                <div class="currencytype">Uzs</div>
+                            </div>
+                            <span id="resultonpercent" class="resultonpercent">0%</span>
+                            <span class="htooltip" id="htooltip">Birinchi to'lov summasi ko'rsatilgan naxrning 90% dan oshmasligi kerak.</span>
+                        </div>
+                    </div>
+                    <div class="zapt df">
+                        <p class="laytitle">Rasm yuklang</p>
+                        <div class="maximgnote">Eng ko'p rasmlar soni: 15</div>
+                    </div>
+                    <div class="upload__box">
+            <div class="upload__btn-box field df hinputgroup">
+                <label for="imgload" class="upload__btn dertye" id="uploadBtn">+ Shu erga bosing</label>
+                <input type="file" multiple data-max_length="15"
+                    class="hinput upload__inputfile dertye validate" id="imgload" name="imgload">
+                <span class="errorimg">Marhamat, rasm yuklang</span>
+            </div>
+            <div class="upload__img-wrap"></div>
+        </div>
                 </form>
             </div>
             <div class="step" id="step-2">
                 <div class="step-title">
-                    <h2>О работе</h2>
+                    <h5>Qo'shimcha ma'lumotlar</h5>
                     <span>2/3 шаг</span>
                 </div>
-                <form id="form-2">
-                    <div class="field">
-                        <label for="job-title">Должность:</label>
-                        <input type="text" id="job-title" name="job-title" required>
-                        <span class="error">Это поле обязательно для заполнения.</span>
+                <form id="form-2" class="hform">
+                    <div class="field df precentprice">
+                        <div class="zapt df">
+                            <p class="laytitle">Внутренний отдел</p>
+                        </div>
+                        <div class="hradio-container ichkibolim">
+                            <input class="hinput validate" type="radio" id="cars" name="bolimOption"
+                                value="engilavtomobil" checked>
+                            <label for="cars">Английский автомобиль</label>
+                            <input class="hinput validate" type="radio" id="camion" name="bolimOption"
+                                value="yuktashuvchi">
+                            <label for="camion">Грузовик</label>
+                            <input class="hinput validate" type="radio" id="bus" name="bolimOption"
+                                value="yolovchitashuvchi">
+                            <label for="bus">Пассажирский транспорт</label>
+                            <input class="hinput validate" type="radio" id="special" name="bolimOption"
+                                value="maxsustehnika">
+                            <label for="special">Специальная техника</label>
+                            <input class="hinput validate" type="radio" id="moto" name="bolimOption"
+                                value="mototehnika">
+                            <label for="moto">Мототехника</label>
+                            <input class="hinput validate" type="radio" id="zapchasti" name="bolimOption"
+                                value="extiyotqismlar">
+                            <label for="zapchasti">Запчасти</label>
+                            <input class="hinput validate" type="radio" id="othercars" name="bolimOption"
+                                value="boshqalar">
+                            <label for="othercars">Другое</label>
+                            <span class="error">Введите значение</span>
+                        </div>
+                        <span class="error">Введите значение</span>
                     </div>
-                    <div class="field">
-                        <label for="company">Компания:</label>
-                        <input type="text" id="company" name="company" required>
-                        <span class="error">Это поле обязательно для заполнения.</span>
+                    <div class="field df hinputgroup">
+                        <label for="priceInput">Пробег</label>
+                        <div class="hradiot fdc">
+                            <input class="hinput validate" placeholder="1 000" type="number" id="priceInput"
+                                name="priceInput" required>
+                            <span class="error">Введите пробег</span>
+                            <div class="currencytype">Км</div>
+                        </div>
                     </div>
+                    
                 </form>
             </div>
             <div class="step" id="step-3">
                 <div class="step-title">
-                    <h2>О регионе</h2>
+                    <h5>О регионе</h5>
                     <span>3/3 шаг</span>
                 </div>
-                <form id="form-3">
+                <form id="form-3" class="hform">
                     <div class="field">
                         <label for="city">Город:</label>
                         <input type="text" id="city" name="city" required>
@@ -95,9 +163,13 @@
             </div>
         </div>
 
-        <div class="step-buttons">
+        <!-- <div class="step-buttons">
             <button type="button" id="prevBtn" onclick="changeStep(-1)">Назад</button>
             <button type="button" id="nextBtn" onclick="nextStep()">Вперед</button>
+        </div> -->
+        <div class="step-buttons">
+            <button type="button" id="prevBtn">Назад</button>
+            <button type="button" id="nextBtn">Вперед</button>
         </div>
     </div>
 

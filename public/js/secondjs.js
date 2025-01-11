@@ -1,39 +1,12 @@
-function formatNumber(input) {
-    // Получаем значение из поля ввода
-    let value = input.value;
-
-    // Удаляем все пробелы из значения
-    value = value.replace(/\s+/g, '');
-
-    // Проверяем, что значение является числом
-    if (!isNaN(value) && value !== '') {
-        // Преобразуем строку в число и форматируем его с пробелами
-        value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-    }
-
-    // Устанавливаем отформатированное значение обратно в поле ввода
-    input.value = value;
-}
-
-
-
-
 let currentStep = 1;
 let imgArray = []; // Объявляем imgArray глобально
 
 function showStep(step) {
     const steps = document.querySelectorAll('.step');
-    const indicators = document.querySelectorAll('.step-indicator');
     steps.forEach((stepElement, index) => {
         stepElement.classList.remove('active');
         if (index + 1 === step) {
             stepElement.classList.add('active');
-        }
-    });
-    indicators.forEach((indicator, index) => {
-        indicator.classList.remove('active');
-        if (index + 1 === step) {
-            indicator.classList.add('active');
         }
     });
 
@@ -42,17 +15,25 @@ function showStep(step) {
 }
 
 function changeStep(stepChange) {
+    console.log(`Current Step: ${currentStep}, Step Change: ${stepChange}`);
     const stepsCount = document.querySelectorAll('.step').length;
     currentStep += stepChange;
+
+    // Убедимся, что текущий шаг не выходит за пределы допустимого диапазона
     if (currentStep < 1) currentStep = 1;
     if (currentStep > stepsCount) currentStep = stepsCount;
+
+    console.log(`New Step: ${currentStep}`);
     showStep(currentStep);
 }
 
 function nextStep() {
+    console.log(`Next Step from Step: ${currentStep}`);
     const currentForm = document.querySelector(`#step-${currentStep} form`);
     const elements = currentForm.querySelectorAll('.validate');
     let isValid = true;
+
+    
 
     elements.forEach(element => {
         if (!element.checkValidity()) {
@@ -63,43 +44,68 @@ function nextStep() {
         }
     });
 
-    // Проверка, пустое ли поле загрузки файлов
-    const fileInput = currentForm.querySelector('.upload__inputfile');
-    const errorElement = fileInput.nextElementSibling; // Предполагается, что элемент ошибки идет сразу после input
-    const imgWrap = currentForm.querySelector('.upload__img-wrap');
+    const uploadWrap = currentForm.querySelector('.upload__img-wrap');
     const uploadBtn = currentForm.querySelector('.upload__btn');
-    const maxImgNote = currentForm.querySelector('.maximgnote');
+    const imgError = currentForm.querySelector('.errorimg');
 
-    if (imgWrap.children.length === 0) {
-        errorElement.classList.add('errorshow');
-        uploadBtn.classList.add('errorred');
-        isValid = false;
+    if (uploadWrap) { // Проверяем, что uploadWrap не равен null
+        if (uploadWrap.children.length === 0) {
+            if (imgError) {
+                imgError.style.display = 'block';
+                imgError.classList.add('errorshow');
+            } else {
+
+            }
+            if (uploadBtn) {
+                uploadBtn.classList.add('errorborder');
+            } else {
+
+            }
+            isValid = false;
+        } else {
+            if (imgError) {
+                imgError.classList.remove('errorshow');
+            }
+            if (uploadBtn) {
+                uploadBtn.classList.remove('errorborder');
+            }
+        }
     } else {
-        errorElement.classList.remove('errorshow');
-        uploadBtn.classList.remove('errorred');
+
     }
 
-    // Проверка количества загруженных изображений
-    if (imgWrap.children.length >= 4) {
-        maxImgNote.classList.add('errorshowxx');
-    } else {
-        maxImgNote.classList.remove('errorshowxx');
-    }
+
 
     if (isValid) {
         changeStep(1);
     }
+
 }
 
-document.getElementById('prevBtn').addEventListener('click', function () {
+document.getElementById('prevBtn').addEventListener('click', function (event) {
+    event.preventDefault();
     changeStep(-1);
 });
 
-document.getElementById('nextBtn').addEventListener('click', function () {
+document.getElementById('nextBtn').addEventListener('click', function (event) {
+    event.preventDefault();
     nextStep();
 });
 
-showStep(currentStep);
+// Функция для анимации прогресс-бара при загрузке страницы
+function animateProgressBar() {
+    const progress = document.getElementById('progress');
+    progress.classList.add('progress-animation');
+    setTimeout(function () {
+        progress.style.width = '33.33%';
+    }, 10); // Небольшая задержка, чтобы класс был добавлен перед установкой ширины
+}
+
+// Вызываем функцию анимации прогресс-бара после загрузки страницы
+document.addEventListener("DOMContentLoaded", function () {
+    showStep(currentStep);
+    animateProgressBar();
+});
 
 // Получаем элементы
 const textarea = document.querySelector('.theihgt');
@@ -120,17 +126,22 @@ if (textarea && output) {
 }
 
 //---------------Загрузка изображений с предварительным просмотром---------------
+
 $(document).ready(function () {
     ImgUpload();
 });
+
+
 
 function ImgUpload() {
     var imgWrap = "";
 
     $('.upload__inputfile').each(function () {
         $(this).on('change', function (e) {
+            document.querySelector('.upload__img-wrap').classList.add('upload__img-wrap2');
             imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
             var maxLength = $(this).attr('data-max_length');
+           
 
             var files = e.target.files;
             var filesArr = Array.prototype.slice.call(files);
@@ -160,86 +171,72 @@ function ImgUpload() {
                 }
             });
 
-            // Валидация входа файла
-            var errorElement = $(this).siblings('.error');
-            var uploadBtn = $(this).closest('.upload__box').find('.upload__btn')[0]; // Получаем нативный DOM-элемент кнопки
-            var maxImgNote = $(this).closest('.upload__box').find('.maximgnote')[0]; // Получаем нативный DOM-элемент maximgnote
-
-            if (files.length > 0) {
-                errorElement.classList.remove('errorshow');
-                if (uploadBtn) {
-                    uploadBtn.classList.remove('errorred');
-                }
-            } else {
-                errorElement.classList.add('errorshow');
-                if (uploadBtn) {
-                    uploadBtn.classList.add('errorred');
-                }
-            }
-
-           
-
-            // Проверка количества загруженных изображений
-            if (imgWrap.children.length >= 4) {
-                if (maxImgNote) {
-                    maxImgNote.classList.remove('errorshowxx');
-                }
-            } else {
-                if (maxImgNote) {
-                    maxImgNote.classList.add('errorshowxx');
-                }
-            }
-
-            console.log("Файлы выбраны: " + files.length);
         });
     });
 
     $('body').on('click', ".upload__img-close", function (e) {
         var file = $(this).siblings('.img-bg').data("file");
+        
         for (var i = 0; i < imgArray.length; i++) {
             if (imgArray[i].name === file) {
                 imgArray.splice(i, 1);
                 break;
             }
         }
+        
         $(this).parent().remove();
-
-        // Проверка, пустое ли поле загрузки файлов после удаления
-        const fileInput = $(this).closest('.upload__box').find('.upload__inputfile')[0]; // Получаем нативный DOM-элемент
-        const errorElement = $(this).closest('.upload__box').find('.error')[0]; // Получаем нативный DOM-элемент
-        const uploadBtn = $(this).closest('.upload__box').find('.upload__btn')[0]; // Получаем нативный DOM-элемент кнопки
-        const imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap')[0]; // Получаем нативный DOM-элемент imgWrap
-        const maxImgNote = $(this).closest('.upload__box').find('.maximgnote')[0]; // Получаем нативный DOM-элемент maximgnote
-
-        if (fileInput && errorElement && uploadBtn && imgWrap && maxImgNote) {
-            if (imgArray.length === 0 && fileInput.files.length === 0) {
-                // Сбрасываем состояние
-                imgArray = [];
-                fileInput.value = ''; // Очищаем значение input file
-                $(this).closest('.upload__box').find('.upload__img-wrap').empty(); // Удаляем все добавленные изображения
-                errorElement.classList.add('errorshow');
-                uploadBtn.classList.add('errorred');
-                maxImgNote.classList.add('errorshowxx');
-            } else {
-                errorElement.classList.remove('errorshow');
-                uploadBtn.classList.remove('errorred');
-
-                // Проверка количества загруженных изображений
-                if (imgWrap.children.length >= 4) {
-                    maxImgNote.classList.add('errorshowxx');
-                } else {
-                    maxImgNote.classList.remove('errorshowxx');
-                }
-            }
-        } else {
-            console.error('Элементы не найдены! Проверьте HTML.');
+        
+        var remainingCloseButtons = $('.upload__img-wrap .upload__img-close').length;
+        
+        if (remainingCloseButtons === 0) {
+          $('.upload__img-wrap').removeClass('upload__img-wrap2');
         }
     });
+    
 
     $('body').on('click', ".set-primary-btn", function (e) {
         $('.img-bg').removeClass('primary-img');
         $(this).siblings('.img-bg').addClass('primary-img');
     });
+
+
 }
 
+//--------------Кредит
+document.querySelectorAll('input[name="paymentOption"]').forEach((radio) => {
+    radio.addEventListener('change', function () {
+        const yashiruElement = document.querySelector('.yashiru');
+        if (this.value === 'Kredit' || this.value === "Bo'lib to'lash") {
+            yashiruElement.style.display = 'block';
+        } else {
+            yashiruElement.style.display = 'none';
+        }
+    });
+});
 
+document.getElementById('initialPayment').addEventListener('input', function () {
+    const price = parseFloat(document.getElementById('priceInput').value);
+    const initialPayment = parseFloat(this.value);
+    const resultSpan = document.getElementById('resultonpercent');
+    const tooltip = document.getElementById('htooltip');
+
+    if (!isNaN(price) && !isNaN(initialPayment) && price > 0) {
+        const maxInitialPayment = Math.floor(price * 0.90);
+        if (initialPayment > maxInitialPayment) {
+            this.value = maxInitialPayment;
+            resultSpan.textContent = `${(100 * maxInitialPayment / price).toFixed(0)}%`;
+            tooltip.style.display = 'block';
+        } else {
+            tooltip.style.display = 'none';
+            const percentage = (100 * initialPayment / price).toFixed(0);
+            resultSpan.textContent = `${percentage}%`;
+        }
+    } else {
+        resultSpan.textContent = "0%";
+        tooltip.style.display = 'none';
+    }
+});
+
+document.getElementById('priceInput').addEventListener('input', function () {
+    document.getElementById('initialPayment').dispatchEvent(new Event('input'));
+});
