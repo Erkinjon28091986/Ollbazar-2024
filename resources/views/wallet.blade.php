@@ -48,12 +48,8 @@
 
         </div>
     </div>
-    <div class="prowrap w70w mt100">
-        <div class="breadcrumswrap df">
-            <p class="vutre">Last transactions</p>
-        </div>
-    </div>
-    <div class="prowrap w70w">
+    
+    <div class="prowrap w70w uiwrap">
         <div class="tabcontent">
             <div class="category-lists-slider vlarttt">
                 <div class="swiper-container" id="tabs-slider">
@@ -91,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="detailsumma df fdc">
-                                <div class="summasi">-230 000</div> <span class="currencytype">Uzs</span>
+                                <div class="summasi">-230 000</div> <span class="currencybal">Uzs</span>
                             </div>
                         </div>
                     </div>
@@ -106,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="detailsumma df fdc">
-                                <div class="summasi">40 000</div> <span class="currencytype">Uzs</span>
+                                <div class="summasi">40 000</div> <span class="currencybal">Uzs</span>
                             </div>
                         </div>
                     </div>
@@ -122,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="detailsumma df fdc">
-                                <div class="summasi">7 000</div> <span class="currencytype">Uzs</span>
+                                <div class="summasi">7 000</div> <span class="currencybal">Uzs</span>
                             </div>
                         </div>
                     </div>
@@ -138,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="detailsumma df fdc">
-                                <div class="summasi">122 000</div> <span class="currencytype">Uzs</span>
+                                <div class="summasi">122 000</div> <span class="currencybal">Uzs</span>
                             </div>
                         </div>
                     </div>

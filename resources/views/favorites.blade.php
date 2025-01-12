@@ -24,7 +24,7 @@
             <p class="pagetitle">Favorites</p>
         </div>
     </div>
-    <div class="mainwrap">
+    <div class="mainwrap uiwrap">
         <div class="prowrap ">
             <div class="tabcontent">
                 <div class="category-lists-slider vlart">

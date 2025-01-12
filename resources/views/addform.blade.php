@@ -15,7 +15,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="hscroll">
     <div class="fixheadbox">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
@@ -33,29 +33,38 @@
                     <h5>E'lon haqida</h5>
                     <span>1/3 bosqich</span>
                 </div>
-
                 <form id="form-1" class="form-1 hform">
                     <div class="field df hinputgroup">
-                        <label for="name">E'lon nomi</label>
+                        <label for="name" class="laytitle">E'lon nomi</label>
                         <input class="hinput validate" placeholder="E'lon nomini kiriting" type="text" id="name"
                             name="name" required>
                         <span class="error">E'lon nomini kiriting</span>
                     </div>
                     <div class="field df hinputgroup">
-                        <label for="aboutlot">Batafsil</label>
+                        <label for="about" class="laytitle">Batafsil</label>
                         <div class="outputcount"><span class="outsrew">0</span>/2000</div>
                         <textarea class="hinput theihgt validate" maxlength="2000"
                             placeholder="Batafsil ma'lumot kiriting" name="aboutlot" id="aboutlot" required></textarea>
                         <span class="error">Batafsil ma'lumot</span>
                     </div>
                     <div class="field df hinputgroup">
-                        <label for="priceInput">Narxi</label>
+                        <label for="priceInput laytitle">Narxi</label>
 
                         <div class="hradiot fdc">
-                            <input class="hinput validate" placeholder="1 000 000" type="number" id="priceInput"
-                                name="priceInput" required>
+                            <input class="hinput validate" placeholder="1 000 000" type="text" id="priceInput"
+                                name="priceInput" required inputmode="numeric" autocomplete="off" maxlength="15">
                             <span class="error">Narxini ko'rsating</span>
-                            <div class="currencytype">Uzs</div>
+                            <div class="hcustom-select">
+                                <div id="hcurrencySelected" class="hselect-selected">UZS</div>
+                                <div id="hcurrencyDropdown" class="hselect-items hselect-hide hscroll">
+                                    <div onclick="updateCurrency('UZS')">UZS</div>
+                                    <div onclick="updateCurrency('USD')">USD</div>
+                                    <div onclick="updateCurrency('EUR')">EUR</div>
+                                    <div onclick="updateCurrency('TJS')">TJS</div>
+                                    <div onclick="updateCurrency('KGS')">KGS</div>
+                                    <div onclick="updateCurrency('KZT')">KZT</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="field df precentprice">
@@ -72,9 +81,10 @@
                         </div>
                         <div class="hradiot df fdc yashiru">
                             <div class="hradiot">
-                                <input type="number" id="initialPayment" class="hinput validate"
-                                    placeholder="Boshlang'ich to'lov">
-                                <div class="currencytype">Uzs</div>
+                                <input type="number" class="hinput validate initialPayment"
+                                    placeholder="Boshlang'ich to'lov" inputmode="numeric" autocomplete="off"
+                                    maxlength="15" id="priceInput">
+                                <div class="currencytype">UZS</div>
                             </div>
                             <span id="resultonpercent" class="resultonpercent">0%</span>
                             <span class="htooltip" id="htooltip">Birinchi to'lov summasi ko'rsatilgan naxrning 90% dan
@@ -97,14 +107,23 @@
                         <div class="upload__img-wrap"></div>
                     </div>
                     <div class="field df hinputgroup tagwrap">
-                    <label for="taginput">Tezkor so'zlar</label>
-                        <div class="tagcontainer df">
-                            <input class="hinput validate" maxlength="20" type="text" required id="taginput" placeholder="Tezkor so'zlarni kiriting">
-                            
-                            <button id="add-btn">+</button>
+                        <div class="zapt df">
+                            <p class="laytitle">Kalit so'zlar</p>
+                            <span class="tags-counter" id="tagsCounter">0/5 so'z</span>
                         </div>
-                        <span class="errortag">tag kiriting</span>
-                        <ul class="tagslist"></ul>
+                        <div class="tag-container">
+                            <div class="tag-input-wrapper" id="tagInputWrapper">
+                                <input type="text" id="tagInput" placeholder="So'zni kiriting" class="" maxlength="20">
+                                <div class="first-time-hint" id="firstTimeHint">
+                                    👋 Tez haridor topish uchun ko'maklashing!
+                                </div>
+                            </div>
+                            <span class="errorimg">Kamida 1 ta kalit so'z bo'lishi kerak</span>
+                            <div class="helper-text">
+                                <span>Namuna: Nexia 3, Neksiya 3, Aveo, Neksiya 3 2024, Oq nexia 3, Tuning neksiya 3 va hakazo</span>
+                            </div>
+                            <div class="status-message" id="statusMessage"> "asas" kalit so'zi o'chirildi.</div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -114,46 +133,52 @@
                     <span>2/3 шаг</span>
                 </div>
                 <form id="form-2" class="hform">
-                    <div class="field df precentprice">
-                        <div class="zapt df">
-                            <p class="laytitle">Внутренний отдел</p>
-                        </div>
-                        <div class="hradio-container ichkibolim">
-                            <input class="hinput validate" type="radio" id="cars" name="bolimOption"
-                                value="engilavtomobil" checked>
-                            <label for="cars">Английский автомобиль</label>
-                            <input class="hinput validate" type="radio" id="camion" name="bolimOption"
-                                value="yuktashuvchi">
-                            <label for="camion">Грузовик</label>
-                            <input class="hinput validate" type="radio" id="bus" name="bolimOption"
-                                value="yolovchitashuvchi">
-                            <label for="bus">Пассажирский транспорт</label>
-                            <input class="hinput validate" type="radio" id="special" name="bolimOption"
-                                value="maxsustehnika">
-                            <label for="special">Специальная техника</label>
-                            <input class="hinput validate" type="radio" id="moto" name="bolimOption"
-                                value="mototehnika">
-                            <label for="moto">Мототехника</label>
-                            <input class="hinput validate" type="radio" id="zapchasti" name="bolimOption"
-                                value="extiyotqismlar">
-                            <label for="zapchasti">Запчасти</label>
-                            <input class="hinput validate" type="radio" id="othercars" name="bolimOption"
-                                value="boshqalar">
-                            <label for="othercars">Другое</label>
+                    <section class="mainsection">
+
+                    </section>
+                    <section class="secondarysection">
+                        <div class="field df precentprice">
+                            <div class="zapt df">
+                                <p class="laytitle">Внутренний отдел</p>
+                            </div>
+                            <div class="hradio-container ichkibolim">
+                                <input class="hinput validate" type="radio" id="cars" name="bolimOption"
+                                    value="engilavtomobil" checked>
+                                <label for="cars">Английский автомобиль</label>
+                                <input class="hinput validate" type="radio" id="camion" name="bolimOption"
+                                    value="yuktashuvchi">
+                                <label for="camion">Грузовик</label>
+                                <input class="hinput validate" type="radio" id="bus" name="bolimOption"
+                                    value="yolovchitashuvchi">
+                                <label for="bus">Пассажирский транспорт</label>
+                                <input class="hinput validate" type="radio" id="special" name="bolimOption"
+                                    value="maxsustehnika">
+                                <label for="special">Специальная техника</label>
+                                <input class="hinput validate" type="radio" id="moto" name="bolimOption"
+                                    value="mototehnika">
+                                <label for="moto">Мототехника</label>
+                                <input class="hinput validate" type="radio" id="zapchasti" name="bolimOption"
+                                    value="extiyotqismlar">
+                                <label for="zapchasti">Запчасти</label>
+                                <input class="hinput validate" type="radio" id="othercars" name="bolimOption"
+                                    value="boshqalar">
+                                <label for="othercars">Другое</label>
+                                <span class="error">Введите значение</span>
+                            </div>
                             <span class="error">Введите значение</span>
                         </div>
-                        <span class="error">Введите значение</span>
-                    </div>
-                    <div class="field df hinputgroup">
-                        <label for="priceInput">Пробег</label>
-                        <div class="hradiot fdc">
-                            <input class="hinput validate" placeholder="1 000" type="number" id="priceInput"
-                                name="priceInput" required>
-                            <span class="error">Введите пробег</span>
-                            <div class="currencytype">Км</div>
+                        <div class="field df hinputgroup">
+                            <label for="priceInput">Пробег</label>
+                            <div class="hradiot fdc">
+                                <input class="hinput validate" placeholder="1 000" type="number" id="priceInput"
+                                    name="priceInput" required>
+                                <span class="error">Введите пробег</span>
+                                <div class="currencytype">Км</div>
+                            </div>
                         </div>
-                    </div>
-
+                    </section>
+                    <section class="mainsection">
+                    </section>
                 </form>
             </div>
             <div class="step" id="step-3">

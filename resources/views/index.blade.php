@@ -110,7 +110,8 @@
                         </li>
                     </ul>
                     <a href="javascript:void(0)" class="menu__user navitems"><i class="icon-user"></i></a>
-                    <a href="#" class="elonberish elonberishbg" data-bs-toggle="modal" data-bs-target="#ElonBerishBolimlariModal">
+                    <a href="#" class="elonberish elonberishbg" data-bs-toggle="modal"
+                        data-bs-target="#ElonBerishBolimlariModal">
                         <span>+</span> E'LON JOYLASH</a>
                 </div>
             </div>
@@ -265,8 +266,8 @@
                                 </div>
                                 <div class="c-carousel__item swiper-slide">
                                     <a href="" class="cat__item btn-ripple">
-                                        <img class="uyjihozlaricon" src="https://i.postimg.cc/MGYtHLWT/imgbin-sofa-png.png"
-                                            alt="ishbor">
+                                        <img class="uyjihozlaricon"
+                                            src="https://i.postimg.cc/MGYtHLWT/imgbin-sofa-png.png" alt="ishbor">
                                         <span>Uy jihozlari</span>
                                     </a>
                                 </div>
@@ -347,7 +348,7 @@
             </div>
         </div>
     </header>
-    <main class="w70w asosiycontent" style="height: 590px">
+    <main class="w70w asosiycontent" >
         <div class="u-wrapper vip__ads df">
             <div class="swipercontrolbox df">
                 <p class="htitle">Shox e'lonlar</p>
@@ -709,1458 +710,1477 @@
                 </div>
             </div>
         </div>
-        <div class="swipercontrolbox df">
-            <p class="htitle">Yangi e'lonlar</p>
-            <div class="c-carousel__controls" style="--swiper-navigation-color: pink;">
-                <a href="javascript:void(0)" class="adnewads" data-bs-toggle="modal"
-                    data-bs-target="#ElonBerishBolimlariModal"><i class="icon-filter5"></i>Saralash</a>
+        <div class="bopter">
+            <div class="swipercontrolbox df">
+                <p class="htitle">Yangi e'lonlar</p>
+                <div class="c-carousel__controls" style="--swiper-navigation-color: pink;">
+                    <a href="javascript:void(0)" class="adnewads" data-bs-toggle="modal"
+                        data-bs-target="#ElonBerishBolimlariModal"><i class="icon-filter5"></i>Saralash</a>
+                </div>
+            </div>
+            <div class="masonty__box">
+                <div class="masonry">
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="{{ route('details') }}" class="elonimglink adtofavdouble lot-image-vipelon">
+                            <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
+                                class="lot-image lazy" alt="Damas">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
+                                <div>
+                                    <div class="lot-title">Samsung Galaxy S 24 Ultra, ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg"
+                                data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
+                                <div>
+                                    <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 3</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                <div>
+                                    <div class="lot-title">Qazon 4</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
+                                <div>
+                                    <div class="lot-title">Damas 5</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
+                                <div>
+                                    <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Veniam aperiam enim tempore.</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg"
+                                data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
+                                <div>
+                                    <div class="lot-title">Damas 7</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 8</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 9</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
+                            <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy" alt="Damas">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
+                                <div>
+                                    <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg"
+                                data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
+                                <div>
+                                    <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 3</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                <div>
+                                    <div class="lot-title">Qazon 4</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
+                                <div>
+                                    <div class="lot-title">Damas 5</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
+                                <div>
+                                    <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Veniam aperiam enim tempore.</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/CLbnP8D5/kugo.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
+                                <div>
+                                    <div class="lot-title">Damas 7</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 8</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 9</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
+                            <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy" alt="Damas">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
+                                <div>
+                                    <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg"
+                                data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
+                                <div>
+                                    <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 3</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                <div>
+                                    <div class="lot-title">Qazon 4</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
+                                <div>
+                                    <div class="lot-title">Damas 5</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
+                                <div>
+                                    <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Veniam aperiam enim tempore.</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg"
+                                data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
+                                <div>
+                                    <div class="lot-title">Damas 7</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 8</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 9</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
+                            <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
+                                class="lot-image lazy" alt="Damas">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
+                                    class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
+                                <div>
+                                    <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg"
+                                data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/wjVyHdwd/ohpo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
+                                <div>
+                                    <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/wjVyHdwd/ohpo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 3</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
+                                <div>
+                                    <div class="lot-title">Qazon 4</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
+                                <div>
+                                    <div class="lot-title">Damas 5</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon ">
+                        <div class="infobagde df">
+                            <div class="vipbadge">
+                                <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512"
+                                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
+                                            fill="#ffe32d"></path>
+                                        <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
+                                            fill="#ffad49"></path>
+                                        <path
+                                            d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
+                                            fill="#ed7756"></path>
+                                        <path
+                                            d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
+                                            fill="#ffe32d"></path>
+                                        <path
+                                            d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
+                                            fill="#ffad49"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-vipelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
+                                <div>
+                                    <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Veniam aperiam enim tempore.</div>
+                                    <div class="elonNarh">2 000 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
+                                class="lot-image lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-online"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
+                                <div>
+                                    <div class="lot-title">Damas 7</div>
+                                    <div class="elonNarh">100 700 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+                    <div class="item-elon">
+                        <div class="infobagde df">
+                            <div class="flashbadge">Tezkor</div>
+                            <div class="korildibadge">Ko'rildi</div>
+                        </div>
+                        <a href="" class="elonimglink lot-image-flashelon">
+                            <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
+                                class="lot-image  lazy">
+                        </a>
+                        <div class="lot-nav df">
+                            <div class="user-img-box">
+                                <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
+                                <span class="status-user user-offline"></span>
+                            </div>
+                            <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
+                                <div>
+                                    <div class="lot-title">Oshxona mebeli 8</div>
+                                    <div class="elonNarh">56 000 Uzs</div>
+                                </div>
+                                <a href="javascript:void(0)" class="addtolovelist">
+                                    <i class="fa-solid fa-heart favoicon"></i>
+                                    <span class="favoicon__show">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                    <span class="favoicon__show2">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" id="elon-id" class="overlay-elon-items"></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="masonty__box">
-            <div class="masonry">
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="{{ route('details') }}" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
-                            class="lot-image lazy" alt="Damas">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
-                            <div>
-                                <div class="lot-title">Samsung Galaxy S 24 Ultra, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
-                            <div>
-                                <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 3</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
-                            <div>
-                                <div class="lot-title">Qazon 4</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
-                            <div>
-                                <div class="lot-title">Damas 5</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
-                            <div>
-                                <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam aperiam enim tempore.</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
-                            <div>
-                                <div class="lot-title">Damas 7</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 8</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 9</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy" alt="Damas">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
-                            <div>
-                                <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
-                            <div>
-                                <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 3</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
-                            <div>
-                                <div class="lot-title">Qazon 4</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
-                            <div>
-                                <div class="lot-title">Damas 5</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
-                            <div>
-                                <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam aperiam enim tempore.</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/CLbnP8D5/kugo.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
-                            <div>
-                                <div class="lot-title">Damas 7</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 8</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 9</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy" alt="Damas">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
-                            <div>
-                                <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
-                            <div>
-                                <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 3</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
-                            <div>
-                                <div class="lot-title">Qazon 4</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
-                            <div>
-                                <div class="lot-title">Damas 5</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
-                            <div>
-                                <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam aperiam enim tempore.</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
-                            <div>
-                                <div class="lot-title">Damas 7</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 8</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-16">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 9</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="http://127.0.0.1:8000/" class="elonimglink adtofavdouble lot-image-vipelon">
-                        <img src="placeholder.jpg" data-src="https://i.postimg.cc/JzhKWzsD/s24-ultra4.jpg"
-                            class="lot-image lazy" alt="Damas">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" alt="Admin 2"
-                                class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent adtofavdouble" data-item-id="unique-id-8">
-                            <div>
-                                <div class="lot-title">Qazon 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quo deserunt, recusandae sapiente velit nesciunt laudantium?</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg"
-                            data-src="https://i.postimg.cc/QCGZMQw8/yamaha-motosiklet.jpg" class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/wjVyHdwd/ohpo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-9">
-                            <div>
-                                <div class="lot-title">Damas 2 Lorem ipsum dolor sit amet. </div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/wjVyHdwd/ohpo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-10">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 3</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-11">
-                            <div>
-                                <div class="lot-title">Qazon 4</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-12">
-                            <div>
-                                <div class="lot-title">Damas 5</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon ">
-                    <div class="infobagde df">
-                        <div class="vipbadge">
-                            <svg id="fi_7921539" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                width="512" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path
-                                        d="m291.245 12.902-35.245-12.902h-68.6l-118.8 68.6-68.6 118.81v137.18l68.6 118.81 118.8 68.6h68.6l35.245-12.902z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m512 187.41v137.18l-68.6 118.81-118.8 68.6h-68.6v-512h68.6l118.8 68.6z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m284.403 74.446-28.403-10.396h-51.43l-89.09 51.43-51.43 89.09v102.86l51.43 89.09 89.09 51.43h51.43l28.403-10.396z"
-                                        fill="#ffad49"></path>
-                                    <path
-                                        d="m447.95 204.57v102.86l-51.43 89.09-89.09 51.43h-51.43v-383.9h51.43l89.09 51.43z"
-                                        fill="#ed7756"></path>
-                                    <path
-                                        d="m271.697 175.496-15.697-22.986h-12.25l-36.98 72.09-60.34-25.29-17.57 16.93 33.27 135.25h93.87l15.697-16.699z"
-                                        fill="#ffe32d"></path>
-                                    <path d="m383.14 216.24-33.27 135.25h-93.87v-198.98h12.25l36.98 72.09 60.34-25.29z"
-                                        fill="#ffad49"></path>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-vipelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/7ZnC8gQ1/qozon.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/nLSXjG8R/fjuyj.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-13">
-                            <div>
-                                <div class="lot-title">Qazon 6 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam aperiam enim tempore.</div>
-                                <div class="elonNarh">2 000 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/8P7VW32C/shir2.jpg"
-                            class="lot-image lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-online"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-14">
-                            <div>
-                                <div class="lot-title">Damas 7</div>
-                                <div class="elonNarh">100 700 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-                <div class="item-elon">
-                    <div class="infobagde df">
-                        <div class="flashbadge">Tezkor</div>
-                        <div class="korildibadge">Ko'rildi</div>
-                    </div>
-                    <a href="" class="elonimglink lot-image-flashelon">
-                        <img alt="Damas" src="placeholder.jpg" data-src="https://i.postimg.cc/HWF8QWyM/kuhn.jpg"
-                            class="lot-image  lazy">
-                    </a>
-                    <div class="lot-nav df">
-                        <div class="user-img-box">
-                            <img src="https://i.postimg.cc/CLbnP8D5/kugo.jpg" alt="Admin 2" class="seller-avatar">
-                            <span class="status-user user-offline"></span>
-                        </div>
-                        <div class="elonfoot df faveffect__parent" data-item-id="unique-id-15">
-                            <div>
-                                <div class="lot-title">Oshxona mebeli 8</div>
-                                <div class="elonNarh">56 000 Uzs</div>
-                            </div>
-                            <a href="javascript:void(0)" class="addtolovelist">
-                                <i class="fa-solid fa-heart favoicon"></i>
-                                <span class="favoicon__show">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                                <span class="favoicon__show2">
-                                    <i class="fa-solid fa-heart"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="" id="elon-id" class="overlay-elon-items"></a>
-                    </div>
-                </div>
-
-            </div>
     </main>
     <div class="main__overlay"></div>
 
     <!-- Modal -->
-    <div class="modal fade sheetmodal" id="ElonBerishBolimlariModal" tabindex="-1" aria-labelledby="sheetModalLabel"
-        >
+    <div class="modal fade sheetmodal" id="ElonBerishBolimlariModal" tabindex="-1" aria-labelledby="sheetModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -2170,7 +2190,7 @@
                 <div class="modal-body">
                     <div class="sheetmodal__categories">
                         <div class="c-carousel__item swiper-slide">
-                            <a href="javascript:void(0)" class="cat__item btn-ripple" tabindex="0">
+                            <a href="{{ route('addform') }}" class="cat__item btn-ripple" tabindex="0">
                                 <img class="avtoicon" src="https://i.postimg.cc/tC85Wvd6/spark.png" alt="avtomobil">
                                 <span>Avtomobil</span>
                             </a>
@@ -2361,10 +2381,12 @@
                 <div class="last__user df">
                     <p class="lutitle">Ohirgi qidiruvingiz</p>
                     <div class="lubox df">
-                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malibu <span class="closethis"> <i class="icon-close"></i> </span></a>
+                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malibu <span
+                                class="closethis"> <i class="icon-close"></i> </span></a>
                         <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malisdfsbu</a>
                         <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Mibu</a>
-                        <a href="javascript:void(0)" rel="nofollow" class="last__user__item cpiyt">Malssadsafdsafsdfibu</a>
+                        <a href="javascript:void(0)" rel="nofollow"
+                            class="last__user__item cpiyt">Malssadsafdsafsdfibu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malisdfdsbu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malibu</a>
                         <a href="" rel="nofollow" class="last__user__item cpiyt">Malidfabu</a>

@@ -1,3 +1,26 @@
+//-----------------------change currency-----------------
+
+document.getElementById("hcurrencySelected").onclick = function () {
+    toggleDropdown();
+};
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("hcurrencyDropdown");
+    dropdown.classList.toggle("hselect-show");
+}
+
+function updateCurrency(currency) {
+    document.getElementById("hcurrencySelected").innerText = currency;
+    var elements = document.getElementsByClassName("currencytype");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].innerText = currency;
+    }
+    toggleDropdown();
+}
+
+
+
+
 let currentStep = 1;
 let imgArray = []; // Объявляем imgArray глобально
 
@@ -27,56 +50,13 @@ function changeStep(stepChange) {
     showStep(currentStep);
 }
 
-// function nextStep() {
-//     console.log(`Next Step from Step: ${currentStep}`);
-//     const currentForm = document.querySelector(`#step-${currentStep} form`);
-//     const elements = currentForm.querySelectorAll('.validate');
-//     let isValid = true;
-
-    
-
-//     elements.forEach(element => {
-//         if (!element.checkValidity()) {
-//             element.classList.add('invalid');
-//             isValid = false;
-//         } else {
-//             element.classList.remove('invalid');
-//         }
-//     });
-
-//     const uploadWrap = currentForm.querySelector('.upload__img-wrap');
-//     const uploadBtn = currentForm.querySelector('.upload__btn');
-//     const imgError = currentForm.querySelector('.errorimg');
-
-//     if (uploadWrap && uploadWrap.children.length === 0) {
-//         if (imgError) {
-//             imgError.style.display = 'block';
-//             imgError.classList.add('errorshow');
-//         }
-//         if (uploadBtn) {
-//             uploadBtn.classList.add('errorborder');
-//         }
-//         isValid = false;
-//     } else {
-//         if (imgError) {
-//             imgError.classList.remove('errorshow');
-//         }
-//         if (uploadBtn) {
-//             uploadBtn.classList.remove('errorborder');
-//         }
-//     }
-
-//     if (isValid) {
-//         changeStep(1);
-//     }
-
-// }
-
 function nextStep() {
     console.log(`Next Step from Step: ${currentStep}`);
     const currentForm = document.querySelector(`#step-${currentStep} form`);
     const elements = currentForm.querySelectorAll('.validate');
     let isValid = true;
+
+
 
     elements.forEach(element => {
         if (!element.checkValidity()) {
@@ -89,7 +69,7 @@ function nextStep() {
 
     const uploadWrap = currentForm.querySelector('.upload__img-wrap');
     const uploadBtn = currentForm.querySelector('.upload__btn');
-    const imgError = currentForm.querySelector('.errorimg');
+    const imgError = currentForm.querySelector('.upload__btn-box .errorimg');
 
     if (uploadWrap && uploadWrap.children.length === 0) {
         if (imgError) {
@@ -109,18 +89,26 @@ function nextStep() {
         }
     }
 
-    // Новая проверка для .tagslist
-    const tagsList = currentForm.querySelector('.tagslist');
-    const tagError = currentForm.querySelector('.errortag');
+    const tagWrapper = currentForm.querySelector('.tag-input-wrapper');
+    const tagsError = currentForm.querySelector('.tag-container .errorimg');
+    const wrappertagses = document.getElementById('tagInputWrapper');
 
-    if (tagsList && tagsList.children.length === 0) {
-        if (tagError) {
-            tagError.classList.add('errorshow');
-        }
-        isValid = false;
-    } else {
-        if (tagError) {
-            tagError.classList.remove('errorshow');
+    if (tagWrapper) {
+        const tagCount = tagWrapper.querySelectorAll('.tag').length;
+
+        if (tagCount === 0) {
+            if (tagsError) {
+                tagsError.style.display = 'block';
+                tagsError.classList.add('errorshow');
+                wrappertagses.classList.add('max-tags');
+            }
+            isValid = false;
+        } else {
+            if (tagsError) {
+                tagsError.style.display = 'none';
+                tagsError.classList.remove('errorshow');
+                wrappertagses.classList.remove('max-tags');
+            }
         }
     }
 
@@ -128,8 +116,6 @@ function nextStep() {
         changeStep(1);
     }
 }
-
-
 
 document.getElementById('prevBtn').addEventListener('click', function (event) {
     event.preventDefault();
@@ -190,7 +176,7 @@ function ImgUpload() {
             document.querySelector('.upload__img-wrap').classList.add('upload__img-wrap2');
             imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
             var maxLength = $(this).attr('data-max_length');
-           
+
 
             var files = e.target.files;
             var filesArr = Array.prototype.slice.call(files);
@@ -225,23 +211,23 @@ function ImgUpload() {
 
     $('body').on('click', ".upload__img-close", function (e) {
         var file = $(this).siblings('.img-bg').data("file");
-        
+
         for (var i = 0; i < imgArray.length; i++) {
             if (imgArray[i].name === file) {
                 imgArray.splice(i, 1);
                 break;
             }
         }
-        
+
         $(this).parent().remove();
-        
+
         var remainingCloseButtons = $('.upload__img-wrap .upload__img-close').length;
-        
+
         if (remainingCloseButtons === 0) {
-          $('.upload__img-wrap').removeClass('upload__img-wrap2');
+            $('.upload__img-wrap').removeClass('upload__img-wrap2');
         }
     });
-    
+
 
     $('body').on('click', ".set-primary-btn", function (e) {
         $('.img-bg').removeClass('primary-img');
@@ -263,7 +249,7 @@ document.querySelectorAll('input[name="paymentOption"]').forEach((radio) => {
     });
 });
 
-document.getElementById('initialPayment').addEventListener('input', function () {
+document.querySelector('.initialPayment').addEventListener('input', function () {
     const price = parseFloat(document.getElementById('priceInput').value);
     const initialPayment = parseFloat(this.value);
     const resultSpan = document.getElementById('resultonpercent');
@@ -292,98 +278,221 @@ document.getElementById('priceInput').addEventListener('input', function () {
 
 
 //-----------------------tag function--------------------------
-// let maxTags = 2; // Установите максимальное количество тегов
-
-// document.getElementById('add-btn').addEventListener('click', function() {
-//     const tagInput = document.getElementById('taginput');
-//     const tagText = tagInput.value.trim();
-//     const tagsList = document.querySelector('.tagslist');
-//     const tags = tagsList.querySelectorAll('.tag');
-
-//     if (tagText === '') {
-//         alert('Введите текст тега!');
-//         return;
-//     }
-
-//     if (tags.length >= maxTags) {
-//         alert(`Максимальное количество тегов - ${maxTags}!`);
-//         return;
-//     }
-
-//     // Проверка на уникальность тега
-//     const isDuplicate = Array.from(tags).some(tag => tag.firstChild.textContent.trim() === tagText);
-//     if (isDuplicate) {
-//         alert("Bunday tezkor s'oz kiritilgan!");
-//         return;
-//     }
-
-//     const newTag = document.createElement('li');
-//     newTag.className = 'tag';
-//     newTag.textContent = tagText;
-
-//     const removeButton = document.createElement('button');
-//     removeButton.textContent = '×';
-//     removeButton.addEventListener('click', function() {
-//         newTag.classList.add('remove');
-//         newTag.addEventListener('transitionend', function() {
-//             tagsList.removeChild(newTag);
-//         }, { once: true });
-//     });
-
-//     newTag.appendChild(removeButton);
-//     tagsList.appendChild(newTag);
-//     setTimeout(() => newTag.classList.add('show'), 10); // Добавляем класс show с небольшой задержкой
-
-//     tagInput.value = ''; // Очистка поля ввода
-// });
-
-
-let maxTags = 5; // Установите максимальное количество тегов
-
-document.getElementById('add-btn').addEventListener('click', function() {
-    const tagInput = document.getElementById('taginput');
-    const tagText = tagInput.value.trim();
-    const tagsList = document.querySelector('.tagslist');
-    const tags = tagsList.querySelectorAll('.tag');
-
-    if (tagText === '') {
-        alert('Введите текст тега!');
-        return;
+class TagInput {
+    constructor(maxTags = 5) {
+        this.tags = [];
+        this.maxTags = maxTags;
+        this.input = document.getElementById('tagInput');
+        this.wrapper = document.getElementById('tagInputWrapper');
+        this.errorText = document.getElementById('errorTextss');
+        this.tagsCounter = document.getElementById('tagsCounter');
+        this.statusMessage = document.getElementById('statusMessage');
+        this.firstTimeHint = document.getElementById('firstTimeHint');
+        this.hasShownFirstTimeHint = false;
+        this.setupEventListeners();
+        this.updateCounter();
+        this.showFirstTimeHint();
     }
 
-    if (tags.length >= maxTags) {
-        alert(`Максимальное количество тегов - ${maxTags}!`);
-        return;
+    showFirstTimeHint() {
+        if (!this.hasShownFirstTimeHint) {
+            this.firstTimeHint.classList.add('visible');
+            setTimeout(() => {
+                this.firstTimeHint.classList.remove('visible');
+                this.hasShownFirstTimeHint = true;
+            }, 5000);
+        }
     }
 
-    // Проверка на уникальность тега
-    const isDuplicate = Array.from(tags).some(tag => tag.firstChild.textContent.trim() === tagText);
-    if (isDuplicate) {
-        alert("Bunday tezkor s'oz kiritilgan!");
-        return;
+    showStatus(message, type = 'info') {
+        this.statusMessage.textContent = message;
+        this.statusMessage.className = 'status-message ' + type;
+        setTimeout(() => {
+            this.statusMessage.className = 'status-message';
+        }, 3000);
     }
 
-    const newTag = document.createElement('li');
-    newTag.className = 'tag';
-    newTag.textContent = tagText;
+    setupEventListeners() {
+        this.input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                this.addTag();
+            } else if (e.key === 'Backspace' && !this.input.value && this.tags.length > 0) {
+                this.removeLastTag();
+            }
+        });
 
-    const removeButton = document.createElement('button');
-    removeButton.textContent = '×';
-    removeButton.addEventListener('click', function() {
-        newTag.classList.add('remove');
-        newTag.addEventListener('transitionend', function() {
-            tagsList.removeChild(newTag);
-        }, { once: true });
-    });
+        this.input.addEventListener('focus', () => {
+            if (this.tags.length === 0) {
+                this.showFirstTimeHint();
+            }
+        });
+    }
 
-    newTag.appendChild(removeButton);
-    tagsList.appendChild(newTag);
-    setTimeout(() => newTag.classList.add('show'), 10); // Добавляем класс show с небольшой задержкой
+    updateCounter() {
+        const count = this.tags.length;
+        this.tagsCounter.textContent = `${count}/${this.maxTags} so'z`;
 
-    tagInput.value = ''; // Очистка поля ввода
+        this.tagsCounter.className = 'tags-counter';
+        if (count >= this.maxTags - 1) {
+            this.tagsCounter.classList.add('danger');
+        } else if (count >= this.maxTags - 2) {
+            this.tagsCounter.classList.add('warning');
+        }
 
-    // Проверка количества добавленных тегов и удаление класса .invalid у элементов с классом .validate
-    if (tagsList.querySelectorAll('.tag').length >= 1) {
-        document.querySelectorAll('.hinput').forEach(element => { element.classList.remove('invalid', 'validate'); });
+        if (count >= this.maxTags) {
+            this.wrapper.classList.add('max-tags');
+            this.input.classList.add('disabled');
+            this.showStatus("Cheklov: eng ko'p kalit so'zlar soni", 'error');
+        } else {
+            this.wrapper.classList.remove('max-tags');
+            this.input.classList.remove('disabled');
+        }
+    }
+
+    addTag() {
+        const value = this.input.value.trim();
+        if (value) {
+            if (this.tags.length >= this.maxTags) {
+                this.wrapper.classList.add('shake');
+                this.showStatus(`Eng ko'p kalit so'zlar soni: ${this.maxTags}`, 'error');
+                setTimeout(() => {
+                    this.wrapper.classList.remove('shake');
+                }, 300);
+                return;
+            }
+
+            if (!this.tags.includes(value)) {
+                this.tags.push(value);
+                this.createTagElement(value);
+                this.input.value = '';
+                this.updateCounter();
+                //this.showStatus(`"${value}" kalit so'z qo'shildi`, 'info');
+            } else {
+                this.input.classList.add('shake');
+                this.showStatus(`"${value}" bu kalit so'z mavjud`, 'warning');
+                setTimeout(() => {
+                    this.input.classList.remove('shake');
+                }, 300);
+            }
+        }
+    }
+
+    createTagElement(text) {
+        const tag = document.createElement('div');
+        tag.className = 'tag';
+
+        const tagText = document.createElement('span');
+        tagText.className = 'tag-text';
+        tagText.textContent = text;
+
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tag-tooltip';
+        tooltip.textContent = "O'chirish uchun × ga bosing";
+
+        const closeButton = document.createElement('button');
+        closeButton.className = 'tag-close';
+        closeButton.innerHTML = '×';
+        closeButton.onclick = () => this.removeTag(text, tag);
+
+        tag.appendChild(tagText);
+        tag.appendChild(closeButton);
+        tag.appendChild(tooltip);
+        this.wrapper.insertBefore(tag, this.input);
+    }
+
+    removeTag(text, element) {
+        element.classList.add('removing');
+        element.addEventListener('animationend', () => {
+            this.tags = this.tags.filter(tag => tag !== text);
+            element.remove();
+            this.updateCounter();
+            //this.showStatus(`Тег "${text}" o'chirildi`, 'info');
+        });
+    }
+
+    removeLastTag() {
+        if (this.tags.length > 0) {
+            const lastTag = this.wrapper.querySelector('.tag:last-of-type');
+            if (lastTag) {
+                const text = lastTag.querySelector('.tag-text').textContent;
+                this.removeTag(text, lastTag);
+            }
+        }
+    }
+
+    getTags() {
+        return this.tags;
+    }
+}
+
+
+const tagInput = new TagInput(10);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const input = document.querySelector('.theihgt');
+    const outputde = document.querySelector('.outputcount');
+
+    if (input && outputde) {
+        input.addEventListener('input', function () {
+            if (this.value.length >= 2000) {
+                outputde.style.backgroundColor = '#f8d7da';
+                outputde.style.color = '#721c24';
+            } else {
+                outputde.style.backgroundColor = '';
+                outputde.style.color = '';
+            }
+        });
+    } else {
+        console.error(' .teihgt yoki .outputcount topilmadi');
+    }
+});
+
+//---------------------formation price numbers-----------------
+const priceInput = document.querySelector('#priceInput');
+
+// Функция для форматирования числа с пробелами
+function formatNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
+// Функция для очистки строки от всех символов кроме цифр
+function cleanNumber(str) {
+    return str.replace(/\D/g, '');
+}
+
+priceInput.addEventListener('input', function (e) {
+    // Получаем значение и удаляем все символы кроме цифр
+    let value = cleanNumber(this.value);
+
+    // Если значение не пустое, форматируем его
+    if (value) {
+        // Сохраняем позицию курсора
+        const cursorPosition = this.selectionStart;
+        const oldLength = this.value.length;
+
+        // Форматируем число
+        const formattedValue = formatNumber(value);
+        this.value = formattedValue;
+
+        // Вычисляем новую позицию курсора
+        const newLength = this.value.length;
+        const cursorOffset = newLength - oldLength;
+
+        // Устанавливаем курсор в правильную позицию
+        this.setSelectionRange(cursorPosition + cursorOffset, cursorPosition + cursorOffset);
+    }
+});
+
+// Форматируем начальное значение, если оно есть
+if (priceInput.value) {
+    priceInput.value = formatNumber(cleanNumber(priceInput.value));
+}
+
+// Дополнительно: форматируем значение при потере фокуса 
+// (на случай, если пользователь удалит все пробелы)
+priceInput.addEventListener('blur', function () {
+    if (this.value) {
+        this.value = formatNumber(cleanNumber(this.value));
     }
 });

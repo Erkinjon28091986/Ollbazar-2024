@@ -24,7 +24,7 @@
             <p class="pagetitle">Notification</p>
         </div>
     </div>
-    <div class="mainwrap">
+    <div class="mainwrap uiwrap">
         <div class="prowrap ">
             <div class="tabcontent">
                 <div class="category-lists-slider vlart">
@@ -172,7 +172,7 @@
                                         <div class="chatstfoot df">
                                             <span class="pinningbutton"><i class="icon-pin34"></i></span>
                                         </div>
-                                        <p class="soldad"><i class="icon-ok-2"></i></p>
+                                        <p class="soldad" tooltip="Sotildi" flow="left"><i class="icon-ok-2"></i></p>
 
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@
                                         <div class="chatstfoot df">
                                             <span class="pinningbutton"><i class="icon-pin34"></i></span>
                                         </div>
-                                        <p class="dataexpired"><i class="fas fa-exclamation"></i></p>
+                                        <p class="dataexpired" tooltip="Muddati tugadi" flow="left"><i class="fas fa-exclamation"></i></p>
 
                                     </div>
                                 </div>
@@ -204,7 +204,7 @@
                                         <div class="chatstfoot df">
                                             <span class="pinningbutton"><i class="icon-pin34"></i></span>
                                         </div>
-                                        <p class="withdrawnad">-</p>
+                                        <p class="withdrawnad" tooltip="Sotuvdan olindi" flow="left">-</p>
                                     </div>
                                 </div>
                                 <div class="chat-block" data-id="4">
@@ -219,7 +219,7 @@
                                         <div class="chatstfoot df">
                                             <span class="pinningbutton"><i class="icon-pin34"></i></span>
                                         </div>
-                                       <p class="stschangednad"><i class="icon-pencil-black-gross-tool"></i></p>
+                                       <p class="stschangednad" tooltip="O'zgartirildi" flow="left"><i class="icon-pencil-black-gross-tool"></i></p>
 
                                     </div>
                                 </div>
