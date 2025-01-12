@@ -6932,7 +6932,7 @@ h1.fm-title {
     visibility: hidden;
 }
 
-.hinput.invalid+.error {
+.hinput.invalid ~ .error {
     display: inline;
     opacity: 1;
     margin-left: 0;
@@ -7231,8 +7231,10 @@ p.laytitle {
     transition: all ease 0.3s;
 
     &:focus {
+      background: #F9f9f9;
         border: 1px solid #d4d4d4;
         outline: none;
+        transition: all ease 0.3s;
     }
 
     &:hover {
@@ -7308,6 +7310,14 @@ p.laytitle {
     opacity: 0;
     visibility: hidden;
 }
+.errortag {
+  color: #e74040;
+  font-size: 14px;
+  height: 14px;
+  margin-left: -10px;
+  opacity: 0;
+  visibility: hidden;
+}
 
 .errorshow {
     display: inline;
@@ -7329,4 +7339,59 @@ p.laytitle {
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+}
+.noticetitle{
+  color: #888;
+  margin: 5px 0 15px 0;
+}
+.tag {
+  display: inline-block;
+  background-color: #dfdfdf;
+  padding: 10px 30px 10px 15px;
+  margin: 5px;
+  color: #777;
+  border-radius: 10px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.tag.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tag button {
+  background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tag.remove {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.tagcontainer {
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+#add-btn {
+  position: absolute;
+  right: 4px;
+  border: none;
+  background: #7395e2;
+  height: calc(100% - 8px);
+  border-radius: 7px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 38px;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
 }

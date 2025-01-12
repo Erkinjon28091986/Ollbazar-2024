@@ -37,23 +37,23 @@
                 <form id="form-1" class="form-1 hform">
                     <div class="field df hinputgroup">
                         <label for="name">E'lon nomi</label>
-                        <input class="hinput validate" placeholder="Lot name" type="text" id="name" name="name"
-                            required>
+                        <input class="hinput validate" placeholder="E'lon nomini kiriting" type="text" id="name"
+                            name="name" required>
                         <span class="error">E'lon nomini kiriting</span>
                     </div>
                     <div class="field df hinputgroup">
                         <label for="aboutlot">Batafsil</label>
                         <div class="outputcount"><span class="outsrew">0</span>/2000</div>
-                        <textarea class="hinput theihgt validate" maxlength="2000" placeholder="About lot"
-                            name="aboutlot" id="aboutlot" required></textarea>
+                        <textarea class="hinput theihgt validate" maxlength="2000"
+                            placeholder="Batafsil ma'lumot kiriting" name="aboutlot" id="aboutlot" required></textarea>
                         <span class="error">Batafsil ma'lumot</span>
                     </div>
                     <div class="field df hinputgroup">
                         <label for="priceInput">Narxi</label>
 
                         <div class="hradiot fdc">
-                            <input oninput="formatNumber(this)" class="hinput validate" placeholder="1 000 000"
-                                type="number" id="priceInput" name="priceInput" required>
+                            <input class="hinput validate" placeholder="1 000 000" type="number" id="priceInput"
+                                name="priceInput" required>
                             <span class="error">Narxini ko'rsating</span>
                             <div class="currencytype">Uzs</div>
                         </div>
@@ -77,7 +77,8 @@
                                 <div class="currencytype">Uzs</div>
                             </div>
                             <span id="resultonpercent" class="resultonpercent">0%</span>
-                            <span class="htooltip" id="htooltip">Birinchi to'lov summasi ko'rsatilgan naxrning 90% dan oshmasligi kerak.</span>
+                            <span class="htooltip" id="htooltip">Birinchi to'lov summasi ko'rsatilgan naxrning 90% dan
+                                oshmasligi kerak.</span>
                         </div>
                     </div>
                     <div class="zapt df">
@@ -85,14 +86,26 @@
                         <div class="maximgnote">Eng ko'p rasmlar soni: 15</div>
                     </div>
                     <div class="upload__box">
-            <div class="upload__btn-box field df hinputgroup">
-                <label for="imgload" class="upload__btn dertye" id="uploadBtn">+ Shu erga bosing</label>
-                <input type="file" multiple data-max_length="15"
-                    class="hinput upload__inputfile dertye validate" id="imgload" name="imgload">
-                <span class="errorimg">Marhamat, rasm yuklang</span>
-            </div>
-            <div class="upload__img-wrap"></div>
-        </div>
+                        <div class="upload__btn-box field df hinputgroup">
+                            <label for="imgload" class="upload__btn dertye" id="uploadBtn">+ Shu erga bosing</label>
+                            <input type="file" multiple data-max_length="15"
+                                class="hinput upload__inputfile dertye validate" id="imgload" name="imgload">
+                            <span class="errorimg">Marhamat, rasm yuklang</span>
+                            <p class="noticetitle">Eng ko'p 15 ta rasm, jpeg va png formatda qabul qilinadi. 1 dona rasm
+                                hajmi 20mb dan oshmasligi kerak.</p>
+                        </div>
+                        <div class="upload__img-wrap"></div>
+                    </div>
+                    <div class="field df hinputgroup tagwrap">
+                    <label for="taginput">Tezkor so'zlar</label>
+                        <div class="tagcontainer df">
+                            <input class="hinput validate" maxlength="20" type="text" required id="taginput" placeholder="Tezkor so'zlarni kiriting">
+                            
+                            <button id="add-btn">+</button>
+                        </div>
+                        <span class="errortag">tag kiriting</span>
+                        <ul class="tagslist"></ul>
+                    </div>
                 </form>
             </div>
             <div class="step" id="step-2">
@@ -140,7 +153,7 @@
                             <div class="currencytype">Км</div>
                         </div>
                     </div>
-                    
+
                 </form>
             </div>
             <div class="step" id="step-3">

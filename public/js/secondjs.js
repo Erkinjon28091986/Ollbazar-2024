@@ -27,13 +27,56 @@ function changeStep(stepChange) {
     showStep(currentStep);
 }
 
+// function nextStep() {
+//     console.log(`Next Step from Step: ${currentStep}`);
+//     const currentForm = document.querySelector(`#step-${currentStep} form`);
+//     const elements = currentForm.querySelectorAll('.validate');
+//     let isValid = true;
+
+    
+
+//     elements.forEach(element => {
+//         if (!element.checkValidity()) {
+//             element.classList.add('invalid');
+//             isValid = false;
+//         } else {
+//             element.classList.remove('invalid');
+//         }
+//     });
+
+//     const uploadWrap = currentForm.querySelector('.upload__img-wrap');
+//     const uploadBtn = currentForm.querySelector('.upload__btn');
+//     const imgError = currentForm.querySelector('.errorimg');
+
+//     if (uploadWrap && uploadWrap.children.length === 0) {
+//         if (imgError) {
+//             imgError.style.display = 'block';
+//             imgError.classList.add('errorshow');
+//         }
+//         if (uploadBtn) {
+//             uploadBtn.classList.add('errorborder');
+//         }
+//         isValid = false;
+//     } else {
+//         if (imgError) {
+//             imgError.classList.remove('errorshow');
+//         }
+//         if (uploadBtn) {
+//             uploadBtn.classList.remove('errorborder');
+//         }
+//     }
+
+//     if (isValid) {
+//         changeStep(1);
+//     }
+
+// }
+
 function nextStep() {
     console.log(`Next Step from Step: ${currentStep}`);
     const currentForm = document.querySelector(`#step-${currentStep} form`);
     const elements = currentForm.querySelectorAll('.validate');
     let isValid = true;
-
-    
 
     elements.forEach(element => {
         if (!element.checkValidity()) {
@@ -48,39 +91,45 @@ function nextStep() {
     const uploadBtn = currentForm.querySelector('.upload__btn');
     const imgError = currentForm.querySelector('.errorimg');
 
-    if (uploadWrap) { // Проверяем, что uploadWrap не равен null
-        if (uploadWrap.children.length === 0) {
-            if (imgError) {
-                imgError.style.display = 'block';
-                imgError.classList.add('errorshow');
-            } else {
-
-            }
-            if (uploadBtn) {
-                uploadBtn.classList.add('errorborder');
-            } else {
-
-            }
-            isValid = false;
-        } else {
-            if (imgError) {
-                imgError.classList.remove('errorshow');
-            }
-            if (uploadBtn) {
-                uploadBtn.classList.remove('errorborder');
-            }
+    if (uploadWrap && uploadWrap.children.length === 0) {
+        if (imgError) {
+            imgError.style.display = 'block';
+            imgError.classList.add('errorshow');
         }
+        if (uploadBtn) {
+            uploadBtn.classList.add('errorborder');
+        }
+        isValid = false;
     } else {
-
+        if (imgError) {
+            imgError.classList.remove('errorshow');
+        }
+        if (uploadBtn) {
+            uploadBtn.classList.remove('errorborder');
+        }
     }
 
+    // Новая проверка для .tagslist
+    const tagsList = currentForm.querySelector('.tagslist');
+    const tagError = currentForm.querySelector('.errortag');
 
+    if (tagsList && tagsList.children.length === 0) {
+        if (tagError) {
+            tagError.classList.add('errorshow');
+        }
+        isValid = false;
+    } else {
+        if (tagError) {
+            tagError.classList.remove('errorshow');
+        }
+    }
 
     if (isValid) {
         changeStep(1);
     }
-
 }
+
+
 
 document.getElementById('prevBtn').addEventListener('click', function (event) {
     event.preventDefault();
@@ -239,4 +288,102 @@ document.getElementById('initialPayment').addEventListener('input', function () 
 
 document.getElementById('priceInput').addEventListener('input', function () {
     document.getElementById('initialPayment').dispatchEvent(new Event('input'));
+});
+
+
+//-----------------------tag function--------------------------
+// let maxTags = 2; // Установите максимальное количество тегов
+
+// document.getElementById('add-btn').addEventListener('click', function() {
+//     const tagInput = document.getElementById('taginput');
+//     const tagText = tagInput.value.trim();
+//     const tagsList = document.querySelector('.tagslist');
+//     const tags = tagsList.querySelectorAll('.tag');
+
+//     if (tagText === '') {
+//         alert('Введите текст тега!');
+//         return;
+//     }
+
+//     if (tags.length >= maxTags) {
+//         alert(`Максимальное количество тегов - ${maxTags}!`);
+//         return;
+//     }
+
+//     // Проверка на уникальность тега
+//     const isDuplicate = Array.from(tags).some(tag => tag.firstChild.textContent.trim() === tagText);
+//     if (isDuplicate) {
+//         alert("Bunday tezkor s'oz kiritilgan!");
+//         return;
+//     }
+
+//     const newTag = document.createElement('li');
+//     newTag.className = 'tag';
+//     newTag.textContent = tagText;
+
+//     const removeButton = document.createElement('button');
+//     removeButton.textContent = '×';
+//     removeButton.addEventListener('click', function() {
+//         newTag.classList.add('remove');
+//         newTag.addEventListener('transitionend', function() {
+//             tagsList.removeChild(newTag);
+//         }, { once: true });
+//     });
+
+//     newTag.appendChild(removeButton);
+//     tagsList.appendChild(newTag);
+//     setTimeout(() => newTag.classList.add('show'), 10); // Добавляем класс show с небольшой задержкой
+
+//     tagInput.value = ''; // Очистка поля ввода
+// });
+
+
+let maxTags = 5; // Установите максимальное количество тегов
+
+document.getElementById('add-btn').addEventListener('click', function() {
+    const tagInput = document.getElementById('taginput');
+    const tagText = tagInput.value.trim();
+    const tagsList = document.querySelector('.tagslist');
+    const tags = tagsList.querySelectorAll('.tag');
+
+    if (tagText === '') {
+        alert('Введите текст тега!');
+        return;
+    }
+
+    if (tags.length >= maxTags) {
+        alert(`Максимальное количество тегов - ${maxTags}!`);
+        return;
+    }
+
+    // Проверка на уникальность тега
+    const isDuplicate = Array.from(tags).some(tag => tag.firstChild.textContent.trim() === tagText);
+    if (isDuplicate) {
+        alert("Bunday tezkor s'oz kiritilgan!");
+        return;
+    }
+
+    const newTag = document.createElement('li');
+    newTag.className = 'tag';
+    newTag.textContent = tagText;
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = '×';
+    removeButton.addEventListener('click', function() {
+        newTag.classList.add('remove');
+        newTag.addEventListener('transitionend', function() {
+            tagsList.removeChild(newTag);
+        }, { once: true });
+    });
+
+    newTag.appendChild(removeButton);
+    tagsList.appendChild(newTag);
+    setTimeout(() => newTag.classList.add('show'), 10); // Добавляем класс show с небольшой задержкой
+
+    tagInput.value = ''; // Очистка поля ввода
+
+    // Проверка количества добавленных тегов и удаление класса .invalid у элементов с классом .validate
+    if (tagsList.querySelectorAll('.tag').length >= 1) {
+        document.querySelectorAll('.hinput').forEach(element => { element.classList.remove('invalid', 'validate'); });
+    }
 });
