@@ -18,7 +18,7 @@
 
 <body>
     <x-rightmenu></x-rightmenu>
-    <div class="fixheadbox walletpanel">
+    <div class="fixheadbox walletpanel responsivewidth">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
             <p class="pagetitle">Wallet</p>
@@ -49,7 +49,7 @@
         </div>
     </div>
     
-    <div class="prowrap w70w uiwrap">
+    <div class="prowrap w70w uiwrap responsivewidth">
         <div class="tabcontent">
             <div class="category-lists-slider vlarttt">
                 <div class="swiper-container" id="tabs-slider">

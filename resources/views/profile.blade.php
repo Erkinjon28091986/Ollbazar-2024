@@ -17,79 +17,76 @@
 </head>
 
 <body>
-<div class="fixheadbox">
+    <div class="fixheadbox responsivewidth">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
             <p class="pagetitle">My profile</p>
         </div>
     </div>
     <x-rightmenu></x-rightmenu>
-    <div class="prowrap w70w mt100">
-        <div class="breadcrumswrap df">
-            <a href="" class="breads">Home</a>
-            <a href="" class="breads">My profile</a>
-        </div>
-        <div class="userbox df">
-            <div class="leftuserbox df fdc">
-                <div class="lyutr df">
-                    <div class="useravabox user-img-box">
-                        <img src="https://i.postimg.cc/qv0h97XL/kjl.jpg" alt="user" class="useravatar">
-                    </div>
-                    <div class="userinn df fdc">
-                        <div class="sellername">
-                            <a href="">Richard McCardy</a>
-                            <div class="sellerstatus">
-                                <img src="https://i.postimg.cc/cL2b71bR/goldbadge.webp" alt="">
-                                <div class="showloyalbox showloyalbox__bottom">
-                                    <div class="range-container stsishonch">
-                                        <div class="confetibox">
-                                            <div class="confetiss"></div>
-                                            <div class="confetiss"></div>
-                                            <div class="confetiss"></div>
-                                            <div class="confetiss"></div>
-                                            <div class="confetiss"></div>
-                                            <div class="confetiss"></div>
+    <div class="prowrap w70w mt100 responsivewidth ">
+        <div class="uiwrap">
+            <div class="userbox df">
+                <div class="leftuserbox df fdc">
+                    <div class="lyutr df">
+                        <div class="useravabox user-img-box">
+                            <img src="https://i.postimg.cc/qv0h97XL/kjl.jpg" alt="user" class="useravatar">
+                        </div>
+                        <div class="userinn df fdc">
+                            <div class="sellername">
+                                <a href="">Richard McCardy</a>
+                                <div class="sellerstatus">
+                                    <img src="https://i.postimg.cc/cL2b71bR/goldbadge.webp" alt="">
+                                    <div class="showloyalbox showloyalbox__bottom">
+                                        <div class="range-container stsishonch">
+                                            <div class="confetibox">
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                                <div class="confetiss"></div>
+                                            </div>
+                                            <img id="rangeImage" class="rangeimage"
+                                                src=" https://i.postimg.cc/dQZ7ZWpJ/gold-badge.png" alt="Ommamop Image">
+                                            <output id="rangeValue">Ommamop</output>
+                                            <input type="range" class="custom-range" id="customRange" min="0" max="100"
+                                                step="1" value="0" style="--thumb-color: #e3b500;">
+                                            <div id="outsubtext">Eng ko`p haridorlarga ega va 200 dan ortiq e`lonlari
+                                                mavjud.</div>
                                         </div>
-                                        <img id="rangeImage" class="rangeimage"
-                                            src=" https://i.postimg.cc/dQZ7ZWpJ/gold-badge.png" alt="Ommamop Image">
-                                        <output id="rangeValue">Ommamop</output>
-                                        <input type="range" class="custom-range" id="customRange" min="0" max="100"
-                                            step="1" value="0" style="--thumb-color: #e3b500;">
-                                        <div id="outsubtext">Eng ko`p haridorlarga ega va 200 dan ortiq e`lonlari
-                                            mavjud.</div>
                                     </div>
                                 </div>
                             </div>
+                            <p class="sellertime">Kirdi: <span class="lasttime">21:45</span></p>
                         </div>
-                        <p class="sellertime">Kirdi: <span class="lasttime">21:45</span></p>
                     </div>
-                </div>
 
-            </div>
-            <div class="rightserbox df">
-                <a href="" class="settinglink"> <i class="icon-settings"></i> </a>
-                <!-- <button id="subscribeButton" class="buttonsub" onclick="toggleSubscription()">
+                </div>
+                <div class="rightserbox df">
+                    <a href="" class="settinglink"> <i class="icon-settings"></i> </a>
+                    <!-- <button id="subscribeButton" class="buttonsub" onclick="toggleSubscription()">
                     <span class="icon"><i class="icon-plus-1"></i></span>
                     <span>Subscribe</span>
                 </button> -->
+                </div>
+            </div>
+            <div class="userdetitem df">
+                <div class="adscount strew df">
+                    <p id="mycounter" class="mycounter">23</p>
+                    <p>ads</p>
+                </div>
+                <div class="favscount strew df">
+                    <p id="mycounter" class="mycounter">4</p>
+                    <p>follows</p>
+                </div>
+                <div class="fallowscount strew df">
+                    <p id="mycounter" class="mycounter">8</p>
+                    <p>followers</p>
+                </div>
             </div>
         </div>
-        <div class="userdetitem df">
-            <div class="adscount strew df">
-                <p id="mycounter" class="mycounter">23</p>
-                <p>ads</p>
-            </div>
-            <div class="favscount strew df">
-                <p id="mycounter" class="mycounter">4</p>
-                <p>follows</p>
-            </div>
-            <div class="fallowscount strew df">
-                <p id="mycounter" class="mycounter">8</p>
-                <p>followers</p>
-            </div>
-        </div>
-        <hr class="hdivider" style="margin-bottom: 0">
-        <div class="tabcontent">
+        <div class="tabcontent uiwrap">
             <div class="category-lists-slider">
                 <div class="swiper-container" id="tabs-slider">
                     <div class="swiper-wrapper">
@@ -397,7 +394,7 @@
                         <a href="" class="raiseupad moltra fgr"><i class="icon-right"></i> Return to sale</a>
                         <a href="" class="editad moltra"><i class="icon-pencil-black-gross-tool"></i> Edit</a>
                         <a href="" class="removead moltra" data-bs-toggle="modal"
-                        data-bs-target="#noteRemovefromSaleModal2"><i class="fa-solid fa-trash"></i> Remove</a>
+                            data-bs-target="#noteRemovefromSaleModal2"><i class="fa-solid fa-trash"></i> Remove</a>
                     </div>
 
                 </div>
@@ -480,14 +477,14 @@
                 </div>
                 <div class="modal-body custombody df fdc">
                     <div class="toastad">
-                        
+
                         <form action="" class="cancelsale">
                             <div class="customradiobox">
                                 <div class="customradioitem">
                                     <input type="radio" class="custom-radio-button" id="heresold" checked="checked"
                                         name="gender"></input>
                                     <label for="heresold" class="custom-radio-button-label">Hanbazarda sotildi
-                                    <span class="bavt"></span>
+                                        <span class="bavt"></span>
                                     </label>
                                 </div>
                                 <div class="customradioitem">
@@ -499,20 +496,22 @@
                                 </div>
                                 <div class="customradioitem">
                                     <input type="radio" class="custom-radio-button" id="Othersd" name="gender"></input>
-                                    <label for="Othersd" class="custom-radio-button-label">Boshqa erda sotildi <span class="bavt"></span></label>
+                                    <label for="Othersd" class="custom-radio-button-label">Boshqa erda sotildi <span
+                                            class="bavt"></span></label>
                                 </div>
                                 <div class="customradioitem">
                                     <input type="radio" class="custom-radio-button" id="Othersold"
                                         name="gender"></input>
-                                    <label for="Othersold" class="custom-radio-button-label">Other <span class="bavt"></span></label>
+                                    <label for="Othersold" class="custom-radio-button-label">Other <span
+                                            class="bavt"></span></label>
                                 </div>
 
                             </div>
                             <div class="toastadfoot df">
-                            <a href="" class="cancelbtn">Cancel</a>
-                            <a href="" class="cancelsalebtn">Withdrawn from sale</a>
-                        </div>
-                            
+                                <a href="" class="cancelbtn">Cancel</a>
+                                <a href="" class="cancelsalebtn">Withdrawn from sale</a>
+                            </div>
+
                         </form>
                     </div>
                 </div>

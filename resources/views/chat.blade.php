@@ -18,25 +18,34 @@
 
 <body>
     <x-rightmenu></x-rightmenu>
-    <div class="fixheadbox">
+    <div class="fixheadbox responsivewidth">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
             <p class="pagetitle">Chat</p>
         </div>
     </div>
-    <div class="prowrap w70w mt100">        
-        <div class="chatcontainer uiwrap">
+    <div class="prowrap w70w mt100 responsivewidth">        
+        <div class="chatcontainer uiwrap ">
             <div id="selection-panel" class="panelhidden">
                 <div class="laredq df fdc">
                     <p class="laredtitle">Suhbatlar</p>
                     <span id="selected-info">Выбрано: 0</span>
                 </div>
-                <div class="leftwrte df">
-                    <button id="pin-btn" style="display: none" class="pinbtn" title="ss" tooltip="Pin chat" flow="left"><p class="unpinbtn"></p> <i class="icon-pin34"></i>
-                    </button>
-                    <button id="delete-btn" class="deletebtn" tooltip="Remove chat" flow="left"><i
-                            class="icon-deletese"></i> </button>
-                </div>
+                <div class="leftwrte df chatpanel">
+    <div class="search-container">
+        <button id="search-btn" class="searchbtn" tooltip="Поиск" flow="left">
+            <i class="icon-search"></i>
+        </button>
+        <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
+    </div>
+    <button id="pin-btn" style="display: none" class="pinbtn" title="ss" tooltip="Pin chat" flow="left">
+        <p class="unpinbtn"></p>
+        <i class="icon-pin34"></i>
+    </button>
+    <button id="delete-btn" class="deletebtn" tooltip="Remove chat" flow="left">
+        <i class="icon-deletese"></i>
+    </button>
+</div>
 
             </div>
             <div id="chat-list">
@@ -47,7 +56,7 @@
                         <span class="status-user user-online"></span>
                     </div>
                     <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
+                        <span class="chat-name">Vitaliy Kovrov</span>
                         <a href="" class="last-message"> Привет! Как дела?</a>
                     </div>
                     <div class="chat-status df">
@@ -87,7 +96,7 @@
                         <span class="status-user user-online"></span>
                     </div>
                     <div class="chat-info">
-                        <span class="chat-name">Иван Иванов</span>
+                        <span class="chat-name">Suxrob Karimov</span>
                         <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
                             vecherom</a>
                     </div>

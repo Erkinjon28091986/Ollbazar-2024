@@ -16,13 +16,13 @@
 </head>
 
 <body class="hscroll">
-    <div class="fixheadbox">
+    <div class="fixheadbox responsivewidth">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
             <p class="pagetitle">E'lon joylash</p>
         </div>
     </div>
-    <div class="mainwrap uiwrap">
+    <div class="mainwrap uiwrap responsivewidth">
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
         </div>

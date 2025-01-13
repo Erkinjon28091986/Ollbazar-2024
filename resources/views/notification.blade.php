@@ -18,13 +18,13 @@
 
 <body>
     <x-rightmenu></x-rightmenu>
-    <div class="fixheadbox">
+    <div class="fixheadbox responsivewidth">
         <div class="w70w df headbox">
             <a href="/" class="gobackbtn"><i class="icon-left-small"></i> </a>
             <p class="pagetitle">Notification</p>
         </div>
     </div>
-    <div class="mainwrap uiwrap">
+    <div class="mainwrap uiwrap responsivewidth">
         <div class="prowrap ">
             <div class="tabcontent">
                 <div class="category-lists-slider vlart">

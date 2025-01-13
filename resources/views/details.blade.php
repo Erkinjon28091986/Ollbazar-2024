@@ -22,6 +22,7 @@
     <!-- <x-second-menu></x-second-menu> -->
     <main>
         <div class="hcontainer hwidth">
+            <div class="uiwrap secwrap">
             <div class="itemhead df">
                 <div class="ithl">
                     <div class="name__price">
@@ -115,7 +116,6 @@
                     </div>
                 </div>
             </div>
-
             <hr class="hdivider">
             <div class="itemmoreinfo">
                 <p class="moreinfo-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi error itaque
@@ -233,7 +233,8 @@
                     <p class="add-tum">Bekobod tumani</p>
                 </div>
             </div>
-            <hr class="hdivider">
+            </div>
+            <div class="uiwrap secwrap">
             <div class="similarbox">
                 <div class="htitlebox df">
                     <div class="htitle">O'xshash e'lonlar</div>
@@ -577,6 +578,8 @@
             <div class="footpanel df">
                 <a href="" class="report__item"> <i class="icon-flag-filled"></i> Shikoyat</a>
             </div>
+            </div>
+            
         </div>
 
     </main>
@@ -620,7 +623,7 @@
                     </div>
                     <div class="telshowed df">
                         <p>Ko'rildi: <span>4</span></p>
-                        <button class="yopmodal" data-bs-dismiss="modal">Yopish</button>
+                        <button class="yopmodal" data-bs-dismiss="modal">x</button>
                     </div>
                 </div>
             </div>

@@ -119,7 +119,7 @@
     </div>
     <header>
 
-        <div class="markazbox w70w df">
+        <div class="markazbox w70w df responsivewidth">
             <div class="centralbox df hideff">
                 <h1 class="brandtitle" datatitle="pagetitle">Hanbazar</h1>
                 <div class="subbrandtitle">
@@ -348,7 +348,7 @@
             </div>
         </div>
     </header>
-    <main class="w70w asosiycontent" >
+    <main class="w70w asosiycontent responsivewidth" >
         <div class="u-wrapper vip__ads df">
             <div class="swipercontrolbox df">
                 <p class="htitle">Shox e'lonlar</p>
