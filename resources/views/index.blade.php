@@ -119,7 +119,7 @@
     </div>
     <header>
 
-        <div class="markazbox w70w df responsivewidth">
+        <div class="markazbox w70w df mainpagewidth">
             <div class="centralbox df hideff">
                 <h1 class="brandtitle" datatitle="pagetitle">Hanbazar</h1>
                 <div class="subbrandtitle">
@@ -236,13 +236,7 @@
                                         <span>Uy-joy</span>
                                     </a>
                                 </div>
-                                <div class="c-carousel__item swiper-slide">
-                                    <a href="" class="cat__item btn-ripple">
-                                        <img class="ishboricon" src="https://i.postimg.cc/JnFPbBSH/jobs.png"
-                                            alt="ishbor">
-                                        <span>Ish Bor</span>
-                                    </a>
-                                </div>
+
                                 <div class="c-carousel__item swiper-slide">
                                     <a href="" class="cat__item btn-ripple">
                                         <img class="telefonicon" src="https://i.postimg.cc/jSPjvc9m/telefon5.png"
@@ -348,7 +342,7 @@
             </div>
         </div>
     </header>
-    <main class="w70w asosiycontent responsivewidth" >
+    <main class="w70w asosiycontent mainpagewidth">
         <div class="u-wrapper vip__ads df">
             <div class="swipercontrolbox df">
                 <p class="htitle">Shox e'lonlar</p>
@@ -708,6 +702,267 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="popularstores uiwrap ">
+            <!-- <p class="htitle">Ommabop do'konlar</p> -->
+            <div class="swipercontrolbox df">
+                <p class="htitle">Ommabop do'konlar</p>
+                <div class="popularstores__controls" >
+                    <div class="popularstores__button--prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ceaf6faf9feb610e8">
+                        <i class="fa-solid fa-square-caret-left"></i>
+                    </div>
+                    <div class="popularstores__button--next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ceaf6faf9feb610e8">
+                        <i class="fa-solid fa-square-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-containerws swiperstores">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide df">
+
+                        <div class="tosgridmain df">
+                            <div class="topsgridinner df">
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda</div>
+                                            <div class="baholari"><div class="hrating r35"></div>8.1</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/d3CzvJgL/adfsf.jpg
+" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">6.9</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/RVrkdnnf/edrt.jpg
+" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">9.9</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="swiper-slide df">
+                    <div class="tosgridmain df">
+                            <div class="topsgridinner df">
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/63gDD8jk/pisg.jpg
+" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda4</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">10.0</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/wxsKDk3g/sder.jpg
+" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda5</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">9.5</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda6</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">7.3</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide df">
+                    <div class="tosgridmain df">
+                            <div class="topsgridinner df">
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/vHWpNHWK/sef.jpg
+" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.6</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda7</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">8.1</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda8</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">9.4</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide df">
+                    <div class="tosgridmain df">
+                            <div class="topsgridinner df">
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda9</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda10</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda11</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide df">
+                    <div class="tosgridmain df">
+                            <div class="topsgridinner df">
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda9</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda10</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda11</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide df">
+                    <div class="tosgridmain df">
+                            <div class="topsgridinner df">
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda9</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda10</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="topstore df btn-ripple">
+                                    <div class="itemstore">
+                                        <img src="https://i.postimg.cc/XqSMBMkt/store.jpg" alt="" class="storeavatar">
+                                        <div class="storetoptitle">
+                                            <div class="ttsre">Arzoni Bizda11</div>
+                                            <div class="storecat">Avtomobillar</div>
+                                            <div class="baholari"><img src="https://i.postimg.cc/pXjbvdRx/staraq.png"
+                                                    alt="">4.7</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="bopter">
@@ -2181,7 +2436,7 @@
 
     <!-- Modal -->
     <div class="modal fade sheetmodal" id="ElonBerishBolimlariModal" tabindex="-1" aria-labelledby="sheetModalLabel">
-        <div class="modal-dialog">
+        <div class="modal-dialog cutsmodal">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Marhamat bo'limni tanlang</h5>
@@ -2201,12 +2456,7 @@
                                 <span>Uy-joy</span>
                             </a>
                         </div>
-                        <div class="c-carousel__item swiper-slide">
-                            <a href="" class="cat__item btn-ripple">
-                                <img class="ishboricon" src="https://i.postimg.cc/W1My5q7X/ishbor.png" alt="ishbor">
-                                <span>Ish Bor</span>
-                            </a>
-                        </div>
+
                         <div class="c-carousel__item swiper-slide">
                             <a href="" class="cat__item btn-ripple">
                                 <img class="telefonicon" src="https://i.postimg.cc/jSPjvc9m/telefon5.png" alt="Telefon">

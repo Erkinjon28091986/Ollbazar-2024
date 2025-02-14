@@ -30,14 +30,20 @@
                 <div class="category-lists-slider vlart">
                     <div class="swiper-container" id="tabs-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            
+                        <div class="swiper-slide">
                                 <div class="category-button active" data-id="data1">
-                                    Sellers
+                                    Do'kon
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="category-button" data-id="data2">
-                                    Ads
+                                    Sotuvchi
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-button" data-id="data3">
+                                    E'lon
                                 </div>
                             </div>
                         </div>
@@ -47,6 +53,74 @@
                 </div>
                 <div class="tabitems vdery">
                     <div class="data-text active" id="data1">
+                        <div class="chatcontainer chatcontt">
+                            <div id="chat-list">
+                                <div class="chat-block" data-id="1">
+                                    <div class="flipbox df user-img-box">
+                                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar"
+                                            class="chatavatar">
+                                        <span class="status-user user-online"></span>
+                                    </div>
+                                    <a href="" class="chat-info">
+                                        <span class="chat-name">Do'stlik</span>
+                                        <p class="last-userregion"> Added a new ad</p>
+                                    </a>
+                                    <div class="ads-status df">
+                                        <div class="chatstfoot df">
+                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
+                                        </div>
+                                        <a href="" class="newadbox">
+                                            <p class="addedbadge">+</p>
+                                            <img src="https://i.postimg.cc/MKkXnsCb/viper.jpg" class="newadimg" alt="">
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="chat-block" data-id="2">
+                                    <div class="flipbox df user-img-box">
+                                        <img src="https://i.postimg.cc/1Xh5wWvH/lih.png" alt="Avatar"
+                                            class="chatavatar">
+                                        <span class="status-user user-online"></span>
+                                    </div>
+                                    <a href="" class="chat-info">
+                                        <span class="chat-name">Vodiy avto</span>
+                                        <p class="last-userregion"> Added the new ad</p>
+                                    </a>
+                                    <div class="ads-status df">
+                                        <div class="chatstfoot df">
+                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
+                                        </div>
+                                        <a href="" class="newadbox">
+                                            <p class="addedbadge">+</p>
+                                            <img src="https://i.postimg.cc/gj1z80t2/Malibu.jpg" class="newadimg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="chat-block" data-id="3">
+                                    <div class="flipbox df user-img-box">
+                                        <img src="https://i.postimg.cc/ydJkF3sV/ydo.jpg" alt="Avatar"
+                                            class="chatavatar">
+                                        <span class="status-user user-online"></span>
+                                    </div>
+                                    <a href="" class="chat-info">
+                                        <span class="chat-name">Arzoni bizda</span>
+                                        <p class="last-userregion"> Removed the ad</p>
+                                    </a>
+                                    <div class="ads-status df">
+                                        <div class="chatstfoot df">
+                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
+                                        </div>
+                                        <a href="" class="newadbox">
+                                            <p class="deletebadge">-</p>
+                                            <img src="https://i.postimg.cc/s2nv13zv/palma.jpg" class="newadimg" alt="">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-text" id="data2">
                         <div class="chatcontainer chatcontt">
                             <div id="chat-list">
                                 <div class="chat-block" data-id="1">
@@ -72,6 +146,26 @@
                                 </div>
                                 <div class="chat-block" data-id="2">
                                     <div class="flipbox df user-img-box">
+                                        <img src="https://i.postimg.cc/1Xh5wWvH/lih.png" alt="Avatar"
+                                            class="chatavatar">
+                                        <span class="status-user user-online"></span>
+                                    </div>
+                                    <a href="" class="chat-info">
+                                        <span class="chat-name">Roberto Mancini</span>
+                                        <p class="last-userregion"> Added the new ad</p>
+                                    </a>
+                                    <div class="ads-status df">
+                                        <div class="chatstfoot df">
+                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
+                                        </div>
+                                        <a href="" class="newadbox">
+                                            <p class="addedbadge">+</p>
+                                            <img src="https://i.postimg.cc/gj1z80t2/Malibu.jpg" class="newadimg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="chat-block" data-id="3">
+                                    <div class="flipbox df user-img-box">
                                         <img src="https://i.postimg.cc/ydJkF3sV/ydo.jpg" alt="Avatar"
                                             class="chatavatar">
                                         <span class="status-user user-online"></span>
@@ -91,73 +185,10 @@
 
                                     </div>
                                 </div>
-                                <div class="chat-block" data-id="3">
-                                    <div class="flipbox df user-img-box">
-                                        <img src="https://i.postimg.cc/1Xh5wWvH/lih.png" alt="Avatar"
-                                            class="chatavatar">
-                                        <span class="status-user user-online"></span>
-                                    </div>
-                                    <a href="" class="chat-info">
-                                        <span class="chat-name">Roberto Mancini</span>
-                                        <p class="last-userregion"> Added the new ad</p>
-                                    </a>
-                                    <div class="ads-status df">
-                                        <div class="chatstfoot df">
-                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                                        </div>
-                                        <a href="" class="newadbox">
-                                            <p class="addedbadge">+</p>
-                                            <img src="https://i.postimg.cc/gj1z80t2/Malibu.jpg" class="newadimg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="chat-block" data-id="4">
-                                    <div class="flipbox df user-img-box">
-                                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar"
-                                            class="chatavatar">
-                                        <span class="status-user user-online"></span>
-                                    </div>
-                                    <a href="" class="chat-info">
-                                        <span class="chat-name">Gulruh Latipova</span>
-                                        <p class="last-userregion"> Changed the ad</p>
-                                    </a>
-                                    <div class="ads-status df">
-                                        <div class="chatstfoot df">
-                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                                        </div>
-                                        <a href="" class="newadbox">
-                                            <p class="editebadge"><i class="icon-pencil-black-gross-tool"></i> </p>
-                                            <img src="https://i.postimg.cc/3RRYqGPw/bil.jpg" class="newadimg" alt="">
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="chat-block" data-id="5">
-                                    <div class="flipbox df user-img-box">
-                                        <img src="https://i.postimg.cc/gcC6Hsx1/kiuy.jpg" alt="Avatar"
-                                            class="chatavatar">
-                                        <span class="status-user user-online"></span>
-                                    </div>
-                                    <a href="" class="chat-info">
-                                        <span class="chat-name">Gulruh Latipova</span>
-                                        <p class="last-userregion"> Sold in the Hanbazar</p>
-                                    </a>
-                                    <div class="ads-status df">
-                                        <div class="chatstfoot df">
-                                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
-                                        </div>
-                                        <a href="" class="newadbox">
-                                            <p class="soldbadge"><i class="icon-ok-2"></i> </p>
-                                            <img src="https://i.postimg.cc/3RRYqGPw/bil.jpg" class="newadimg" alt="">
-                                        </a>
-
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
-                    <div class="data-text" id="data2">
+                    <div class="data-text" id="data3">
                         <div class="chatcontainer chatcontt">
                             <div id="chat-list">
                                 <div class="chat-block" data-id="1">

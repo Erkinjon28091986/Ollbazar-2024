@@ -24,31 +24,39 @@
             <p class="pagetitle">Chat</p>
         </div>
     </div>
-    <div class="prowrap w70w mt100 responsivewidth">        
-        <div class="chatcontainer uiwrap ">
+    <div class="prowrap w70w mt100 responsivewidth">
+        <div class="chatcontainer uiwrap " id="chat-container-1">
             <div id="selection-panel" class="panelhidden">
-                <div class="laredq df fdc">
+                <div class="laredq df">
                     <p class="laredtitle">Suhbatlar</p>
-                    <span id="selected-info">Выбрано: 0</span>
+                    <div class="search-container">
+                        <button id="search-btn" class="searchbtn" tooltip="Поиск" flow="left">
+                            <i class="icon-search"></i>
+                        </button>
+                        <div class="search-input df" id="search-input" >
+                            <input type="text" class="search-input-in" placeholder="Qidirish...">
+                            <a href="javascript:void(0)" id="closesearchinput"><i class="icon-close"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="leftwrte df chatpanel">
-    <div class="search-container">
-        <button id="search-btn" class="searchbtn" tooltip="Поиск" flow="left">
-            <i class="icon-search"></i>
-        </button>
-        <input type="text" id="search-input" class="search-input" placeholder="Поиск...">
-    </div>
-    <button id="pin-btn" style="display: none" class="pinbtn" title="ss" tooltip="Pin chat" flow="left">
-        <p class="unpinbtn"></p>
-        <i class="icon-pin34"></i>
-    </button>
-    <button id="delete-btn" class="deletebtn" tooltip="Remove chat" flow="left">
-        <i class="icon-deletese"></i>
-    </button>
-</div>
+                    <span id="selected-info" class="selected-info">Tanlandi: 0</span>
+                    <div class="btnper df">
+                        <button id="pin-btn" style="display: none" class="pinbtn" title="ss" tooltip="Pin chat"
+                            flow="left">
+                            <p class="unpinbtn"></p>
+                            <i class="icon-pin34"></i>
+                        </button>
+                        <button id="delete-btn" class="deletebtn" tooltip="Remove chat" flow="left">
+                            <i class="icon-deletese"></i>
+                        </button>
+                    </div>
+                </div>
 
             </div>
             <div id="chat-list">
+                <div id="no-results-message" style="display: none; color: red; margin-top: 10px;">Совпадений не найдено
+                </div>
                 <div class="chat-block" data-id="1">
                     <div class="flipbox df user-img-box">
                         <div class="flipcheck"><i class="icon-ok"></i></div>
@@ -77,7 +85,8 @@
                     </div>
                     <div class="chat-info">
                         <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
+                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span>
+                            Vstretimsya
                             vecherom</a>
                     </div>
                     <div class="chat-status df">
@@ -97,7 +106,8 @@
                     </div>
                     <div class="chat-info">
                         <span class="chat-name">Suxrob Karimov</span>
-                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
+                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span>
+                            Vstretimsya
                             vecherom</a>
                     </div>
                     <div class="chat-status df">
@@ -117,7 +127,8 @@
                     </div>
                     <div class="chat-info">
                         <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span> Vstretimsya
+                        <a href="" class="last-message"><span class="read-status"><i class="icon-read"></i> </span>
+                            Vstretimsya
                             vecherom</a>
                     </div>
                     <div class="chat-status df">
@@ -137,7 +148,8 @@
                     </div>
                     <div class="chat-info">
                         <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message"><span class="read-status unread-status"><i class="icon-read"></i>
+                        <a href="" class="last-message"><span class="read-status unread-status"><i
+                                    class="icon-read"></i>
                             </span> Привет! Как дела?</a>
                     </div>
                     <div class="chat-status df">
@@ -158,7 +170,8 @@
                     </div>
                     <div class="chat-info">
                         <span class="chat-name">Иван Иванов</span>
-                        <a href="" class="last-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                        <a href="" class="last-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consectetur
                             dolorem nesciunt perspiciatis cumque itaque repellat vel inventore repudiandae aut
                             asperiores!</a>
                     </div>
@@ -167,7 +180,7 @@
                             <div class="chatdata">14:32, today</div>
                         </div>
                         <div class="chatstfoot df">
-                        <span class="pinningbutton"><i class="icon-pin34"></i></span>
+                            <span class="pinningbutton"><i class="icon-pin34"></i></span>
                         </div>
                     </div>
                 </div>
@@ -199,7 +212,7 @@
         </div>
     </div>
 
-  
+
     <!-- jQuery и JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>

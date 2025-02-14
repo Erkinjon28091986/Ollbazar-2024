@@ -196,8 +196,8 @@ function ImgUpload() {
                     reader.onload = function (e) {
                         var html = "<div class='upload__img-box'>" +
                             "<img src='" + e.target.result + "' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'>" +
-                            "<div class='upload__img-close'></div>" +
-                            "<a href='javascript:void(0)' class='set-primary-btn'>Set as Primary</a>" +
+                            "<div class='upload__img-close'></div>" + "<div class='upload__img-selected'> <i class='icon-ok-1'></i>  </div>" +
+                            "<a href='javascript:void(0)' class='set-primary-btn'>Asosiy rasm</a>" +
                             "</div>";
                         imgWrap.append(html);
                         iterator++;
@@ -231,7 +231,9 @@ function ImgUpload() {
 
     $('body').on('click', ".set-primary-btn", function (e) {
         $('.img-bg').removeClass('primary-img');
+        $('.upload__img-selected').removeClass('upload__img-selected-show');
         $(this).siblings('.img-bg').addClass('primary-img');
+        $(this).siblings('.upload__img-selected').addClass('upload__img-selected-show');
     });
 
 

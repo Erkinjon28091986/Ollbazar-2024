@@ -53,3 +53,21 @@ Route::get('/addform', function () {
     return view('addform');
 })->name('addform');
 
+Route::get('/store', function () {
+    return view('store');
+})->name('store');
+
+Route::get('/registration', function () {
+    return view('registration');
+})->name('registration');
+
+// Редирект с /registration на /registration/signin
+Route::redirect('/registration', '/registration/signin');
+
+// Основной маршрут для страницы регистрации
+Route::get('/registration/{type}', function ($type) {
+    if (!in_array($type, ['signin', 'signup'])) {
+        return redirect('/registration/signin');
+    }
+    return view('registration');
+})->where('type', 'signin|signup');

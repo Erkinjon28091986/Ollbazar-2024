@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="mainwrap uiwrap responsivewidth">
-        <div class="progress-bar">
+        <div class="progress-bar bar100">
             <div class="progress" id="progress"></div>
         </div>
 
@@ -97,7 +97,9 @@
                     </div>
                     <div class="upload__box">
                         <div class="upload__btn-box field df hinputgroup">
-                            <label for="imgload" class="upload__btn dertye" id="uploadBtn">+ Shu erga bosing</label>
+                            <label for="imgload" class="upload__btn dertye" id="uploadBtn">
+                            <i class="fa-solid fa-image"></i>
+                                + Shu erga bosing</label>
                             <input type="file" multiple data-max_length="15"
                                 class="hinput upload__inputfile dertye validate" id="imgload" name="imgload">
                             <span class="errorimg">Marhamat, rasm yuklang</span>

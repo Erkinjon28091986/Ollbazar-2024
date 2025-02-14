@@ -81,7 +81,6 @@ $(document).ready(function () {
 
 
 
-
 $(document).ready(function () {
 
 
@@ -135,14 +134,15 @@ function toggleSubscription() {
 
     if (subscribed) {
         icon.innerHTML = '<i class="icon-minus-1 icon"></i>';
-        text.innerHTML = 'Unsubscribe';
-        button.style.backgroundColor = '#de5e6a'; // Change button color to red
+        text.innerHTML = 'Obunadan chiqish';
+        button.style.backgroundColor = '#888888'; // Change button color to red
     } else {
         icon.innerHTML = '<i class="icon-plus-1 icon"></i>';
-        text.innerHTML = 'Subscribe';
-        button.style.backgroundColor = '#6e8dce'; // Change button color to blue
+        text.innerHTML = "Obuna bo'lish";
+        button.style.backgroundColor = '#00af5e'; // Change button color to blue
     }
 }
+
 
 
 // profile page swiper tabs
@@ -435,6 +435,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
     });
+});
+
+// populat srores
+const swiperstores = new Swiper('.swiperstores', {
+    slidesPerView: 3.2,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.popularstores__button--next',
+        prevEl: '.popularstores__button--prev',
+    },
+    // breakpoints: {
+    //     420: {
+    //         slidesPerView: 1,
+    //         slidesPerColumn: 1, // Изменено с 2 на 1
+    //         slidesPerGroup: 1,
+    //     },
+    //     960: {
+    //         slidesPerView: 2, // Изменено с 1 на 2
+    //         slidesPerColumn: 2,
+    //         slidesPerGroup: 2, // Изменено с 1 на 2
+    //     }
+    // },
 });
 
 
