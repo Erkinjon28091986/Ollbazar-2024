@@ -7,11 +7,11 @@
     <title>Регистрация и Авторизация</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <!-- Добавляем IMask -->
-    <script src="https://unpkg.com/imask"></script>
     <link href="/css/hanbazar-icons.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://unpkg.com/imask"></script>
+
 
     <style>
         * {
@@ -98,7 +98,7 @@
             position: relative;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, #ff4b2b, #ff416c);
+            background: linear-gradient(-45deg, rgba(28, 63, 185, 0.76) 0%, rgba(28, 206, 234, 0.82) 100%);
             border-radius: 10px;
 
             img {
@@ -136,6 +136,7 @@
             margin-bottom: 5px;
             color: #666;
             font-size: 14px;
+            text-align: left;
         }
 
         input,
@@ -216,6 +217,7 @@
             font-size: 12px;
             margin-top: 4px;
             display: none;
+            text-align: left;
         }
 
         .form-group.error input,
@@ -773,7 +775,7 @@
             color: #3893df;
             border: none !important;
             background: rgb(255 255 255 / 73%);
-    backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
         }
 
         .uslovi {
@@ -807,189 +809,551 @@
             right: 1px;
             width: 33px;
         }
+
         .sms-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
 
-.modal-content {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
 
-/* Стили для полей ввода кода */
-.verification-code-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
-}
+        /* Обновленные стили для модального окна подтверждения телефона */
+        .sms-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-.code-input {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 24px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    background: #f8f8f8;
-}
+        .sms-modal.show {
+            opacity: 1;
+        }
 
-/* Стили для кнопок */
-.verify-button {
-    width: 100%;
-    background: #6092d9;
-    margin-top: 15px;
-}
+        .sms-modal .modal-content {
+            transform: scale(0.7);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
 
-.resend-code {
-    background: none;
-    border: none;
-    color: #333;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
+        .sms-modal.show .modal-content {
+            transform: scale(1);
+            opacity: 1;
+        }
 
-}
-.resend-code:hover {
-    background:  #e5e5e5;
-    transition: all 0.3s ease;
-}
+        /* Стили для полей ввода кода */
+        .verification-code-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+        }
 
-.resend-code:disabled {
-    color: #999;
-    cursor: not-allowed;
-}
-.phone-input-group {
-    display: flex;
-    gap: 10px;
-}
+        .code-input {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 24px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: #f8f8f8;
+        }
 
-.verify-phone-btn {
-    padding: 10px 20px;
-    white-space: nowrap;
-    margin: 0;
-}
-.verify-phone-btn {
-    padding: 10px 20px;
-    white-space: nowrap;
-    margin: 0;
-    transition: all 0.3s ease;
-}
+        /* Стили для кнопок */
+        .verify-button {
+            width: 100%;
+            background: #6092d9;
+            margin-top: 15px;
+        }
 
-.verify-phone-btn.verified {
-    background-color: #4CAF50;
-    pointer-events: none;
-}
+        .resend-code {
+            background: none;
+            border: none;
+            color: #333;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
 
-.verification-error {
-    color: #f44336;
-    font-size: 14px;
-    margin-top: 10px;
-    display: none;
-}
-.mclose-modal {
-    position: absolute;
-    top: -4px;
-    right: 10px;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #a29c9c;
-    padding: 5px 8px;
-    line-height: 1;
-    z-index: 1001;
-    height: 32px;
-    transition: color 0.3s ease;
-    width: 32px;
-    border-radius: 50%;
-    background: transparent;
-}
+        }
 
-.mclose-modal:hover {
-    background: #e5e5e5;
-    
-    transition: color 0.3s ease;
-}
-.pghit{
-    flex-direction: column;
-}
-.hnotification {
-    position: fixed;
-    right: 5px;
-    top: 5px;
-    z-index: 9999;
-    padding: 15px 20px;
-    color: #fff;
-    border-radius: 5px;
-    opacity: 0; /* Начальное состояние прозрачности */
-    transform: translateY(-20px); /* Начальное состояние позиции */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Анимация для прозрачности и позиции */
-}
+        .resend-code:hover {
+            background: #e5e5e5;
+            transition: all 0.3s ease;
+        }
 
-.hnotification.show {
-    opacity: 1; /* Конечное состояние прозрачности */
-    transform: translateY(0); /* Конечное состояние позиции */
-}
+        .resend-code:disabled {
+            color: #999;
+            cursor: not-allowed;
+        }
 
-.hnotification.success {
-    background: rgb(27, 208, 100);
-}
+        .phone-input-group {
+            display: flex;
+            gap: 10px;
+        }
 
-.hnotification.info {
-    background: #26c767;
-}
-.sign-up-container form {
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #b9b9b9 #ffffff;
-}
+        .verify-phone-btn {
+            padding: 10px 20px;
+            white-space: nowrap;
+            margin: 0;
+        }
 
-.sign-up-container form::-webkit-scrollbar {
-    width: 10px;
-}
+        .verify-phone-btn {
+            padding: 10px 20px;
+            white-space: nowrap;
+            margin: 0;
+            transition: all 0.3s ease;
+        }
 
-.sign-up-container form::-webkit-scrollbar-track {
-    background:rgb(163, 37, 37);
-    border-radius: 5px;
-}
+        .verify-phone-btn.verified {
+            background-color: #4CAF50;
+            pointer-events: none;
+        }
 
-.sign-up-container form::-webkit-scrollbar-thumb {
-    background:rgb(36, 193, 49);
-    border-radius: 0;
-}
+        .verification-error {
+            color: #f44336;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
 
-.sign-up-container form::-webkit-scrollbar-thumb:hover {
-    background:rgb(146, 212, 21);
-}
-.mtnote{
-    color: #999;
-    font-size: 14px;
-}
-.mcontent h2{
-    color: #444;
-    margin-bottom: 21px;
-}
+        .mclose-modal {
+            position: absolute;
+            top: -4px;
+            right: 10px;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #a29c9c;
+            padding: 5px 8px;
+            line-height: 1;
+            z-index: 1001;
+            height: 32px;
+            transition: color 0.3s ease;
+            width: 32px;
+            border-radius: 50%;
+            background: transparent;
+        }
+
+        .mclose-modal:hover {
+            background: #e5e5e5;
+
+            transition: color 0.3s ease;
+        }
+
+        .pghit {
+            flex-direction: column;
+        }
+
+        .hnotification {
+            position: fixed;
+            right: 5px;
+            top: 5px;
+            z-index: 9999;
+            padding: 15px 20px;
+            color: #fff;
+            border-radius: 5px;
+            opacity: 0;
+            /* Начальное состояние прозрачности */
+            transform: translateY(-20px);
+            /* Начальное состояние позиции */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            /* Анимация для прозрачности и позиции */
+        }
+
+        .hnotification.show {
+            opacity: 1;
+            /* Конечное состояние прозрачности */
+            transform: translateY(0);
+            /* Конечное состояние позиции */
+        }
+
+        .hnotification.success {
+            background: rgb(27, 208, 100);
+        }
+
+        .hnotification.info {
+            background: #26c767;
+        }
+
+        .sign-up-container form {
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #b9b9b9 #ffffff;
+        }
+
+        .sign-up-container form::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .sign-up-container form::-webkit-scrollbar-track {
+            background: rgb(163, 37, 37);
+            border-radius: 5px;
+        }
+
+        .sign-up-container form::-webkit-scrollbar-thumb {
+            background: rgb(36, 193, 49);
+            border-radius: 0;
+        }
+
+        .sign-up-container form::-webkit-scrollbar-thumb:hover {
+            background: rgb(146, 212, 21);
+        }
+
+        .mtnote {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .mcontent h2 {
+            color: #444;
+            margin-bottom: 21px;
+        }
 
 
+
+        .overlay-container-mobile {
+            display: none;
+        }
+
+        /* Стили для модального окна восстановления пароля */
+        .forgot-password-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .recovery-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            background: #b8b8b8;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background: #6092d9;
+            color: white;
+        }
+
+        .recovery-content {
+            display: none;
+        }
+
+        .recovery-content.active {
+            display: block;
+        }
+
+        /* Анимация для модального окна */
+        .forgot-password-modal .modal-content {
+            transform: scale(0.7);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .forgot-password-modal.show .modal-content {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .tab-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #cecdcd !important;
+            color: #626262 !important;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.disabled:hover {
+            background: rgb(195, 195, 195) !important;
+            transition: all 0.3s ease;
+        }
+
+        .verification-form .verification-error {
+            text-align: center;
+        }
+
+        .mcontent .verification-error {
+            text-align: center;
+        }
+
+        /* Стили для полей ввода кода */
+        .code-input.error {
+            border-color: #ff4444;
+            animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+        }
+
+        /* Анимация встряхивания */
+        @keyframes shake {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-3px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(3px, 0, 0);
+            }
+        }
+
+        /* Стили для сообщения об ошибке */
+        .verification-error {
+            color: #ff4444;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .verification-error.show-error {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Улучшенные стили для полей ввода */
+        .code-input {
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .code-input:focus {
+            border-color: #6092d9;
+            box-shadow: 0px 8px 10px 0px rgb(96 146 217 / 23%);
+        }
+
+        .code-input.error:focus {
+            border-color: #ff4444;
+            box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.2);
+        }
+
+        /* Добавьте эти стили в существующий CSS */
+
+        /* Анимация тряски */
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-3px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(3px);
+            }
+        }
+
+        .shake {
+            animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+        }
+
+        /* Стили для полей с ошибкой */
+        .code-input.error {
+            border-color: #ff4444;
+            background-color: #fff2f2;
+        }
+
+        /* Анимация появления сообщения об ошибке */
+        .verification-error {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .verification-error.show-error {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .resetpassimg {
+            width: 70px;
+            display: block;
+            margin: 30px auto;
+        }
+
+        .overlay-images-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .overlay-images {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .overlay-images.active {
+            opacity: 1;
+        }
+
+        .dn {
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            a#signinmobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin: 10px auto;
+                text-decoration: none;
+                color: #727272;
+                padding: 10px 22px;
+                border-radius: 10px;
+            }
+
+            #signinmobile:hover {
+                background: #edeaea;
+            }
+
+            .overlay-container-mobile {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                transition: transform 0.6s ease-in-out;
+                z-index: 100;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .overlay-mobile img {
+                height: 100%;
+                width: 100%;
+                border-radius: 0 0 30px 30px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .overlay-container {
+                display: none;
+            }
+
+            .sign-up-container {
+                right: 0;
+                width: 100%;
+            }
+
+            .sign-in-container {
+                left: 0;
+                width: 100%;
+                transform: translateX(0) !important;
+            }
+
+            .container {
+                position: relative;
+                width: 800px;
+                height: 100vh;
+                background: white;
+                overflow: hidden;
+                border-radius: 0 0 15px 15px;
+            }
+
+            .overlay-mobile {
+                height: calc(100% - 58px);
+            }
+        }
+
+        @media (max-width: 480px) {}
     </style>
 </head>
 
 <body>
+    <div class="dn">
+
+        <div id="outputcountry"></div>
+        <div id="outputstate"></div>
+        <div id="outputcity"></div>
+        <div id="outputlat"></div>
+        <div id="outputlong"></div>
+        <div id="outputmethod"></div>
+        <button id="updateButton" onclick="updateLocationManually()">Обновить местоположение</button>
+    </div>
     <div class="container">
         <div class="forms-container">
             <div class="sign-in-container form-container">
@@ -1013,7 +1377,7 @@
                         <div class="error-message">Mahfiy so'zni kiriting</div>
                     </div>
                     <div class="form-links">
-                        <a href="#" class="forgot-password">Mahfiy so'zni tiklash.</a>
+                        <a href="#" class="forgot-password">Mahfiy so'zni tiklash</a>
                     </div>
                     <button type="submit">Kirish</button>
                     <p class="switch-form" onclick="switchToSignUp()">A'zo bo'lmaganmisiz? A'zo bo'lish</p>
@@ -1099,21 +1463,23 @@
                         <div class="error-message">Emailni to'g'ri kiriting</div>
                     </div>
                     <div class="form-group">
-    <label>Телефон</label>
-    <div class="phone-input-group pghit">
-        <input type="tel" id="signUpPhone" name="phone" required>
-        <div class="error-message">Telefon raqam noto'g'ri</div>
-        <button type="button" class="verify-phone-btn">Tasdiqlash</button>
-    </div>
-    
-</div>
+                        <label>Телефон</label>
+                        <div class="phone-input-group pghit">
+                            <input type="tel" id="signUpPhone" name="phone" required autocomplete="none">
+                            <div class="error-message">Telefon raqam noto'g'ri</div>
+                            <button type="button" class="verify-phone-btn">Tasdiqlash</button>
+                        </div>
+
+                    </div>
                     <!-- Добавьте перед кнопкой "Зарегистрироваться" -->
                     <div class="form-group">
                         <label>Mahfiy so'z</label>
                         <div class="password-input-group">
                             <input type="password" name="password" id="password" required>
                             <button type="button" class="toggle-password">
-                                <i class="eye-icon">👁️</i>
+                                <span class="eye-icon">
+                                    <i class="icon-eye"></i>
+                                </span>
                             </button>
                         </div>
                         <div class="password-strength">
@@ -1133,7 +1499,9 @@
                         <div class="password-input-group">
                             <input type="password" name="password_confirmation" id="passwordConfirm" required>
                             <button type="button" class="toggle-password">
-                                <i class="eye-icon">👁️</i>
+                                <span class="eye-icon">
+                                    <i class="icon-eye"></i>
+                                </span>
                             </button>
                         </div>
                         <div class="error-message">Mahfiy so'zlar bir hil emas</div>
@@ -1151,8 +1519,15 @@
         </div>
         <div class="overlay-container">
             <div class="overlay">
+                <div class="overlay-images-container">
+                </div>
+            </div>
+        </div>
+        <div class="overlay-container-mobile">
+            <div class="overlay-mobile">
                 <img src="https://i.postimg.cc/sXfN7n1x/8336929c08f9bd6e85eb24ff9261a64b.jpg" alt="Banner">
             </div>
+            <a href="" class="sign-in-mobile" id="signinmobile">A'zo bo'ish</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1685,203 +2060,961 @@
 
                 if (input.type === 'password') {
                     input.type = 'text';
-                    eyeIcon.innerHTML = `<i class="icon-eye"></i>`;
+                    eyeIcon.innerHTML = `<i class="icon-eye-off"></i>`;
                 } else {
                     input.type = 'password';
-                    eyeIcon.innerHTML = `<i class="icon-eye-off"></i>`;
+                    eyeIcon.innerHTML = `<i class="icon-eye"></i>`;
                 }
             });
         });
 
-    
 
 
 
 
 
-        document.addEventListener('DOMContentLoaded', function() {
-    // Получаем все необходимые элементы
-    const smsModal = document.getElementById('smsModal');
-    const verifyPhoneBtn = document.querySelector('.verify-phone-btn');
-    const closeModalBtn = document.querySelector('.mclose-modal');
-    const codeInputs = document.querySelectorAll('.code-input');
-    const resendButton = document.querySelector('.resend-code');
-    const phoneDisplay = document.querySelector('.phone-number-display');
-    const verifyButton = document.querySelector('.verify-button');
-    const verificationError = document.querySelector('.verification-error');
-    
-    let timer;
-    const DEMO_CODE = '1234';
-    let isVerified = false;
 
-    // Функция запуска таймера
-    function startTimer() {
-        let timeLeft = 30;
-        resendButton.disabled = true;
-        resendButton.textContent = `Yangi kod yuborish (${timeLeft})`;
-        
-        clearInterval(timer);
-        timer = setInterval(() => {
-            timeLeft--;
-            resendButton.textContent = `Yangi kod yuborish (${timeLeft})`;
-            
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                resendButton.disabled = false;
-                resendButton.textContent = 'Yangi kod yuborish';
-            }
-        }, 1000);
-    }
 
-    // Функция проверки кода
-    function checkCode() {
-        const enteredCode = Array.from(codeInputs).map(input => input.value).join('');
-        return enteredCode === DEMO_CODE;
-    }
 
-    // Функция очистки полей кода
-    function clearCodeInputs() {
-        codeInputs.forEach(input => {
-            input.value = '';
-        });
-        if (codeInputs.length > 0) {
-            codeInputs[0].focus();
-        }
-    }
 
-    // Функция закрытия модального окна
-    function closeModalWindow() {
-        smsModal.style.display = 'none';
-        clearInterval(timer);
-        clearCodeInputs();
-        if (verificationError) {
-            verificationError.style.display = 'none';
-        }
-    }
-
-    // Функция успешной верификации
-    function handleSuccessfulVerification() {
-        isVerified = true;
-        verifyPhoneBtn.classList.add('verified');
-        verifyPhoneBtn.innerHTML = '<i class="icon-check"></i> TASDIQLANDI';
-        verifyPhoneBtn.disabled = true;
-        
-        const verificationInput = document.createElement('input');
-        verificationInput.type = 'hidden';
-        verificationInput.name = 'phone_verified';
-        verificationInput.value = 'true';
-        document.getElementById('signUpForm').appendChild(verificationInput);
-        
-        closeModalWindow();
-        showNotification('Muvaffaqqiyatli tasdiqlandi!', 'success');
-    }
-
-    // Функция показа уведомлений
+        document.addEventListener('DOMContentLoaded', function () {
+    // Общая функция для показа уведомлений
     function showNotification(message, type) {
-    const notification = document.createElement('div');
-    notification.className = `hnotification ${type}`;
-    notification.textContent = message;
-    document.body.appendChild(notification);
+        const notification = document.createElement('div');
+        notification.className = `hnotification ${type}`;
+        notification.textContent = message;
+        document.body.appendChild(notification);
 
-    // Добавляем класс show для анимации появления
-    setTimeout(() => {
-        notification.classList.add('show');
-    }, 10);
-
-    // Удаляем уведомление через 3 секунды с анимацией исчезновения
-    setTimeout(() => {
-        notification.classList.remove('show');
         setTimeout(() => {
-            notification.remove();
-        }, 300); // Время анимации исчезновения
-    }, 3000);
-}
+            notification.classList.add('show');
+        }, 10);
 
-    // Обработчики событий
-    if (closeModalBtn) {
-        closeModalBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            closeModalWindow();
-        });
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                notification.remove();
+            }, 300);
+        }, 3000);
     }
 
-    if (verifyButton) {
-        verifyButton.addEventListener('click', function() {
-            if (checkCode()) {
-                handleSuccessfulVerification();
-            } else {
-                verificationError.textContent = "Noto'g'ri kod. Qayta urinib ko'ring";
-                verificationError.style.display = 'block';
-                clearCodeInputs();
-            }
-        });
-    }
+    // Общая функция для проверки кода подтверждения
+    function handleVerificationCode(codeInputs, options = {}) {
+        const {
+            onSuccess,
+            onError,
+            expectedCode = '1234',
+            errorElement,
+            successMessage = 'Код успешно подтвержден',
+            errorMessage = 'Неверный код. Попробуйте еще раз'
+        } = options;
 
-    if (verifyPhoneBtn) {
-        verifyPhoneBtn.addEventListener('click', function() {
-            const phoneInput = document.getElementById('signUpPhone');
-            if (validatePhone(phoneInput)) {
-                smsModal.style.display = 'flex';
-                phoneDisplay.textContent = phoneInput.value;
-                startTimer();
-                clearCodeInputs();
-                verificationError.style.display = 'none';
-                console.log('Demo SMS code:', DEMO_CODE);
-                showNotification('Telefon raqamingizga sms tarzida kod yuborildi', 'info');
-            }
-        });
-    }
+        const enteredCode = Array.from(codeInputs)
+            .map(input => input.value)
+            .join('');
 
-    // Обработка ввода кода
-    codeInputs.forEach((input, index) => {
-        input.addEventListener('input', function(e) {
-            this.value = this.value.replace(/[^0-9]/g, '');
-            
-            if (this.value.length === 1) {
-                if (index < codeInputs.length - 1) {
-                    codeInputs[index + 1].focus();
+        if (enteredCode.length !== 4) {
+            showError("Пожалуйста, введите код полностью", errorElement);
+            codeInputs.forEach(input => {
+                if (!input.value) {
+                    input.classList.add('error');
+                    addShakeAnimation(input);
                 }
-                if (index === codeInputs.length - 1) {
-                    verifyButton.click();
-                }
-            }
-        });
-
-        input.addEventListener('keydown', function(e) {
-            if (e.key === 'Backspace' && !this.value && index > 0) {
-                codeInputs[index - 1].focus();
-            }
-        });
-    });
-
-    // Закрытие по клику вне модального окна
-    smsModal.addEventListener('click', function(e) {
-        if (e.target === smsModal) {
-            closeModalWindow();
+            });
+            return;
         }
-    });
 
-    // Закрытие по Escape
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && smsModal.style.display === 'flex') {
-            closeModalWindow();
+        if (enteredCode === expectedCode) {
+            showNotification(successMessage, 'success');
+            clearInputs(codeInputs, errorElement);
+            if (onSuccess) onSuccess();
+        } else {
+            showError(errorMessage, errorElement);
+            codeInputs.forEach(input => {
+                input.classList.add('error');
+                addShakeAnimation(input);
+            });
+
+            setTimeout(() => {
+                clearInputs(codeInputs, errorElement);
+                codeInputs[0].focus();
+            }, 500);
+
+            if (onError) onError();
         }
-    });
-
-    // Обработчик повторной отправки кода
-    if (resendButton) {
-        resendButton.addEventListener('click', function() {
-            if (!resendButton.disabled) {
-                startTimer();
-                clearCodeInputs();
-                console.log('Demo SMS code:', DEMO_CODE);
-                showNotification('Yangi kod yuborildi', 'info');
-            }
-        });
     }
+
+    function addShakeAnimation(element) {
+        element.classList.add('shake');
+        setTimeout(() => {
+            element.classList.remove('shake');
+        }, 500);
+    }
+
+    function showError(message, errorElement) {
+        if (!errorElement) return;
+        
+        errorElement.textContent = message;
+        errorElement.style.display = 'block';
+        errorElement.classList.add('show-error');
+        
+        errorElement.classList.add('shake');
+        setTimeout(() => {
+            errorElement.classList.remove('shake');
+        }, 500);
+    }
+
+    function clearInputs(inputs, errorElement) {
+        inputs.forEach(input => {
+            input.value = '';
+            input.classList.remove('error');
+        });
+        if (errorElement) {
+            errorElement.style.display = 'none';
+            errorElement.classList.remove('show-error');
+        }
+    }
+
+    // Объект для работы с регистрацией и подтверждением телефона
+    const registrationVerification = {
+        modal: document.getElementById('smsModal'),
+        verifyPhoneBtn: document.querySelector('.verify-phone-btn'),
+        codeInputs: document.querySelectorAll('#smsModal .code-input'),
+        verifyButton: document.querySelector('#smsModal .verify-button'),
+        resendButton: document.querySelector('#smsModal .resend-code'),
+        verificationError: document.querySelector('#smsModal .verification-error'),
+        closeButton: document.querySelector('#smsModal .mclose-modal'),
+        phoneDisplay: document.querySelector('.phone-number-display'),
+        timer: null,
+        DEMO_CODE: '1234',
+
+        init() {
+            this.setupOpenModal();
+            this.setupCodeInputs();
+            this.setupVerifyButton();
+            this.setupResendButton();
+            this.setupCloseButton();
+            this.setupOutsideClick();
+        },
+
+        setupOpenModal() {
+            this.verifyPhoneBtn.addEventListener('click', () => {
+                const phoneInput = document.getElementById('signUpPhone');
+                if (validatePhone(phoneInput)) {
+                    this.modal.style.display = 'flex';
+                    setTimeout(() => {
+                        this.modal.classList.add('show');
+                    }, 10);
+                    this.phoneDisplay.textContent = phoneInput.value;
+                    this.startTimer();
+                    this.clearInputs();
+                    showNotification('Код отправлен на телефон', 'info');
+                    console.log('Registration Demo Code:', this.DEMO_CODE);
+                }
+            });
+        },
+
+        setupCodeInputs() {
+            this.codeInputs.forEach((input, index) => {
+                input.addEventListener('input', function() {
+                    this.value = this.value.replace(/[^0-9]/g, '');
+                    if (this.value.length === 1 && index < registrationVerification.codeInputs.length - 1) {
+                        registrationVerification.codeInputs[index + 1].focus();
+                    }
+                });
+
+                input.addEventListener('keydown', function(e) {
+                    if (e.key === 'Backspace' && !this.value && index > 0) {
+                        registrationVerification.codeInputs[index - 1].focus();
+                    }
+                });
+            });
+        },
+
+        setupVerifyButton() {
+            this.verifyButton.addEventListener('click', () => {
+                handleVerificationCode(this.codeInputs, {
+                    expectedCode: this.DEMO_CODE,
+                    errorElement: this.verificationError,
+                    successMessage: 'Телефон успешно подтвержден',
+                    onSuccess: () => {
+                        const verifyPhoneBtn = document.querySelector('.verify-phone-btn');
+                        verifyPhoneBtn.classList.add('verified');
+                        verifyPhoneBtn.innerHTML = '<i class="icon-check"></i> ПОДТВЕРЖДЕНО';
+                        verifyPhoneBtn.disabled = true;
+
+                        const verificationInput = document.createElement('input');
+                        verificationInput.type = 'hidden';
+                        verificationInput.name = 'phone_verified';
+                        verificationInput.value = 'true';
+                        document.getElementById('signUpForm').appendChild(verificationInput);
+
+                        this.closeModal();
+                    }
+                });
+            });
+        },
+
+        startTimer() {
+            let timeLeft = 30;
+            this.resendButton.disabled = true;
+
+            if (this.timer) clearInterval(this.timer);
+
+            const updateTimer = () => {
+                this.resendButton.textContent = `Отправить код повторно (${timeLeft})`;
+                if (timeLeft <= 0) {
+                    clearInterval(this.timer);
+                    this.resendButton.disabled = false;
+                    this.resendButton.textContent = 'Отправить код повторно';
+                    return;
+                }
+                timeLeft--;
+            };
+
+            updateTimer();
+            this.timer = setInterval(updateTimer, 1000);
+        },
+
+        setupResendButton() {
+            this.resendButton.addEventListener('click', () => {
+                if (!this.resendButton.disabled) {
+                    this.startTimer();
+                    this.clearInputs();
+                    this.codeInputs[0].focus();
+                    showNotification('Новый код отправлен', 'info');
+                }
+            });
+        },
+
+        setupCloseButton() {
+            this.closeButton.addEventListener('click', () => {
+                this.closeModal();
+            });
+        },
+
+        setupOutsideClick() {
+            this.modal.addEventListener('click', (e) => {
+                if (e.target === this.modal) {
+                    this.closeModal();
+                }
+            });
+        },
+
+        closeModal() {
+            this.modal.classList.remove('show');
+            setTimeout(() => {
+                this.modal.style.display = 'none';
+                this.clearInputs();
+                if (this.timer) clearInterval(this.timer);
+            }, 300);
+        },
+
+        clearInputs() {
+            this.codeInputs.forEach(input => input.value = '');
+            this.verificationError.style.display = 'none';
+        }
+    };
+
+     // Модальное окно восстановления пароля
+     const passwordRecovery = {
+                modal: document.getElementById('forgotPasswordModal'),
+                forgotLink: document.querySelector('.forgot-password'),
+                codeInputs: document.querySelectorAll('#forgotPasswordModal .code-input'),
+                verifyButton: document.querySelector('#forgotPasswordModal .verify-code-btn'),
+                resendButton: document.querySelector('#forgotPasswordModal .resend-code'),
+                verificationError: document.querySelector('#forgotPasswordModal .verification-error'),
+                closeButton: document.querySelector('#forgotPasswordModal .mclose-modal'),
+                emailButton: document.getElementById('sendEmailCode'),
+                phoneButton: document.getElementById('sendPhoneCode'),
+                verificationForm: document.querySelector('.verification-form'),
+                recoveryContents: document.querySelectorAll('.recovery-content'),
+                phoneMask: null,
+                timer: null,
+                DEMO_CODE: '0000',
+
+                init() {
+                    this.setupOpenModal();
+                    this.setupCodeInputs();
+                    this.setupVerifyButton();
+                    this.setupResendButton();
+                    this.setupCloseButton();
+                    this.setupSendButtons();
+                    this.setupTabs();
+                    this.setupOutsideClick();
+                    this.setupPhoneMask();
+                    this.setupTogglePassword();
+                },
+
+                setupPhoneMask() {
+                    const recoveryPhone = document.getElementById('recoveryPhone');
+                    if (recoveryPhone) {
+                        const iti = window.intlTelInput(recoveryPhone, {
+                            initialCountry: "uz",
+                            onlyCountries: ["uz", "ru", "kz", "kg", "tj", "tm"],
+                            separateDialCode: true,
+                            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+                        });
+
+                        const maskConfigs = {
+                            'uz': { mask: '(00) 000-00-00' },
+                            'ru': { mask: '(000) 000-00-00' },
+                            'kz': { mask: '(000) 000-00-00' },
+                            'kg': { mask: '(000) 000-000' },
+                            'tj': { mask: '(00) 000-00-00' },
+                            'tm': { mask: '(00)-00-00-00' }
+                        };
+
+                        const updateMask = (countryCode) => {
+                            if (this.phoneMask) {
+                                this.phoneMask.destroy();
+                            }
+
+                            const config = maskConfigs[countryCode] || maskConfigs['uz'];
+                            this.phoneMask = IMask(recoveryPhone, {
+                                mask: config.mask,
+                                lazy: false,
+                                placeholderChar: '_'
+                            });
+                        };
+
+                        recoveryPhone.addEventListener('countrychange', function () {
+                            const countryData = iti.getSelectedCountryData();
+                            updateMask(countryData.iso2);
+                        });
+
+                        updateMask(iti.getSelectedCountryData().iso2);
+                    }
+                },
+
+                setupOpenModal() {
+                    this.forgotLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.modal.style.display = 'flex';
+                        setTimeout(() => {
+                            this.modal.classList.add('show');
+                        }, 10);
+                    });
+                },
+
+                setupCodeInputs() {
+                    this.codeInputs.forEach((input, index) => {
+                        // Разрешаем только цифры
+                        input.addEventListener('input', function () {
+                            this.value = this.value.replace(/[^0-9]/g, '');
+
+                            // Автоматический переход к следующему полю
+                            if (this.value.length === 1 && index < passwordRecovery.codeInputs.length - 1) {
+                                passwordRecovery.codeInputs[index + 1].focus();
+                            }
+
+                            // Скрываем сообщение об ошибке при вводе
+                            passwordRecovery.verificationError.style.display = 'none';
+                        });
+
+                        // Обработка клавиши Backspace
+                        input.addEventListener('keydown', function (e) {
+                            if (e.key === 'Backspace' && !this.value && index > 0) {
+                                passwordRecovery.codeInputs[index - 1].focus();
+                            }
+                        });
+
+                        // Предотвращаем вставку текста длиннее 1 символа
+                        input.addEventListener('paste', function (e) {
+                            e.preventDefault();
+                            const pastedData = (e.clipboardData || window.clipboardData).getData('text');
+                            if (pastedData.length === 4 && /^\d{4}$/.test(pastedData)) {
+                                passwordRecovery.codeInputs.forEach((input, i) => {
+                                    input.value = pastedData[i] || '';
+                                });
+                                passwordRecovery.codeInputs[3].focus();
+                            }
+                        });
+                    });
+                },
+
+                // В объекте passwordRecovery добавим/обновим setupVerifyButton:
+
+                setupVerifyButton() {
+                    const verifyBtn = document.getElementById('verycodebtn');
+                    if (!verifyBtn) return;
+
+                    verifyBtn.addEventListener('click', () => {
+                        const enteredCode = Array.from(this.codeInputs)
+                            .map(input => input.value)
+                            .join('');
+
+                        // Проверяем заполнены ли все поля
+                        if (enteredCode.length !== 4) {
+                            this.showError("Пожалуйста, введите код полностью");
+                            // Анимация тряски для незаполненных полей
+                            this.codeInputs.forEach(input => {
+                                if (!input.value) {
+                                    input.classList.add('error');
+                                    this.addShakeAnimation(input);
+                                }
+                            });
+                            return;
+                        }
+
+                        // Проверяем правильность кода
+                        if (enteredCode === this.DEMO_CODE) {
+                            // Успешная проверка
+                            this.verificationForm.style.display = 'none';
+                            const newPasswordForm = this.modal.querySelector('.new-password-form');
+                            newPasswordForm.style.display = 'block';
+                            this.setupNewPasswordStrength();
+                            this.clearInputs();
+
+                            // Показываем уведомление об успехе
+                            showNotification('Код успешно подтвержден', 'success');
+                        } else {
+                            // Неверный код
+                            this.showError("Неверный код. Попробуйте еще раз");
+
+                            // Анимация тряски для всех полей
+                            this.codeInputs.forEach(input => {
+                                input.classList.add('error');
+                                this.addShakeAnimation(input);
+                            });
+
+                            // Очищаем поля
+                            setTimeout(() => {
+                                this.clearInputs();
+                                this.codeInputs[0].focus();
+                            }, 500);
+                        }
+                    });
+                },
+
+                // Добавим вспомогательные методы:
+
+                addShakeAnimation(element) {
+                    element.classList.add('shake');
+                    setTimeout(() => {
+                        element.classList.remove('shake');
+                    }, 500);
+                },
+
+                showError(message) {
+                    if (!this.verificationError) return;
+
+                    this.verificationError.textContent = message;
+                    this.verificationError.style.display = 'block';
+                    this.verificationError.classList.add('show-error');
+
+                    // Добавляем анимацию для сообщения об ошибке
+                    this.verificationError.classList.add('shake');
+                    setTimeout(() => {
+                        this.verificationError.classList.remove('shake');
+                    }, 500);
+                },
+
+                clearInputs() {
+                    this.codeInputs.forEach(input => {
+                        input.value = '';
+                        input.classList.remove('error');
+                    });
+                    if (this.verificationError) {
+                        this.verificationError.style.display = 'none';
+                        this.verificationError.classList.remove('show-error');
+                    }
+                },
+
+                setupNewPasswordStrength() {
+                    const newPassword = document.getElementById('newPassword');
+                    const confirmPassword = document.getElementById('confirmNewPassword');
+                    const saveButton = document.getElementById('saveNewPassword');
+
+                    newPassword.addEventListener('input', function () {
+                        const password = this.value;
+                        const strengthBars = this.closest('.form-group').querySelector('.strength-bars');
+                        const strengthLabel = this.closest('.form-group').querySelector('.strength-label span');
+                        const strength = checkPasswordStrength(password);
+
+                        strengthBars.className = 'strength-bars';
+                        if (password.length > 0) {
+                            strengthBars.classList.add(`level-${strength}`);
+                            const labels = {
+                                1: 'слабый',
+                                2: "средний",
+                                3: 'хороший',
+                                4: 'сильный'
+                            };
+                            strengthLabel.textContent = labels[strength] || 'отсутствует';
+                        } else {
+                            strengthLabel.textContent = 'отсутствует';
+                        }
+                    });
+
+                    saveButton.addEventListener('click', () => {
+                        const password = newPassword.value;
+                        const confirmValue = confirmPassword.value;
+
+                        if (this.validateNewPasswords(password, confirmValue)) {
+                            showNotification('Пароль успешно изменен', 'success');
+                            this.closeModal();
+                        }
+                    });
+                },
+
+                setupTogglePassword() {
+                    const toggleButtons = this.modal.querySelectorAll('.toggle-password');
+                    toggleButtons.forEach(button => {
+                        button.addEventListener('click', function () {
+                            const input = this.parentElement.querySelector('input');
+                            const eyeIcon = this.querySelector('.eye-icon i');
+
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                eyeIcon.className = 'icon-eye-off';
+                            } else {
+                                input.type = 'password';
+                                eyeIcon.className = 'icon-eye';
+                            }
+                        });
+                    });
+                },
+
+                startTimer() {
+                    let timeLeft = 30;
+                    this.resendButton.disabled = true;
+
+                    if (this.timer) clearInterval(this.timer);
+
+                    const updateTimer = () => {
+                        this.resendButton.textContent = `Отправить код повторно (${timeLeft})`;
+                        if (timeLeft <= 0) {
+                            clearInterval(this.timer);
+                            this.resendButton.disabled = false;
+                            this.resendButton.textContent = 'Отправить код повторно';
+                            return;
+                        }
+                        timeLeft--;
+                    };
+
+                    updateTimer();
+                    this.timer = setInterval(updateTimer, 1000);
+                },
+
+                setupResendButton() {
+                    this.resendButton.addEventListener('click', () => {
+                        if (!this.resendButton.disabled) {
+                            this.startTimer();
+                            this.clearInputs();
+                            this.codeInputs[0].focus();
+                            console.log('New Recovery Demo Code:', this.DEMO_CODE);
+                            showNotification('Новый код отправлен', 'info');
+                        }
+                    });
+                },
+
+                setupSendButtons() {
+                    this.emailButton.addEventListener('click', () => {
+                        if (this.validateEmail()) {
+                            const phoneTab = document.querySelector('[data-tab="phone"]');
+                            phoneTab.classList.add('disabled');
+                            phoneTab.disabled = true;
+
+                            this.showVerificationForm();
+                            this.startTimer();
+                            showNotification('Код отправлен на email', 'info');
+                            console.log('Recovery Demo Code:', this.DEMO_CODE);
+                        }
+                    });
+
+                    this.phoneButton.addEventListener('click', () => {
+                        if (this.validatePhone()) {
+                            const emailTab = document.querySelector('[data-tab="email"]');
+                            emailTab.classList.add('disabled');
+                            emailTab.disabled = true;
+
+                            this.showVerificationForm();
+                            this.startTimer();
+                            showNotification('Код отправлен в SMS', 'info');
+                            console.log('Recovery Demo Code:', this.DEMO_CODE);
+                        }
+                    });
+                },
+
+                setupTabs() {
+                    const tabButtons = document.querySelectorAll('.tab-btn');
+                    tabButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            if (!button.classList.contains('disabled')) {
+                                const tabName = button.getAttribute('data-tab');
+                                tabButtons.forEach(btn => btn.classList.remove('active'));
+                                button.classList.add('active');
+
+                                this.recoveryContents.forEach(content => {
+                                    content.classList.remove('active');
+                                    if (content.id === `${tabName}Recovery`) {
+                                        content.classList.add('active');
+                                    }
+                                });
+                            }
+                        });
+                    });
+                },
+
+                setupCloseButton() {
+                    this.closeButton.addEventListener('click', () => {
+                        this.closeModal();
+                    });
+                },
+
+                setupOutsideClick() {
+                    this.modal.addEventListener('click', (e) => {
+                        if (e.target === this.modal) {
+                            this.closeModal();
+                        }
+                    });
+                },
+
+                showVerificationForm() {
+                    this.recoveryContents.forEach(content => content.style.display = 'none');
+                    this.verificationForm.style.display = 'block';
+                    this.clearInputs();
+                    this.codeInputs[0].focus();
+                },
+
+                validateEmail() {
+                    const emailInput = document.getElementById('recoveryEmail');
+                    const email = emailInput.value;
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    const formGroup = emailInput.closest('.form-group');
+                    const errorMessage = formGroup.querySelector('.error-message');
+
+                    if (!emailRegex.test(email)) {
+                        formGroup.classList.add('error');
+                        errorMessage.textContent = 'Введите корректный email';
+                        errorMessage.style.display = 'block';
+                        return false;
+                    }
+
+                    formGroup.classList.remove('error');
+                    errorMessage.style.display = 'none';
+                    return true;
+                },
+
+                validatePhone() {
+                    const phoneInput = document.getElementById('recoveryPhone');
+                    if (!phoneInput || !this.phoneMask) return false;
+
+                    const isComplete = this.phoneMask.masked.isComplete;
+                    const formGroup = phoneInput.closest('.form-group');
+                    const errorMessage = formGroup.querySelector('.error-message');
+
+                    if (!isComplete) {
+                        formGroup.classList.add('error');
+                        errorMessage.textContent = "Введите номер телефона полностью";
+                        errorMessage.style.display = 'block';
+                        return false;
+                    }
+
+                    formGroup.classList.remove('error');
+                    errorMessage.style.display = 'none';
+                    return true;
+                },
+
+                validateNewPasswords(password, confirm) {
+                    const newPasswordGroup = document.getElementById('newPassword').closest('.form-group');
+                    const confirmPasswordGroup = document.getElementById('confirmNewPassword').closest('.form-group');
+                    let isValid = true;
+
+                    newPasswordGroup.classList.remove('error');
+                    confirmPasswordGroup.classList.remove('error');
+
+                    if (checkPasswordStrength(password) < 2) {
+                        newPasswordGroup.classList.add('error');
+                        newPasswordGroup.querySelector('.error-message').textContent =
+                            "Пароль недостаточно сложный";
+                        isValid = false;
+                    }
+
+                    if (password !== confirm) {
+                        confirmPasswordGroup.classList.add('error');
+                        confirmPasswordGroup.querySelector('.error-message').textContent =
+                            "Пароли не совпадают";
+                        isValid = false;
+                    }
+
+                    return isValid;
+                },
+
+                showError(message) {
+                    this.verificationError.textContent = message;
+                    this.verificationError.style.display = 'block';
+                    this.verificationError.classList.add('show-error');
+
+                    this.codeInputs.forEach(input => {
+                        input.classList.add('error');
+                    });
+                },
+
+                closeModal() {
+                    this.modal.classList.remove('show');
+                    setTimeout(() => {
+                        this.modal.style.display = 'none';
+                        this.clearAll();
+                    }, 300);
+                },
+
+                // clearInputs() {
+                //     this.codeInputs.forEach(input => {
+                //         input.value = '';
+                //         input.classList.remove('error');
+                //     });
+                //     this.verificationError.style.display = 'none';
+                //     this.verificationError.classList.remove('show-error');
+                // },
+
+                clearAll() {
+                    this.clearInputs();
+                    document.getElementById('newPassword').value = '';
+                    document.getElementById('confirmNewPassword').value = '';
+                    document.querySelector('.new-password-form').style.display = 'none';
+                    document.getElementById('emailRecovery').style.display = 'block';
+
+                    // Сброс состояния табов
+                    const tabs = document.querySelectorAll('.tab-btn');
+                    tabs.forEach(tab => {
+                        tab.classList.remove('disabled');
+                        tab.disabled = false;
+                    });
+
+                    document.querySelector('[data-tab="email"]').classList.add('active');
+                    document.querySelector('[data-tab="phone"]').classList.remove('active');
+                    this.verificationForm.style.display = 'none';
+
+                    if (this.timer) {
+                        clearInterval(this.timer);
+                    }
+                }
+            };
+
+
+    // Инициализация обоих объектов
+    registrationVerification.init();
+    passwordRecovery.init();
 });
 
 
+
+        //---------------------------user location ---------------------------------------------------
+        window.locationService = {
+            currentLocation: {
+                country: 'Неизвестно',
+                state: 'Неизвестно',
+                city: 'Неизвестно',
+                latitude: null,
+                longitude: null,
+                method: 'Неизвестно'
+            },
+
+            formatCoordinate(coordinate, isLatitude) {
+                const direction = isLatitude
+                    ? (coordinate >= 0 ? '°N' : '°S')
+                    : (coordinate >= 0 ? '°E' : '°W');
+                return Math.abs(coordinate).toFixed(6) + direction;
+            },
+
+            updateDOM() {
+                const elements = {
+                    country: document.getElementById('outputcountry'),
+                    state: document.getElementById('outputstate'),
+                    city: document.getElementById('outputcity'),
+                    lat: document.getElementById('outputlat'),
+                    long: document.getElementById('outputlong'),
+                    method: document.getElementById('outputmethod')
+                };
+
+                if (elements.country) elements.country.textContent = this.currentLocation.country;
+                if (elements.state) elements.state.textContent = this.currentLocation.state;
+                if (elements.city) elements.city.textContent = this.currentLocation.city;
+                if (elements.lat && this.currentLocation.latitude) {
+                    elements.lat.textContent = this.formatCoordinate(this.currentLocation.latitude, true);
+                }
+                if (elements.long && this.currentLocation.longitude) {
+                    elements.long.textContent = this.formatCoordinate(this.currentLocation.longitude, false);
+                }
+                if (elements.method) elements.method.textContent = this.currentLocation.method;
+
+                const container = document.querySelector('.overlay-images-container');
+                if (container) {
+                    const existingImage = container.querySelector('.overlay-images');
+                    const randomImage = this.getRandomImageForCountry(this.currentLocation.country);
+
+                    if (!existingImage) {
+                        const newImage = new Image();
+                        newImage.className = 'overlay-images';
+                        newImage.src = randomImage;
+                        newImage.onload = () => {
+                            container.appendChild(newImage);
+                            setTimeout(() => newImage.classList.add('active'), 50);
+                        };
+                    } else {
+                        const newImage = new Image();
+                        newImage.onload = () => {
+                            existingImage.src = randomImage;
+                        };
+                        newImage.src = randomImage;
+                    }
+                }
+            },
+
+            getRandomImageForCountry(country) {
+                console.log('Исходное название страны:', country);
+
+                // Нормализуем название страны
+                const normalizedCountry = country.trim(); // убираем пробелы
+                console.log('Нормализованное название страны:', normalizedCountry);
+
+                const countryMapping = {
+                    "Belgium": "Бельгия",
+                    "Belgique": "Бельгия",
+                    "France": "Франция", // Добавляем правильное написание
+                    "Франция": "Франция",
+                    // Другие варианты...
+                };
+
+                const countryImages = {
+                    "Узбекистан": [
+                        "/img/country-bg/uzb2.webp",
+                        "/img/country-bg/kaz2.webp"
+                    ],
+                    "Казахстан": [
+                        "/img/country-bg/tad2.webp",
+                        "/img/country-bg/kaz3.webp"
+                    ],
+                    "Киргизстан": [
+                        "/img/country-bg/uzb3.webp",
+                        "/img/country-bg/tur2.webp"
+                    ],
+                    "Франция": [ // Используем правильное написание
+                        "/img/country-bg/taj.webp",
+                        "/img/country-bg/kaz.webp"
+                    ],
+                    "Бельгия": [ // Добавляем картинки для Бельгии
+                        "/img/country-bg/tur.webp",
+                        "/img/country-bg/uzb.webp"
+                    ]
+                };
+
+
+
+                // Используем маппинг или оригинальное название
+                const mappedCountry = countryMapping[normalizedCountry] || normalizedCountry;
+                console.log('Маппинг страны:', mappedCountry);
+
+
+
+                const defaultImages = [
+                    "/img/country-bg/default1.webp",
+                    "/img/country-bg/default2.webp",
+                    "/img/country-bg/default3.webp",
+                    "/img/country-bg/default4.webp",
+                    "/img/country-bg/default5.webp"
+                ];
+
+                const images = countryImages[mappedCountry] || defaultImages;
+                const selectedImage = images[Math.floor(Math.random() * images.length)];
+
+                console.log('Выбрано изображение:', selectedImage);
+                return selectedImage;
+            },
+            async getLocationByIP() {
+                try {
+                    const response = await fetch('https://ipapi.co/json/');
+                    if (!response.ok) throw new Error('IP API недоступен');
+
+                    const data = await response.json();
+                    return {
+                        country: data.country_name,
+                        state: data.region,
+                        city: data.city,
+                        latitude: data.latitude,
+                        longitude: data.longitude,
+                        method: 'IP геолокация'
+                    };
+                } catch (error) {
+                    console.error('Ошибка IP геолокации:', error);
+                    throw error;
+                }
+            },
+
+            async determineLocation() {
+                try {
+                    const position = await new Promise((resolve, reject) => {
+                        if (!navigator.geolocation) {
+                            reject(new Error('Геолокация не поддерживается'));
+                            return;
+                        }
+
+                        navigator.geolocation.getCurrentPosition(resolve, reject, {
+                            enableHighAccuracy: true,
+                            timeout: 5000,
+                            maximumAge: 0
+                        });
+                    });
+
+                    const { latitude, longitude } = position.coords;
+
+                    try {
+                        const response = await fetch(
+                            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`
+                        );
+                        const addressData = await response.json();
+
+                        this.currentLocation = {
+                            country: addressData.address.country || 'Неизвестно',
+                            state: addressData.address.state || addressData.address.region || 'Неизвестно',
+                            city: addressData.address.city || addressData.address.town || 'Неизвестно',
+                            latitude,
+                            longitude,
+                            method: 'GPS'
+                        };
+                    } catch (error) {
+                        this.currentLocation = {
+                            country: 'Не удалось определить',
+                            state: 'Не удалось определить',
+                            city: 'Не удалось определить',
+                            latitude,
+                            longitude,
+                            method: 'GPS (только координаты)'
+                        };
+                    }
+                } catch (error) {
+                    try {
+                        this.currentLocation = await this.getLocationByIP();
+                    } catch (ipError) {
+                        console.error('Все методы геолокации недоступны:', ipError);
+                    }
+                }
+
+                this.updateDOM();
+                return this.currentLocation;
+            }
+        };
+
+        window.updateLocationManually = function () {
+            const button = document.getElementById('updateButton');
+            if (button) {
+                button.disabled = true;
+                button.textContent = 'Обновление...';
+            }
+
+            locationService.determineLocation()
+                .finally(() => {
+                    if (button) {
+                        button.disabled = false;
+                        button.textContent = 'Обновить местоположение';
+                    }
+                });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            locationService.determineLocation();
+        });
 
 
 
@@ -1889,25 +3022,119 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <div class="sms-modal" id="smsModal">
-    <div class="modal-content mcontent">
-        <h2>Telefon raqamni tasdiqlash</h2>
-        <p class="modal-text mtnote">Quyudagi raqamga sms tarzida kod yuborildi:</p>
-        <p class="phone-number-display">+998 ** *** ** **</p>
-        <div class="verification-code-container">
-            <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
-            <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
-            <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
-            <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
-        </div>
-        <div class="error-message verification-error"></div>
-        <button class="resend-code" disabled>
-           Kodni yangidan yuborish (<span class="timer">30</span>)
-        </button>
-        <button class="verify-button">Tasdiqlash</button>
-        <button class="mclose-modal" type="button">&times;</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     </div>
-</div>
+    <div class="sms-modal" id="smsModal">
+        <div class="modal-content mcontent">
+            <img src="/img/private-message.webp" alt="Reset password" class="resetpassimg">
+            <h2>Telefon raqamni tasdiqlash</h2>
+            <p class="modal-text mtnote">Quyudagi raqamga sms tarzida kod yuborildi:</p>
+            <p class="phone-number-display">+998 ** *** ** **</p>
+            <div class="verification-code-container">
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" autocomplete="none">
+            </div>
+            <div class="error-message verification-error"></div>
+            <button class="resend-code" disabled>
+                Kodni yangidan yuborish (<span class="timer">30</span>)
+            </button>
+            <button class="verify-button">Tasdiqlash</button>
+            <button class="mclose-modal" type="button">&times;</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно восстановления пароля -->
+    <div class="forgot-password-modal" id="forgotPasswordModal">
+        <div class="modal-content mcontent">
+            <img src="/img/reset-password.webp" alt="Reset password" class="resetpassimg">
+            <h2>Восстановление пароля111</h2>
+
+            <!-- Табы -->
+            <div class="recovery-tabs">
+                <button class="tab-btn active" data-tab="email">По Email</button>
+                <button class="tab-btn" data-tab="phone">По телефону</button>
+            </div>
+
+            <!-- Форма восстановления по email -->
+            <div class="recovery-content active" id="emailRecovery">
+                <div class="form-group">
+                    <label>Введите ваш Email</label>
+                    <input type="email" id="recoveryEmail" required>
+                    <div class="error-message"></div>
+                </div>
+                <button class="verify-button" id="sendEmailCode">Отправить код</button>
+            </div>
+
+            <!-- Форма восстановления по телефону -->
+            <div class="recovery-content" id="phoneRecovery">
+                <div class="form-group">
+                    <label>Введите ваш телефон</label>
+                    <input type="tel" id="recoveryPhone" required>
+                    <div class="error-message"></div>
+                </div>
+                <button class="verify-button" id="sendPhoneCode">Отправить код</button>
+            </div>
+
+            <!-- Форма ввода кода подтверждения -->
+            <div class="verification-form" style="display: none;">
+                <p class="modal-text mtnote">Введите код подтверждения:</p>
+                <div class="verification-code-container">
+                    <input type="text" maxlength="1" class="code-input" inputmode="numeric">
+                    <input type="text" maxlength="1" class="code-input" inputmode="numeric">
+                    <input type="text" maxlength="1" class="code-input" inputmode="numeric">
+                    <input type="text" maxlength="1" class="code-input" inputmode="numeric">
+                </div>
+                <div class="error-message verification-error"></div>
+                <button class="resend-code" disabled>
+                    Отправить код повторно (<span class="timer">30</span>)
+                </button>
+                <button class="verify-button verify-code-btn" id="verycodebtn">Подтвердить</button>
+            </div>
+            <!-- Добавьте эту форму в модальное окно восстановления пароля -->
+            <div class="new-password-form" style="display: none;">
+                <h3>Новый пароль</h3>
+                <div class="form-group">
+                    <label>Новый пароль</label>
+                    <div class="password-input-group">
+                        <input type="password" id="newPassword" required>
+                        <button type="button" class="toggle-password">
+                            <span class="eye-icon">
+                                <i class="icon-eye"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bars">
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                        </div>
+                        <div class="strength-label">Сложность пароля: <span>отсутствует</span></div>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label>Подтвердите пароль</label>
+                    <div class="password-input-group">
+                        <input type="password" id="confirmNewPassword" required>
+                        <button type="button" class="toggle-password">
+                            <span class="eye-icon">
+                                <i class="icon-eye"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+                <button class="verify-button" id="saveNewPassword">Сохранить</button>
+            </div>
+
+            <button class="mclose-modal" type="button">&times;</button>
+        </div>
+    </div>
 </body>
 
 </html>
